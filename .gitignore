@@ -1,6 +1,9 @@
+
 core.Microsoft*
 core.mongo*
 core.python*
+# ignore sqlite3 db files
+*.sqlite3
 env.py
 __pycache__/
 *.py[cod]
