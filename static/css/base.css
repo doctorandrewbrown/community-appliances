@@ -2,4 +2,50 @@ body {
     background: url('/media/homepage_background1.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto';
+    color: black;
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 210px;
+    z-index: 1;
+}
+
+i {
+    font-size: xx-large;
+}
+
+#main-nav {
+    font-size: x-large;
+}
+
+/* overide BS5 styling by adding main-nav ID to make selector more specific*/
+
+#main-nav .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link:hover {
+    color: blue;
+}
+
+.cta-heading {
+    background-color: black; 
+    opacity: 0.5;
+    color: white;
+    margin-top: 220px;
+}
+
+.cta-button {
+    color: white;
+    background-color: black;
+    font-size: x-large;
+}
+
+.about-us {
+    margin-top: 100px;
+    color: white; 
+    background-color: black; 
+    opacity: 0.5;
 }

@@ -16,18 +16,27 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <title>Community Appliances</title>
 </head>
-
 <body>
 
   <!--main header-->
-
-  <header class="container-fluid bg-light fixed-top">
-    <ul class="list-inline">
-      <li class="list-inline-item ms-4">CA</li>
-      <li class="list-inline-item ">Account</li>
-      <li class="list-inline-item">Cart</li>
-    </ul>
-  
+  <header class="container-fluid bg-light fixed-top pt-3">
+    <div class="row main-header">
+      <div class="col-4 me-auto">
+        <p class="display-6">Wales Community Appliances</p>
+      </div>
+      <div class="col-2 px-0 text-end">
+        <div class="text-center">
+          <div><i class="fa-solid fa-user"></i></div>
+          <p>Account</p>
+        </div>
+      </div>
+      <div class="col-2 px-0">
+        <div class="text-center">
+          <div><i class="fa-solid fa-cart-shopping"></i></div>
+          <p>£0.00</p>
+        </div>
+      </div>
+    </div>
   
   <!--main nav-->
 
@@ -36,7 +45,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main-nav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Washing Machines</a>
         </li>
@@ -48,6 +57,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Electric Cookers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">All Appliances</a>
         </li>
       </ul>
     </div>
@@ -61,12 +73,6 @@
     {% block content %}
     {% endblock %}
     
-    <!--footer-->
-    <footer>
-      <div>
-        <p class="text-center">Copyright Community Appliances 2024</p>
-      </div>
-    </footer>
   </div>
 </body>
 
