@@ -3,6 +3,7 @@ from .models import Product, Category
 
 # the two classes below extend the admin model to tell admin view what data to show
 
+
 class ProductAdmin(admin.ModelAdmin):
     # tuple below
     list_display = (
@@ -24,5 +25,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Register your models here. Note admin models defined above are registered 
 # alongside respective models
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
