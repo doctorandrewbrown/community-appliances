@@ -22,8 +22,9 @@
   <!--main header-->
   <header class="container-fluid bg-light fixed-top pt-3">
     <div class="row main-header">
-      <div class="col-4 me-auto">
-        <p class="display-6">Community Appliances</p>
+      <div class="col-4 me-auto branding">
+        <a href="{% url 'home' %}" class="display-6">Community Appliances</a>
+        <!--p class="display-6">Community Appliances</p-->
       </div>
       <div class="col-2 px-0 text-end">
         <div class="text-center">
@@ -57,10 +58,17 @@
           <a class="nav-link" href="#">Gas Cookers |</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Electric Cookers |</a>
+          <a class="nav-link" href="{% url 'products' %}">Electric Cookers |</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">All Appliances</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-target="#" href="{% url 'products' %}" data-bs-toggle="dropdown" aria-expanded="false">
+            All Appliances
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">By price</a></li>
+            <li><a class="dropdown-item" href="#">By condition</a></li>
+            <li><a class="dropdown-item" href="{% url 'products' %}">All appliances</a></li>
+          </ul>
         </li>
       </ul>
     </div>
