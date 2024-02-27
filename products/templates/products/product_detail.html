@@ -17,9 +17,11 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">{{product.name}}</h5>
-                        <p class="card-text">Model: {{product.name}}</p>
                         <p class="card-text"><em>{{product.description}}</em></p>
+                        <p class="card-text">Condition: {{product.grade}}</p>
                         <p class="card-text accent"><strong >Price: £{{product.price}}</strong></p>
+                        <hr>
+                        <p class="card-text text-success">Safety: {{product.certificate.description}}</p>
                     </div>
                 </div>
             </div>
@@ -27,20 +29,4 @@
     </div>
 </div>
 
-
 {% endblock %}
-
-
-  <!--div class="row">
-    {% for product in products %}
-    <div class="col-md-6 col-lg-3">
-      <div class="card text-center mb-3 pt-2">
-        <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{product.image.url}}" alt="pictures of {{product.category}}" width="300" height="300"></a>
-        <div class="card-body">
-          <p class="card-text">{{product.name}}</p>
-          <p class="card-text">£{{product.price}}</p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div-->

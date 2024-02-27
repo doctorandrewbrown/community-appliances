@@ -3,12 +3,15 @@ from .models import Product, Category, Condition, Certificate
 
 # the classes below extend the admin model to tell admin view what data to show
 
+
 class CertificateAdmin(admin.ModelAdmin):
     # tuple below note () brackets
     list_display = (
         'certificate',
         'description',
     )
+
+
 class ProductAdmin(admin.ModelAdmin):
     # tuple below note () brackets
     list_display = (
