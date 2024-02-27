@@ -2,6 +2,7 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,6 +18,7 @@
   <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
   <title>Community Appliances</title>
 </head>
+
 <body>
 
   <!--main header-->
@@ -24,56 +26,73 @@
     <div class="row main-header">
       <div class="col-4 me-auto branding">
         <a href="{% url 'home' %}" class="display-6">Community Appliances</a>
-        <!--p class="display-6">Community Appliances</p-->
       </div>
-      <div class="col-2 px-0 text-end">
-        <div class="text-center accent">
-          <div><i class="fa-solid fa-user"></i></div>
-          <p>Account</p>
-        </div>
+
+      <div class="dropdown col-2 text-center px-0">
+        <a class="accent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div>
+            <div><i class="fa-solid fa-user"></i></div>
+            <p class="my-0">Account</p>
+          </div>
+        </a>
+        <ul class="dropdown-menu">
+          {% if request.user.is_authenticated %}
+          {% if request.user.is_superuser %}
+          <li><a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a></li>
+          {% endif %}
+          <li><a href="" class="dropdown-item">My Profile</a></li>
+          <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+          {% else %}
+          <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+          <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+        </ul>
+        {% endif %}
       </div>
-      <div class="col-2 px-0">
-        <div class="text-center accent">
+
+      <div class="col-2 px-0 text-center">
+        <div class=" accent">
           <div><i class="fa-solid fa-cart-shopping"></i></div>
           <p>£0.00</p>
         </div>
       </div>
     </div>
-  
-  <!--main nav-->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="main-nav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Washing Machines |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tumble Driers |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gas Cookers |</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'products' %}">Electric Cookers |</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-target="#" href="{% url 'products' %}" data-bs-toggle="dropdown" aria-expanded="false">
-            All Appliances
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">By price</a></li>
-            <li><a class="dropdown-item" href="#">By condition</a></li>
-            <li><a class="dropdown-item" href="{% url 'products' %}">All appliances</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+    <!--main nav-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Washing Machines |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tumble Driers |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gas Cookers |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'products' %}">Electric Cookers |</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-target="#" href="{% url 'products' %}" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All Appliances
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">By price</a></li>
+              <li><a class="dropdown-item" href="#">By condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}">All appliances</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!--main content-->
 
@@ -81,7 +100,7 @@
 
     {% block content %}
     {% endblock %}
-    
+
   </div>
 </body>
 

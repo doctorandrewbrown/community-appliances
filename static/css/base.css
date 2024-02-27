@@ -16,6 +16,11 @@ i {
     font-size: x-large;
 }
 
+a {
+    text-decoration: none;
+
+}
+
 /* accent color for features */
 .accent {
     color: blue;
