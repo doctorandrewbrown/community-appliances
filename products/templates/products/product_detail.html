@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<!--padding to prevent navbar overlap-->
+<div class="row" style="padding-top: 200px;"></div>
+<div class="row">
+    <div class="col-sm-6 offset-md-4">
+        <!--BS5 horizontal card-->
+        <div class="card mb-3 p-3 border border-primary rounded-3">
+            <div class="row g-0">
+                <div class="col-md-4 ">
+                    <img src="{{product.image.url}}" class="img-fluid rounded-start"
+                        alt="picture of {{ product.category }}" width="300" height="300">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.name}}</h5>
+                        <p class="card-text">Model: {{product.name}}</p>
+                        <p class="card-text"><em>{{product.description}}</em></p>
+                        <p class="card-text accent"><strong >Price: £{{product.price}}</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+  <!--div class="row">
+    {% for product in products %}
+    <div class="col-md-6 col-lg-3">
+      <div class="card text-center mb-3 pt-2">
+        <a href="{% url 'product_detail' product.id %}"><img class="card-img-top" src="{{product.image.url}}" alt="pictures of {{product.category}}" width="300" height="300"></a>
+        <div class="card-body">
+          <p class="card-text">{{product.name}}</p>
+          <p class="card-text">£{{product.price}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div-->
