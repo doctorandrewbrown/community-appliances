@@ -18,6 +18,7 @@ class ProductAdmin(admin.ModelAdmin):
         'name',
         'category',
         'description',
+        'grade',
         'price',
         'image',
     )
@@ -35,7 +36,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class ConditionAdmin(admin.ModelAdmin):
     list_display = ('grade',)
 
-# Register your models here. Note admin models defined above are registered 
+# Register your models here. Note admin models defined above are registered
 # alongside respective models
 
 
