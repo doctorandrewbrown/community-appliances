@@ -16,6 +16,7 @@
       <div class="card border border-primary text-center mb-3 pt-2">
         <a href="{% url 'product_detail' product.id%}"><img class="card-img-top" src="{{product.image.url}}" alt="pictures of {{product.category}}" width="300" height="300"></a>
         <div class="card-body">
+          <p class="card-text">{{product.grade}}</p>
           <p class="card-text">{{product.name}}</p>
           <p class="card-text"><strong class="accent">£{{product.price}}</strong></p>
         </div>
