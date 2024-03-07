@@ -11,15 +11,19 @@
         <div class="card mb-3 p-3 border border-primary rounded-3">
             <div class="row g-0">
                 <div class="col-md-4 ">
-                    <img src="{{product.image.url}}" class="img-fluid rounded-start"
-                        alt="picture of {{ product.category }}" width="300" height="300">
+                    <!-- card image link to full-size image-->
+                    <a href="{{product.image.url}}">
+                        <img src="{{product.image.url}}" class="img-fluid rounded-start"
+                        alt="picture of {{ product.name }}" width="300" height="300">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">{{product.name}}</h5>
+                        <h5 class="card-title">{{product.category}}</h5>
                         <p class="card-text"><em>{{product.description}}</em></p>
                         <p class="card-text">Condition: {{product.grade}}</p>
-                        <p class="card-text accent"><strong >Price: £{{product.price}}</strong></p>
+                        <p class="card-text accent"><strong>Price: £{{product.price}}</strong></p>
                         <hr>
                         <p class="card-text text-success"><em>Safety: {{product.certificate.description}}</em></p>
                     </div>
