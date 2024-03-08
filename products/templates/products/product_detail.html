@@ -6,6 +6,11 @@
 <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
 <div class="row">
+    <div class="col text-center">
+        <hr class=" w-50 mx-auto mb-3">
+      </div>
+</div>
+<div class="row">
     <div class="col-sm-6 offset-md-4">
         <!--BS5 horizontal card-->
         <div class="card mb-3 p-3 border border-primary rounded-3">
@@ -19,13 +24,29 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">{{product.name}}</h5>
-                        <h5 class="card-title">{{product.category}}</h5>
+                        <h5 class="card-title display-6">{{product.name}}</h5>
+                        <p class="card-title">{{product.category}}</p>
                         <p class="card-text"><em>{{product.description}}</em></p>
                         <p class="card-text">Condition: {{product.grade}}</p>
-                        <p class="card-text accent"><strong>Price: £{{product.price}}</strong></p>
+                        <p class="card-text accent display-6"><strong>£{{product.price}}</strong></p>
+                        <p>
+                            <a href="{% url 'products' %}" class="btn cta-button rounded-0">
+                                <span>Keep Shopping</span>
+                            </a>
+                        </p>
+                        <form class="form" action="{% url 'products' %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-12">
+                                    
+                                    <input type="submit" class="btn-sm cta-button rounded-0 mt-2" value="Add to Bag">
+                                </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </div>
+                        </form>
                         <hr>
                         <p class="card-text text-success"><em>Safety: {{product.certificate.description}}</em></p>
+                        
                     </div>
                 </div>
             </div>

@@ -4,10 +4,10 @@ from .models import Product
 
 
 def all_products(request):
-    """ A view to show all products """
-
+    """ A view to show all products and sorted products"""
     products = Product.objects.all()
-
+    # set value for category where no category is passed in GET request
+    category = 'All Appliances'
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -16,9 +16,12 @@ def all_products(request):
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
+            # get category from request object to pass to UI
+            category = category[0]
 
     context = {
         'products': products,
+        'category': category
     }
     return render(request, 'products/products.html', context)
 
