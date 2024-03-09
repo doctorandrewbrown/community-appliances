@@ -1,6 +1,5 @@
 ## Credits
 
-
 ### Technologies
 | Source | Notes |
 | --- | --- |
