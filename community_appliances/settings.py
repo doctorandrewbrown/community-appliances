@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-ex*&b+(9@@ugm-h^@iifl7%bh$a5jyc75nn5a2t7nj5+a4!4ky
 DEBUG = True
 
 #ALLOWED_HOSTS = ['8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
-ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com/', '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
 
 # Application definition
 
