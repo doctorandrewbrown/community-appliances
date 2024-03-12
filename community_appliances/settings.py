@@ -23,12 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ex*&b+(9@@ugm-h^@iifl7%bh$a5jyc75nn5a2t7nj5+a4!4ky'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG is true only if DEVELOPMENT environmental variable exists
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com',
+                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
 
 # Application definition
 
@@ -106,10 +108,12 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# if in production mode use environment variable set in heroku for url
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+# if in dev mode use sqlite 
 else:
     DATABASES = {
         'default': {
