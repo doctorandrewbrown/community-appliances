@@ -36,8 +36,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com',
-                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', 
+                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu110.gitpod.io']
 
 # Application definition
 
@@ -76,13 +76,13 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),],
+                 os.path.join(BASE_DIR, 'templates', 'allauth'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth', # required by allauth
+                'django.contrib.auth.context_processors.auth',  # required by allauth
                 'django.contrib.messages.context_processors.messages',
             ],
         },
@@ -132,7 +132,9 @@ else:
         }
     }
 
-
+'''DATABASES = {
+     'default': dj_database_url.parse('postgres://yefxllqv:wt0hL4DIhUZe6pO4alal10q9UyJY-fYv@trumpet.db.elephantsql.com/yefxllqv')
+ }'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
