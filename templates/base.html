@@ -50,7 +50,7 @@
 
       <div class="col-2 px-0 text-center">
         <div class=" accent">
-          <div><i class="fa-solid fa-cart-shopping"></i></div>
+          <a href="{% url 'view_cart' %}"><i class="fa-solid fa-cart-shopping"></i></a>
           <p class="my-0">
             {% if grand_total %}
                 ${{ grand_total|floatformat:2 }}
