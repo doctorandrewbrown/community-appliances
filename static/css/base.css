@@ -57,12 +57,12 @@ img {
     font-size: large;
 }
 
-.branding a {
+a.branding {
      color: blue;
      text-decoration: none;
 }
 
-.branding a:hover{
+a.branding:hover{
     color: black;
     text-decoration: none;
 }

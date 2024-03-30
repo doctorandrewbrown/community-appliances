@@ -7,28 +7,28 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <script src="https://kit.fontawesome.com/973b5ea695.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-  
+
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
   <title>Community Appliances</title>
 </head>
 
-<body >
+<body>
 
   <!--main header-->
   <header class="container-fluid bg-light fixed-top pt-3">
-    <div class="row main-header">
+    <div class="row">
       <div class="col-4 me-auto branding">
         <a href="{% url 'home' %}" class="display-6">Community Appliances</a>
       </div>
 
       <div class="dropdown col-2 text-center px-0">
-        <a class="accent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="branding" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           <div>
             <div><i class="fa-solid fa-user"></i></div>
             <p class=" my-0">Account</p>
@@ -49,15 +49,16 @@
       </div>
 
       <div class="col-2 px-0 text-center">
-        <div class=" accent">
-          <a href="{% url 'view_cart' %}"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div>
+          <a href="{% url 'view_cart' %}" class="branding"><i class="fa-cart-shopping fa-solid"></i>
           <p class="my-0">
             {% if total %}
-                £{{ total|floatformat:2 }}
+            £{{ total|floatformat:0 }}
             {% else %}
-                £0.00
+            £0.00
             {% endif %}
-        </p>
+          </p>
+          </a>
         </div>
       </div>
     </div>
@@ -71,16 +72,19 @@
       </button>
       <div class="collapse navbar-collapse" id="main-nav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          
+
           <li class="nav-item dropdown">
             <a class="nav-link" data-target="#" href="{% url 'products' %}" data-bs-toggle="dropdown"
               aria-expanded="false">
               Washing Machines |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price">By price</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade">By condition</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines">All Washing Machines</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price">By price</a>
+              </li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade">By
+                  condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines">All Washing
+                  Machines</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -90,7 +94,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=price">By price</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=grade">By condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=grade">By condition</a>
+              </li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers">All Gas Cookers</a></li>
             </ul>
           </li>
@@ -100,9 +105,12 @@
               Electric Cookers |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=price">By price</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=grade">By condition</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers">All Electric Cookers</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=price">By price</a>
+              </li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=grade">By
+                  condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers">All Electric
+                  Cookers</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
