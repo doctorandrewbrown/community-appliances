@@ -6,7 +6,8 @@ body {
 }
 
 .sticky {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     top: 210px;
     z-index: 1;
@@ -34,18 +35,17 @@ img {
     font-size: x-large;
 }
 
-/* overide BS5 styling by adding main-nav ID to make selector more specific*/
-
-#main-nav .navbar-nav .nav-item .nav-link {
+/* overide BS5 styling by adding main-nav ID to make selector more specific */
+#main-nav a {
     color: black;
 }
 
-#main-nav .navbar-nav .nav-item .nav-link:hover {
-    color: blue;
+#main-nav a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .cta-heading {
-    background-color: black; 
+    background-color: black;
     opacity: 0.5;
     color: white;
     margin-top: 220px;
@@ -58,29 +58,29 @@ img {
 }
 
 a.branding {
-     color: blue;
-     text-decoration: none;
+    color: blue;
+    text-decoration: none;
 }
 
-a.branding:hover{
-    color: black;
+a.branding:hover {
+    color: rgba(0, 0, 255, 0.5);
     text-decoration: none;
 }
 
 .about-us {
     margin-top: 100px;
-    color: white; 
-    background-color: black; 
+    color: white;
+    background-color: black;
     opacity: 0.5;
 }
 
 /* pasted from boutique Ado walkthrough */
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
