@@ -23,8 +23,8 @@
   <!--main header-->
   <header class="container-fluid bg-light fixed-top pt-3">
     <div class="row">
-      <div class="col-4 me-auto branding">
-        <a href="{% url 'home' %}" class="display-6">Community Appliances</a>
+      <div class="col-4 me-auto">
+        <a href="{% url 'home' %}" class="display-6 branding">Community Appliances</a>
       </div>
 
       <div class="dropdown col-2 text-center px-0">
@@ -51,13 +51,13 @@
       <div class="col-2 px-0 text-center">
         <div>
           <a href="{% url 'view_cart' %}" class="branding"><i class="fa-cart-shopping fa-solid"></i>
-          <p class="my-0">
-            {% if total %}
-            £{{ total|floatformat:0 }}
-            {% else %}
-            £0.00
-            {% endif %}
-          </p>
+            <p class="my-0">
+              {% if total %}
+              £{{ total|floatformat:0 }}
+              {% else %}
+              £0.00
+              {% endif %}
+            </p>
           </a>
         </div>
       </div>
