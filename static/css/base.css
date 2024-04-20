@@ -41,7 +41,7 @@ img {
 }
 
 #main-nav a:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .cta-heading {
@@ -63,7 +63,7 @@ a.branding {
 }
 
 a.branding:hover {
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 0.2);
     text-decoration: none;
 }
 
