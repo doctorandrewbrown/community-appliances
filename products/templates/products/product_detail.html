@@ -34,12 +34,12 @@
                                 <span>Keep Shopping</span>
                             </a>
                         </p>
-                        <form class="form" action="{% url 'products' %}" method="POST">
+                        <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                             {% csrf_token %}
                             <div class="form-row">
                                 <div class="col-12">
                                     
-                                    <input type="submit" class="btn-primary rounded-0 mt-2" value="Add to Bag">
+                                    <input type="submit" class="btn-primary rounded-0 mt-2" value="Add to Cart">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
