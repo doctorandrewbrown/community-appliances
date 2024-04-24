@@ -18,6 +18,7 @@ def add_to_cart(request, product_id):
     # look for cart in session if it already exists else create it
     cart = request.session.get('cart', {})
     request.session['cart'] = cart
+    # add one product
     cart[product_id] = 1
     # print(request.session['cart'])
     return redirect(redirect_url)

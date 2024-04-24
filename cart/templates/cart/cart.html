@@ -17,14 +17,14 @@
     <div class="row">
         <div class="col">
             <table class="table table-striped">
-                <th>Your Cart</th>
+                <th>{{ cart_items }}</th>
             </table>
         </div>
     </div>
     {% else %}
     <div class="row">
         <div class="col">
-            <p>Your Cart is Empty</p>
+            <p>{{ cart_items }}</p>
         </div>
     </div>
     {% endif %}
