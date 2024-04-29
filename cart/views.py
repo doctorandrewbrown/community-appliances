@@ -12,14 +12,15 @@ def view_cart(request):
 
 def add_to_cart(request, product_id):
     """ A view to add product to cart """
-    # redirect to current page ie product details
-    redirect_url = request.POST.get('redirect_url')
 
-    # look for cart in session if it already exists else create it
+    # look for cart in session if it already exists else create empty session dict
     cart = request.session.get('cart', {})
+    # update cart contents in session dict
     request.session['cart'] = cart
-    # add one product
+    # add a product quantity of 1 to provide a key:value pair in session dict.
+    # This will also overwrite an
+    # existing id so same product can not be bought twice if attempted
     cart[product_id] = 1
-    # print(request.session['cart'])
+    # redirect to current page (ie product details) when add to bag complete
+    redirect_url = request.POST.get('redirect_url')
     return redirect(redirect_url)
-    
