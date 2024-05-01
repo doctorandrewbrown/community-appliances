@@ -6,21 +6,35 @@
 <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <p>{{ cart_items }}</p>
-            <hr>
-
-        </div>
-    </div>
     {% if cart_items %}
+    
     <div class="row">
         <div class="col">
             <table class="table table-striped">
-                <th></th>
-            </table>
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  {% for item in cart_items %}
+                  <tr>                  
+                    <td class="w-25"><img class="img-fluid rounded" src="{{ item.product.image.url }}"></td>
+                    <td><p class="my-0"><strong>{{ item.product.id }}</strong></p></td>
+                    <td><p class="my-0">${{ item.product.price }}</p></td>
+                    <td><button type="button" class="btn btn-danger remove-from-cart" data-id="{{ item.product.id }}">Remove</button></td>
+                  </tr>
+                  
+                  {% endfor %}
+                </tbody>
+              </table>
         </div>
     </div>
+    
     {% else %}
     <div class="row">
         <div class="col">
