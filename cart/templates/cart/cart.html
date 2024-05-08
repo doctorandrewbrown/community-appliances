@@ -6,44 +6,58 @@
 <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
 <div class="container">
+  <div class="d-flex justify-content-center">
+    <h1>Your Cart</h1>
+</div>
+  {% for msg in messages %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{ msg }}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
   {% if cart_items %}
+  <div class="col table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Name</th>
+          <th scope="col">Details</th>
+          <th scope="col">Price</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
 
-  <div class="row">
-    <div class="col">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Product</th>
-            <th scope="col">Details</th>
-            <th scope="col">Price</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
+      <tbody>
+        {% for item in cart_items %}
+        <tr>
+          <td class="w-25"><img class="img-fluid rounded" src="{{ item.product.image.url }}"></td>
+          <td>
+            <p class="my-0">{{ item.product.name }}</p>
+          </td>
+          <td>
+            <p class="my-0"><em>{{ item.product.description }}</em></p>
+          </td>
+          <td>
+            <strong>
+              <p class="my-0">£{{ item.product.price }}</p>
+            </strong>
+          </td>
+          <!--"remove from cart" button in form to submit to relevant view-->
+          <td>
+            <form action="{% url 'remove_from_cart' item.product.id%}" method="POST">
+              {% csrf_token %}
+              <div>
+                <p ><button class="btn-danger btn-sm" type="submit">Remove</button></p>
+              <input type="hidden" name="redirect_url" value="{{ request.path }}">
+              </div>
+            </form>
+          </td>
+        </tr>
 
-        <tbody>
-          {% for item in cart_items %}
-          <tr>
-            <td class="w-25"><img class="img-fluid rounded" src="{{ item.product.image.url }}"></td>
-            <td>
-              <p class="my-0"><strong>{{ item.product.id }}</strong></p>
-            </td>
-            <td>
-              <p class="my-0">${{ item.product.price }}</p>
-            </td>
-            <!--"remove from cart" button in form to submit to relevant view-->
-            <td>
-              <form action="{% url 'remove_from_cart' item.product.id%}" method="POST">
-                {% csrf_token %}
-                <button class="btn-warning btn-sm" type="submit">Remove</button>
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
-              </form>
-            </td>
-          </tr>
-
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   {% else %}
