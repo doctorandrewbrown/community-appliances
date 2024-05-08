@@ -37,7 +37,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', 
-                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu110.gitpod.io']
+                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu111.gitpod.io']
 
 # Application definition
 
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'cart',
+    'checkout',
 
     # other
     'storages',
