@@ -25,7 +25,6 @@ def checkout(request):
         amount=stripe_total,
         currency=settings.STRIPE_CURRENCY,
     )
-    print(intent)
     order_form = OrderForm()
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -37,5 +36,17 @@ def checkout(request):
         'client_secret': 'test client secret',
 
     }
-
+    #messages.success(request, 'Order successfully processed!')
     return render(request, template, context)
+
+def checkout_success(request, order_number):
+        """
+            Handle successful checkouts
+        """
+
+        if 'cart' in request.session:
+            del request.session['cart']
+
+            template = 'checkout/checkout_success.html'
+
+            return render(request, template)
