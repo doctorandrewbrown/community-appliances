@@ -13,6 +13,13 @@
     <div class="overlay"></div>
     <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
+<!--BS5 alert to show Django messages-->
+{% for msg in messages %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{ msg }}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
     <div class="container">
         <div class="row">
             <div class="col">
@@ -79,12 +86,6 @@
                     </fieldset>
                     <fieldset class="rounded px-3 py-3 mb-5 mt-5">
                         <p class="text-muted"><em>delivery details:</em></p>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-                          </div>
-                          <div class="mb-3">
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-                          </div>
                         {{ order_form.phone_number  }}
                         {{ order_form.country  }}
                         {{ order_form.postcode }}
@@ -120,7 +121,7 @@
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+						<button type = "submit" id="submit-button" class="btn btn-black rounded-0">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
