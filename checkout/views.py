@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect, reverse
+
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.conf import settings
-
-
 from .forms import OrderForm
+from .models import Order, OrderLineItem
+from products.models import Product
 from cart.contexts import cart_contents
 
 import stripe
@@ -13,8 +14,8 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
     if request.method == 'POST':
-        bag = request.session.get('bag', {})
-
+        cart = request.session.get('cart', {})
+        # get user input form data
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -24,15 +25,25 @@ def checkout(request):
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
-            'county': request.POST['county'],}
+            'county': request.POST['county']}
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            #order = order_form.save(commit=False)
-            #pid = request.POST.get('client_secret').split('_secret')[0]
-            #order.stripe_pid = pid
-            #order.original_bag = json.dumps(bag)
-            order_form.save()
-        return redirect(reverse('checkout_success'))
+            # save order info to order model
+            order = order_form.save()
+            for item_id, item_data in cart.items():
+                product = Product.objects.get(id=item_id)
+                if isinstance(item_data, int):
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        product=product,
+                        quantity=item_data,
+                        )
+                    # save to order_line_item model
+                    order_line_item.save()
+            return redirect(reverse('checkout_success'))
+        else:
+            messages.error(request, 'There was an error with your form. \
+                Please double check your information.')
     else:
         cart = request.session.get('cart', {})
         if not cart:
