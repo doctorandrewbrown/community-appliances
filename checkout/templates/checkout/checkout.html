@@ -1,25 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
+
 {% block content %}
-    <div class="overlay"></div>
+<div class="overlay"></div>
     <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
-<!--BS5 alert to show Django messages-->
-{% for msg in messages %}
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>{{ msg }}</strong>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-  {% endfor %}
     <div class="container">
         <div class="row">
             <div class="col">
@@ -79,20 +68,20 @@
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
-                    <fieldset class="rounded px-3 pmb-5">
+                    <fieldset class="rounded px-3 mb-5">
                         <p class="text-muted"><em>your details:</em></p>
-                        {{ order_form.full_name}}
-                        {{ order_form.email }}
+                        {{ order_form.full_name | as_crispy_field}}
+                        {{ order_form.email | as_crispy_field}}
                     </fieldset>
                     <fieldset class="rounded px-3 py-3 mb-5 mt-5">
                         <p class="text-muted"><em>delivery details:</em></p>
-                        {{ order_form.phone_number  }}
-                        {{ order_form.country  }}
-                        {{ order_form.postcode }}
-                        {{ order_form.town_or_city  }}
-                        {{ order_form.street_address1}}
-                        {{ order_form.street_address2}}
-                        {{ order_form.county}}
+                        {{ order_form.phone_number | as_crispy_field  }}
+                        {{ order_form.country | as_crispy_field }}
+                        {{ order_form.postcode | as_crispy_field}}
+                        {{ order_form.town_or_city | as_crispy_field }}
+                        {{ order_form.street_address1 | as_crispy_field}}
+                        {{ order_form.street_address2 | as_crispy_field}}
+                        {{ order_form.county | as_crispy_field}}
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
@@ -108,10 +97,10 @@
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
-                        <div style="width: 30em" class="mb-3" id="card-element"></div>
+                        <div  class="mb-3" id="card-element"></div>
 
                         <!-- Used to display form errors -->
-                        <div style="width: 30em" class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
@@ -139,7 +128,6 @@
             </div>
         </div>
     </div>
-{{stripe_public_key}}
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}
