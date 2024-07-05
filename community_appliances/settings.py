@@ -37,7 +37,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', 
-                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu114.gitpod.io']
+                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu114.gitpod.io', '8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']
 
 # Application definition
 
@@ -60,6 +60,7 @@ INSTALLED_APPS = [
 
     # other
     'storages',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'community_appliances.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -90,6 +94,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
@@ -175,6 +183,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
