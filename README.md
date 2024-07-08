@@ -7,13 +7,13 @@
 |
 
 ### Media 
-| Source | Location | Notes |
-| --- | --- | --- |
-| [Favicon.io](https://favicon.io/favicon-generator/) | website | used to generate website favicon  |
-| [Unsplash](https://unsplash.com/photos/white-\front-load-washing-machine-5cpBWEl6y6c)|Homepage Image|background image for homepage|
-| [FreeImages](https://www.freeimages.com/photo/washing-machine-1418432)|product_detail.html|Washing machine placeholder image|
-| [Pixabay](https://pixabay.com/illustrations/gas-cooker-oven-cooked-kitchen-7317915/)|product_detail.html|Gas cooker placeholder image placeholder image|
-| [Electriq](https://www.electriq.co.uk/p/eqec60b4/electriq-60cm-electric-cooker-with-twin-cavity-and-ceramic-hob-in-black)|product_detail.html|Electric cooker placeholder image placeholder image|
+| Source | Notes |
+| --- | --- |
+| [Favicon.io](https://favicon.io/favicon-generator/) | used to generate website favicon  |
+| [Unsplash](https://unsplash.com/photos/white-\front-load-washing-machine-5cpBWEl6y6c)|background image for homepage|
+| [Markselectrical](https://markselectrical.co.uk/ww11bb504daws1_samsung-washing-machine)|Washing machine placeholder image|
+| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Gas cooker placeholder image placeholder image|
+| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image placeholder image|
 |
 
 
