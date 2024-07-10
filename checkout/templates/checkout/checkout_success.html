@@ -1,10 +1,21 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>yay</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<!--padding to prevent navbar overlap-->
+<div class="row" style="padding-top: 200px;"></div>
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <h1>Purchase Completed!</h1>
+    </div>
+    <hr class=" w-50 mx-auto mb-3">
+
+    <div class="row">
+        <div class="col">
+            <a href="{% url 'home' %}" class=" cta-button btn btn-dark btn-lg rounded-0">Continue Shopping</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
