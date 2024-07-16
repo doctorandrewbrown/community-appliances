@@ -18,6 +18,12 @@
     <!--padding to prevent navbar overlap-->
     <div class="row" style="padding-top: 200px;"></div>
     <div class="container">
+  {% for msg in messages %}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{ msg }}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
         <div class="row">
             <div class="col">
                 <hr>
@@ -41,7 +47,3 @@
         </div>
 {% endblock %}
 
-{% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
-{% endblock %}
