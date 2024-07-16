@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %} 
+{% block content %}
+<div class="row" style="padding-top: 200px;"></div> 
+{% for msg in messages %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>{{ msg }}</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
       <!--cta heading-->
         <div class="row">
           <header class="cta-heading col-12 col-sm-6 col-lg-4 text-center text-sm-start mx-md-3">
