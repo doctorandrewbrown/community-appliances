@@ -18,7 +18,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+  
+  <!--load template specific css-->
+  {% block extra_css %}
+  {% endblock %}
+
   <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
   <title>Community Appliances</title>
 </head>
