@@ -6,6 +6,7 @@ from django.contrib import messages
 
 def view_cart(request):
     """ A view for users to see cart contents """
+    # check if cart is empty
     cart = request.session.get('cart', {})
     if len(cart) == 0:
         messages.success(request, 'Your cart is empty')
