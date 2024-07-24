@@ -11,6 +11,8 @@ class VolunteerProfile(models.Model):
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     volunteer_full_name = models.CharField(max_length=80, null=False, blank=False)
+    email = models.EmailField(max_length=80, null=False, blank=False, default='@')
+    details = models.TextField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.user.username
@@ -22,6 +24,6 @@ def create_or_update_volunteer_profile(sender, instance, created, **kwargs):
     Create or update the volunteer profile
     """
     if created:
-        VolunteerProfile.objects.create(user=instance)
+         VolunteerProfile.objects.create(user=instance)
     #Existing users: just save the profile
     instance.volunteerprofile.save()
