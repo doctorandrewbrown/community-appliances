@@ -15,6 +15,8 @@ class VolunteerProfileForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         placeholders = {
             'volunteer_full_name': 'Full Name',
+            'email':'email',
+            'details':'about you'
         }
 
         self.fields['volunteer_full_name'].widget.attrs['autofocus'] = True
