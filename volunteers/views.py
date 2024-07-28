@@ -14,7 +14,7 @@ def volunteers(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Volunteer profile updated successfully')
-
+    # GET request
     form = VolunteerProfileForm(instance=volunteer_profile)
     template = 'volunteers/volunteer.html'
     context = {

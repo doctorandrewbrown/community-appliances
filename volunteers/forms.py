@@ -13,6 +13,7 @@ class VolunteerProfileForm(forms.ModelForm):
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
+        # form placeholders
         placeholders = {
             'volunteer_full_name': 'Full Name',
             'email':'email',
@@ -26,5 +27,6 @@ class VolunteerProfileForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
+            # add bootstrap classes
             self.fields[field].widget.attrs['class'] = 'border border-dark rounded-0 mt-3'
             self.fields[field].label = False
