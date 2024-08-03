@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/product.css' %}">
+{% endblock %}
 {% block content %}
 <div class="overlay"></div>
 <!--padding to prevent navbar overlap-->
@@ -38,8 +40,12 @@
                         <p class="card-title">{{product.category}}</p>
                         <h5 class="card-title display-6">{{product.name}}</h5>
                         <p class="card-text"><em>{{product.description}}</em></p>
-                        <p class="card-text">Grade: {{product.grade}}</p>
-                        <p class="card-text"><em>{{product.grade.description}}</em></p>
+                        <div class="dropdown ">
+                            <span class="fst-italic fw-light">Grade: {{product.grade}}</span>
+                            <div class="dropdown-content">
+                                <p>{{product.grade.description}}</p>
+                            </div>
+                        </div>
                         <p class="card-text accent display-6"><strong>£{{product.price}}</strong></p>
                         <p>
                             <a href="{% url 'products' %}" class="btn btn-primary rounded-0">
