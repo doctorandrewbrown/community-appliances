@@ -41,12 +41,12 @@
                         <h5 class="card-title display-6">{{product.name}}</h5>
                         <p class="card-text"><em>{{product.description}}</em></p>
                         <div class="dropdown ">
-                            <span class="fst-italic fw-light">Grade: {{product.grade}}</span>
+                            <span class="fst-italic dotted-bottom-border fw-light">Grade: {{product.grade}}</span>
                             <div class="dropdown-content">
-                                <p>{{product.grade.description}}</p>
+                                <p><em>{{product.grade.description}}</em></p>
                             </div>
                         </div>
-                        <p class="card-text accent display-6"><strong>£{{product.price}}</strong></p>
+                        <p class="card-text accent display-6 mt-2"><strong>£{{product.price}}</strong></p>
                         <p>
                             <a href="{% url 'products' %}" class="btn btn-primary rounded-0">
                                 <span>Keep Shopping</span>

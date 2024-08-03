@@ -1,3 +1,7 @@
+.dotted-bottom-border{
+    border-bottom: thin black dotted;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
