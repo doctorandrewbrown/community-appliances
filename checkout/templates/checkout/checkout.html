@@ -65,7 +65,7 @@
             </div>
             <!--order details form-->
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="text-muted">Please fill out the form below to complete your order. Please note we only deliver in CF34 and CF31 areas. </p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="px-3 mb-5">
@@ -82,7 +82,7 @@
                         {{ order_form.postcode | as_crispy_field}}
                         {{ order_form.county | as_crispy_field}}
                         {{ order_form.country | as_crispy_field }}
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="form-check form-check-inline float-right mr-0 mt-3">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
