@@ -61,7 +61,7 @@
             </div>
             <!--order details form-->
             <div class="col-12 col-lg-6">
-                <!--p class="text-muted">Please fill out the form below to complete your order. Please note we only deliver in CF34 and CF31 areas. </p-->
+                <p class="text-muted">Please fill out the form below to complete your order. Please note we only deliver in CF34 and CF31 areas. </p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="px-3 mb-5">
