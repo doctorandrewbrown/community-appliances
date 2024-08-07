@@ -76,7 +76,7 @@
       <tbody>
         {% for item in cart_items %}
         <tr>
-          <td class="w-25"><img class="img-fluid rounded" src="{{ item.product.image.url }}"></td>
+          <td class="w-25"><img alt="{{ item.product.name }}" class="img-fluid rounded" src="{{ item.product.image.url }}"></td>
           <td>
             <p class="my-0">{{ item.product.name }}</p>
           </td>
