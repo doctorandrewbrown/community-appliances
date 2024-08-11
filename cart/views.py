@@ -9,7 +9,7 @@ def view_cart(request):
     # check if cart is empty
     cart = request.session.get('cart', {})
     if len(cart) == 0:
-        messages.success(request, 'Your cart is empty')
+        messages.warning(request, 'Your cart is empty')
 
     return render(request, 'cart/cart.html')
 
@@ -22,15 +22,21 @@ def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
     # update cart contents in session dict
     request.session['cart'] = cart
-    # add a product quantity of 1 to provide a key:value pair in session dict.
-    # This will also overwrite an
-    # existing id so same product can not be bought twice if attempted
-    cart[product_id] = 1
-    # flash message
-    messages.success(request, 'The item has been added to your cart')
-    # redirect to current page (ie product details) when add to bag complete
-    redirect_url = request.POST.get('redirect_url')
-    return redirect(redirect_url)
+    # check if item is already in cart.
+    if product_id in cart:
+        # flash message
+        messages.warning(request, 'The item is already in your cart!')
+        # redirect to current page (ie product details) if item already in cart.
+        redirect_url = request.POST.get('redirect_url')
+        return redirect(redirect_url)
+    else:
+        # add item to cart
+        cart[product_id] = 1
+        # flash message
+        messages.success(request, 'The item has been added to your cart')
+        # redirect to current page (ie product details) when add to cart complete
+        redirect_url = request.POST.get('redirect_url')
+        return redirect(redirect_url)
 
 
 def remove_from_cart(request, product_id):
