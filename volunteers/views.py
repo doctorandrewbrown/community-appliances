@@ -1,11 +1,13 @@
 
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import VolunteerProfile
 from .forms import VolunteerProfileForm
 
-
+# direct to login page if not logged in
+@login_required
 def volunteers(request):
     """ Display volunteer profile. """
     volunteer_profile = get_object_or_404(VolunteerProfile, user=request.user)
