@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     # other
     'storages',
     'crispy_forms',
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -77,7 +78,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'community_appliances.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']
 TEMPLATES = [
