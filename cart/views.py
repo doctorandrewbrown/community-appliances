@@ -42,7 +42,7 @@ def add_to_cart(request, product_id):
 def remove_from_cart(request, product_id):
     """ A view to remove product from cart """
     # flash message to user
-    messages.success(request, 'The item has been removed from your cart')
+    messages.warning(request, 'The item has been removed from your cart')
     # get cart fom session or create
     cart = request.session.get('cart', {})
     # pop product from cart
