@@ -19,7 +19,7 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address1': 'Street Address 1',
             'default_street_address2': 'Street Address 2',
             'default_town_or_city': 'Town or City',
-            'default_county': 'County, State or Locality',
+            'default_county': 'County',
             'default_postcode': 'Post Code. CF31 or CF34 only please',
             'default_country': 'Country',
         }
