@@ -25,7 +25,6 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'county': 'County',
             'postcode': 'Post Code. CF31 or CF34 only please',
-            #'country': 'Country',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True

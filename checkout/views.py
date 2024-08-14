@@ -22,7 +22,6 @@ def checkout(request):
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
-            # 'country': request.POST['country'],
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
@@ -115,7 +114,6 @@ def checkout_success(request, order_number):
             profile_data = {
                 'default_full_name': order.full_name,
                 'default_phone_number': order.phone_number,
-                #'default_country': order.country,
                 'default_postcode': order.postcode,
                 'default_town_or_city': order.town_or_city,
                 'default_street_address1': order.street_address1,
