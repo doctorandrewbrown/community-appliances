@@ -72,7 +72,7 @@ def checkout(request):
                     'full_name': profile.default_full_name,
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
-                    'country': profile.default_country,
+                    #'country': profile.default_country,
                     'postcode': profile.default_postcode,
                     'town_or_city': profile.default_town_or_city,
                     'street_address1': profile.default_street_address1,
@@ -86,6 +86,7 @@ def checkout(request):
         if not stripe_public_key:
             messages.error(request, 'Stripe public key is missing. \
                 Did you forget to set it in your environment?')
+        messages.error(request, 'Stripe public key is missing')
         template = 'checkout/checkout.html'
         context = {
             'order_form': order_form, 
