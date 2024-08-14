@@ -15,6 +15,7 @@ class UserProfileAdmin(admin.ModelAdmin):
             'default_town_or_city',
             'default_county',
             'default_postcode',
-            'default_country',)
+            #'default_country',
+            )
 
 admin.site.register(UserProfile, UserProfileAdmin)

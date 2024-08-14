@@ -21,7 +21,7 @@ class UserProfileForm(forms.ModelForm):
             'default_town_or_city': 'Town or City',
             'default_county': 'County',
             'default_postcode': 'Post Code. CF31 or CF34 only please',
-            'default_country': 'Country',
+            #'default_country': 'Country',
         }
 
         self.fields['default_full_name'].widget.attrs['autofocus'] = True
