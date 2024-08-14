@@ -24,7 +24,7 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address 2',
             'town_or_city': 'Town or City',
             'county': 'County',
-            'postcode': 'Postal Code',
+            'postcode': 'Post Code. CF31 or CF34 only please',
             'country': 'Country',
         }
 
