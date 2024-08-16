@@ -6,11 +6,19 @@
 <!--padding to prevent navbar overlap-->
 <div class="row" style="padding-top: 200px;"></div>
 <div class="container">
-    <div class="d-flex justify-content-center">
-        <h1>Purchase Completed!</h1>
+    {% for msg in messages %}
+    {% if msg.tags == "success" %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{ msg }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-    <hr class=" w-50 mx-auto mb-3">
-
+    {% else %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{ msg }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    {% endfor %}
     <div class="row">
         <div class="col-12 col-lg-7">
             <div class="p-2 border border-primary">
