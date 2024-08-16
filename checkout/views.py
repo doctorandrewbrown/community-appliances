@@ -85,7 +85,6 @@ def checkout(request):
         if not stripe_public_key:
             messages.error(request, 'Stripe public key is missing. \
                 Did you forget to set it in your environment?')
-        messages.error(request, 'Stripe public key is missing')
         template = 'checkout/checkout.html'
         context = {
             'order_form': order_form, 
@@ -127,7 +126,7 @@ def checkout_success(request, order_number):
     if 'cart' in request.session:
         # empty cart
         del request.session['cart']
-
+        messages.success(request, 'Checkout succcessful!')
         template = 'checkout/checkout_success.html'
         context = {
         'order': order,

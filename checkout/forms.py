@@ -1,5 +1,7 @@
 from django import forms
 from .models import Order
+from django.core.exceptions import ValidationError
+
 
 
 class OrderForm(forms.ModelForm):
@@ -36,3 +38,13 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border border-dark rounded-0 mt-2 stripe-style-input'
             self.fields[field].label = False
+
+
+    def clean_postcode(self):
+        data = self.cleaned_data["postcode"]
+        # check for valid postcode
+        if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
+            raise ValidationError("Invalid postcode")
+        # Always return a value to use as the new cleaned data, even if
+        # this method didn't change it.
+        return data
