@@ -11,7 +11,11 @@ def all_products(request):
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
-            products = products.order_by(sortkey)
+            # sort by descending price
+            if sortkey == 'price':
+                products = products.order_by("-" + sortkey)
+            else:
+                products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
