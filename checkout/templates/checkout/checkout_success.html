@@ -12,8 +12,15 @@
         <strong>{{ msg }}</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
-    {% else %}
+    {% endif %}
+    {% if msg.tags == "error" %}
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>{{ msg }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    {% if msg.tags == "info" %}
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
         <strong>{{ msg }}</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
