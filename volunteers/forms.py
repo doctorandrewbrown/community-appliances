@@ -28,5 +28,5 @@ class VolunteerProfileForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             # add bootstrap classes
-            self.fields[field].widget.attrs['class'] = 'border border-dark rounded-0 mt-3'
+            self.fields[field].widget.attrs['class'] = 'border border-primary shadow-none rounded-0 mt-3'
             self.fields[field].label = False
