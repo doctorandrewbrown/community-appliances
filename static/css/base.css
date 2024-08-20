@@ -85,12 +85,28 @@ a.branding:hover {
     z-index: -1;
 }
 
-/*.form-control:focus{
-    background-color: rgba(125, 125, 236, 0.443);
+/*---allauth form styling---*/
+
+.allauth-form-inner-content h1 {
+    color: blue;
 }
 
-.form-control{
-    background-color: rgba(161, 122, 251, 0.88);
+.allauth-form-inner-content a {
+    color: blue;
+    text-decoration: none;
 }
 
-/*
+.allauth-form-inner-content a:hover {
+    color: rgba(0, 0, 255, 0.2);
+    text-decoration: none;
+}
+
+.allauth-form-inner-content button {
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+
+.allauth-form-inner-content label {
+    display: none;
+}
