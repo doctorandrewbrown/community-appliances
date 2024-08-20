@@ -84,3 +84,13 @@ a.branding:hover {
     background: white;
     z-index: -1;
 }
+
+/*.form-control:focus{
+    background-color: rgba(125, 125, 236, 0.443);
+}
+
+.form-control{
+    background-color: rgba(161, 122, 251, 0.88);
+}
+
+/*
