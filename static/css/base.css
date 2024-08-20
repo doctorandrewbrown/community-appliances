@@ -57,6 +57,12 @@ img {
     font-size: large;
 }
 
+.cta-button:hover{
+    color: rgba(255, 255, 255, 0.624);
+    background-color: black;
+    font-size: large;
+}
+
 a.branding {
     color: blue;
     text-decoration: none;
@@ -103,6 +109,12 @@ a.branding:hover {
 
 .allauth-form-inner-content button {
     color: white;
+    background-color: black;
+    font-size: large;
+}
+
+.allauth-form-inner-content button:hover{
+    color: rgba(255, 255, 255, 0.624);
     background-color: black;
     font-size: large;
 }
