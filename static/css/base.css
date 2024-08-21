@@ -90,6 +90,16 @@ a.branding:hover {
     background: white;
     z-index: -1;
 }
+/*---dropdown styles---*/
+
+#main-nav .dropdown-item:focus, 
+#main-nav .dropdown-item:hover, 
+header .dropdown-item:focus,
+header .dropdown-item:hover 
+{
+    color: white;
+    background-color: blue;
+}
 
 /*---allauth form styling---*/
 
