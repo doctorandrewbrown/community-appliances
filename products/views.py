@@ -9,6 +9,7 @@ def all_products(request):
     products = Product.objects.all()
     # set value for category to pass in context where no category is passed in GET request
     category = 'All Appliances'
+    # check if query set contains sort conditions
     if request.GET:
         # sort by price or grade
         if 'sort' in request.GET:
@@ -19,16 +20,16 @@ def all_products(request):
             # or sort by condition
             else:
                 products = products.order_by(sortkey)
-
+        # filter sorted list by category
         if 'category' in request.GET:
-            print('elif')
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
-            # get category from request object to pass to UI
+            # get category from request object to pass to template
             category = category[0]
 
     # if no query set in GET request show all products with descending price
-    products = products.order_by('-price')
+    else: products = products.order_by('-price')
+
     context = {
         'products': products,
         'category': category
