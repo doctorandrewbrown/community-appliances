@@ -5,24 +5,30 @@ from .models import Product
 
 def all_products(request):
     """ A view to show all products and sorted products"""
+    # get all products from database
     products = Product.objects.all()
-    # set value for category where no category is passed in GET request
+    # set value for category to pass in context where no category is passed in GET request
     category = 'All Appliances'
     if request.GET:
+        # sort by price or grade
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             # sort by descending price
             if sortkey == 'price':
                 products = products.order_by("-" + sortkey)
+            # or sort by condition
             else:
                 products = products.order_by(sortkey)
 
         if 'category' in request.GET:
+            print('elif')
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
             # get category from request object to pass to UI
             category = category[0]
 
+    # if no query set in GET request show all products with descending price
+    products = products.order_by('-price')
     context = {
         'products': products,
         'category': category
