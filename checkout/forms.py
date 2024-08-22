@@ -40,11 +40,13 @@ class OrderForm(forms.ModelForm):
             self.fields[field].label = False
 
 
+    
     def clean_postcode(self):
+        """
+        Check for valid postcode 
+        """
         data = self.cleaned_data["postcode"]
-        # check for valid postcode
+        # check for valid delivery postcode
         if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
             raise ValidationError("Invalid postcode")
-        # Always return a value to use as the new cleaned data, even if
-        # this method didn't change it.
         return data
