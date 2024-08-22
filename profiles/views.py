@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -17,11 +17,13 @@ def profile(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile updated successfully')
+            return redirect(reverse('profile'))
         else:
-            messages.error(request, 'There was a problem with your form')
-
+            messages.error(request, 'There was a problem with your form. Did you enter a valid CF34 or CF31 postcode?')
+            return redirect(reverse('profile'))
 
     form = UserProfileForm(instance=profile)
+
     orders = profile.orders.all()
     template = 'profiles/profile.html'
     context = {
@@ -35,6 +37,8 @@ def profile(request):
 
 @login_required
 def order_history(request, order_number):
+    """ Display order history """
+    
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
