@@ -1,10 +1,15 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 style="color: blue;">This is a 500 server error!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<!--padding to prevent navbar overlap-->
+<div class="row" style="padding-top: 200px;"></div>
+<div class="row">
+    <div class="col text-center">
+        <hr class=" w-50 mx-auto mb-3">
+      </div>
+</div>
+
+<h1 class="accent">500 error</h1>
+{% endblock %}
