@@ -1,5 +1,6 @@
 from django import forms
 from .models import UserProfile
+from django.core.exceptions import ValidationError
 
 
 class UserProfileForm(forms.ModelForm):
@@ -32,3 +33,14 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border border-primary shadow-none rounded-0 mt-3'
             self.fields[field].label = False
+
+   
+    def clean_default_postcode(self):
+        """
+        Check for valid default postcode 
+        """
+        data = self.cleaned_data["default_postcode"]
+        # check for valid postcode
+        if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
+            raise ValidationError("Invalid postcode")
+        return data
