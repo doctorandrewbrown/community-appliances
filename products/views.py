@@ -9,23 +9,25 @@ def all_products(request):
     products = Product.objects.all()
     # set value for category to pass in context where no category is passed in GET request
     category = 'All Appliances'
-    # check if query set contains sort conditions
+    # check query for category and sort conditions
     if request.GET:
         # sort by price or grade
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
-            # sort by descending price
+            # sort by high to low price
             if sortkey == 'price':
                 products = products.order_by("-" + sortkey)
-            # or sort by condition
+            # or sort by condition A to C
             else:
                 products = products.order_by(sortkey)
-        # filter sorted list by category
+        # filter sorted products by category
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
-            # get category from request object to pass to template
+            # get category to pass to template
             category = category[0]
+        # if invalid category in query
+        if len(products) == 0: category = "no appliances found"
 
     # if no query set in GET request show all products with descending price
     else: products = products.order_by('-price')
