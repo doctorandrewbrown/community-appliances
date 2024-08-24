@@ -40,7 +40,9 @@ class UserProfileForm(forms.ModelForm):
         Check for valid default postcode 
         """
         data = self.cleaned_data["default_postcode"]
+        # check if optional postcode present
+        if data :
         # check for valid postcode
-        if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
-            raise ValidationError("Invalid postcode")
-        return data
+            if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
+                raise ValidationError("Invalid postcode")
+            return data
