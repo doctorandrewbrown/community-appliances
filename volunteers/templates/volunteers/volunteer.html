@@ -39,7 +39,7 @@
             <form class="mt-3" action="{% url 'volunteers' %}" method="POST" id="volunteer-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn cta-button mt-3">Update Information</button>
+                <button class="btn cta-button mt-2 mb-4">Update Information</button>
             </form>
         </div>
     </div>
