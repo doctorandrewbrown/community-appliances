@@ -39,6 +39,7 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for delivery costs and delete order.
         """
+        # order total or set to zero if no products
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total > settings.DISCOUNT_THRESHOLD:
             self.discount = self.order_total * settings.PERCENTAGE_DISCOUNT/ 100
