@@ -130,7 +130,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'community_appliances.wsgi.application'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+#ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Database
@@ -217,11 +217,9 @@ if 'USE_AWS' in os.environ:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Variables for applying discount
-
 DISCOUNT_THRESHOLD = 200
 PERCENTAGE_DISCOUNT = 15
-FREE_DELIVERY_THRESHOLD = 250
-STANDARD_DELIVERY_PERCENTAGE = 10
+
 STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
