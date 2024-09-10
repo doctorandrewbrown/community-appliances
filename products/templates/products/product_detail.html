@@ -6,28 +6,12 @@
 {% endblock %}
 {% block content %}
 <div class="overlay"></div>
-<!--padding to prevent navbar overlap-->
-<div class="row" style="padding-top: 200px;"></div>
 <div class="row">
     <div class="col text-center">
         <hr class=" w-50 mx-auto mb-3">
       </div>
 </div>
-<!--BS5 alert to show Django messages-->
 
-{% for msg in messages %}
-    {% if msg.tags == "success" %}
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>{{ msg }}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% else %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>{{ msg }}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    {% endif %}
-    {% endfor %}
 <div class="row">
     <div class="col-sm-6 offset-md-4">
         <!--BS5 horizontal card-->
