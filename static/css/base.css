@@ -79,6 +79,9 @@ a.branding:hover {
     background-color: black;
     opacity: 0.5;
 }
+.page-top-padding{
+    padding-top: 200px;
+}
 
 /* pasted from boutique Ado walkthrough */
 .overlay {
