@@ -25,8 +25,8 @@ def profile(request):
             return redirect(reverse('profile'))
 
     form = UserProfileForm(instance=profile)
-
-    orders = profile.orders.all()
+    # order by descending date
+    orders = profile.orders.all().order_by('-date')
     template = 'profiles/profile.html'
     context = {
         'form': form,
