@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
+from django.core.exceptions import PermissionDenied
+
 from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
@@ -38,11 +40,21 @@ def profile(request):
 @login_required
 def order_history(request, order_number):
     """ Display order history """
-    
+
     order = get_object_or_404(Order, order_number=order_number)
 
+    # get owner username for requested order from Order model
+    order_owner = order.user_profile.user.username
+
+    # get username for current logged in user
+    current_user = get_object_or_404(UserProfile, user=request.user).user.username
+    
+    # check the logged-in user owns the order or trigger 403.html page
+    if current_user != order_owner:
+        raise PermissionDenied() 
+
     messages.info(request, (
-        f'This is a past confirmation for order number {order_number}. '
+        f'These are details of a previous order number {order_number}. '
     ))
 
     template = 'checkout/checkout_success.html'
