@@ -41,9 +41,10 @@ def profile(request):
 def order_history(request, order_number):
     """ Display order history """
 
+    # get order using order number in get request 
     order = get_object_or_404(Order, order_number=order_number)
 
-    # get owner username for requested order from Order model
+    # get order owner username for requested order from Order model
     order_owner = order.user_profile.user.username
 
     # get username for current logged in user
