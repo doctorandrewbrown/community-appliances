@@ -126,7 +126,7 @@ def checkout_success(request, order_number):
     if 'cart' in request.session:
         # empty cart
         del request.session['cart']
-        messages.success(request, 'Checkout succcessful!')
+        messages.success(request, 'Checkout succcessful! Your order will be delivered within five working days.')
         template = 'checkout/checkout_success.html'
         context = {
         'order': order,
