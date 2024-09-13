@@ -20,6 +20,7 @@ def all_products(request):
             # or sort by condition A to C
             if sortkey == 'grade':
                 products = products.order_by(sortkey)
+            else: products = products.order_by('-price')
         else: products = products.order_by('-price')
 
         # filter sorted products by category
