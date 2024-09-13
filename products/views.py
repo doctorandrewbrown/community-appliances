@@ -5,30 +5,41 @@ from .models import Product
 
 def all_products(request):
     """ A view to show all products and sorted products"""
+
     # get all products from database
-    products = Product.objects.all() #.order_by('-price')
+    products = Product.objects.all()
+
     # set value for category to pass in context where no category is passed in GET request
     category = 'All Appliances'
+
     # check query for category and sort conditions
     if request.GET:
         # sort by price or grade
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
+
             # sort by high to low price
             if sortkey == 'price':
                 products = products.order_by("-" + sortkey)
             # or sort by condition A to C
+
             if sortkey == 'grade':
                 products = products.order_by(sortkey)
+
+            # default ordering for no valid sortkey in query 
             else: products = products.order_by('-price')
+
+        # default ordering if "sort" not in query
         else: products = products.order_by('-price')
 
         # filter sorted products by category
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
+
             # get category to pass to template
             category = category[0]
+            
             # if invalid category in query
             if len(products) == 0: category = "no appliances found"
 
