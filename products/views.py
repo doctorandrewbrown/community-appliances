@@ -6,7 +6,7 @@ from .models import Product
 def all_products(request):
     """ A view to show all products and sorted products"""
     # get all products from database
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('-price')
     # set value for category to pass in context where no category is passed in GET request
     category = 'All Appliances'
     # check query for category and sort conditions
@@ -18,9 +18,9 @@ def all_products(request):
             if sortkey == 'price':
                 products = products.order_by("-" + sortkey)
             # or sort by condition A to C
-            elif sortkey == 'grade':
+            if sortkey == 'grade':
                 products = products.order_by(sortkey)
-            else: products = products.order_by('-price')
+            #else: products = products.order_by('-price')
 
         # filter sorted products by category
         if 'category' in request.GET:
@@ -30,12 +30,10 @@ def all_products(request):
             category = category[0]
             # if invalid category in query
             if len(products) == 0: category = "no appliances found"
-        #else:
-            #products = products.order_by('-price')
 
     # if no query set in GET request show all products with descending price
-    else: 
-        products = products.order_by('-price')
+   # else: 
+        #products = products.order_by('-price')
 
     context = {
         'products': products,
