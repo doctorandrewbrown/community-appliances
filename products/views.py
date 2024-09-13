@@ -16,7 +16,6 @@ def all_products(request):
             sortkey = request.GET['sort']
             # sort by high to low price
             if sortkey == 'price':
-                print("price")
                 products = products.order_by("-" + sortkey)
             # or sort by condition A to C
             elif sortkey == 'grade':
@@ -31,8 +30,8 @@ def all_products(request):
             category = category[0]
             # if invalid category in query
             if len(products) == 0: category = "no appliances found"
-        else:
-            products = products.order_by('-price')
+        #else:
+            #products = products.order_by('-price')
 
     # if no query set in GET request show all products with descending price
     else: 
