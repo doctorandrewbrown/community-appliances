@@ -16,21 +16,27 @@ def all_products(request):
             sortkey = request.GET['sort']
             # sort by high to low price
             if sortkey == 'price':
+                print("price")
                 products = products.order_by("-" + sortkey)
             # or sort by condition A to C
-            else:
+            elif sortkey == 'grade':
                 products = products.order_by(sortkey)
+            else: products = products.order_by('-price')
+
         # filter sorted products by category
         if 'category' in request.GET:
             category = request.GET['category'].split(',')
             products = products.filter(category__name__in=category)
             # get category to pass to template
             category = category[0]
-        # if invalid category in query
-        if len(products) == 0: category = "no appliances found"
+            # if invalid category in query
+            if len(products) == 0: category = "no appliances found"
+        else:
+            products = products.order_by('-price')
 
     # if no query set in GET request show all products with descending price
-    else: products = products.order_by('-price')
+    else: 
+        products = products.order_by('-price')
 
     context = {
         'products': products,
