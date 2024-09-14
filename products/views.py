@@ -20,28 +20,22 @@ def all_products(request):
 
             # sort by high to low price
             if sortkey == 'price_descending':
-                print("price desc")
                 products = products.order_by("-price")
             
             # sort by low to high price
             elif sortkey == 'price_ascending':
-                print("price asc")
                 products = products.order_by("price")
 
             # or sort by condition A to C
             elif sortkey == 'grade_ascending':
-                print("grade asc")
                 products = products.order_by("grade")
             
              # or sort by condition C to A
             elif sortkey == 'grade_descending':
-                print("grade desc")
                 products = products.order_by("-grade")
 
             # default ordering for no valid sortkey in query 
-            else:
-                print("else")
-                products = products.order_by('-price')
+            else: products = products.order_by('-price')
 
         # default ordering if "sort" not in query
         else: products = products.order_by('-price')
