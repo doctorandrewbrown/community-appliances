@@ -87,10 +87,12 @@
               Washing Machines |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price">By price</a>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price_descending">price high to low</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade">By
-                  condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price_ascending">price low to high</a>
+              </li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade_descending">condition C to A</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade_ascending">condition A to C</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
