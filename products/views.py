@@ -19,15 +19,29 @@ def all_products(request):
             sortkey = request.GET['sort']
 
             # sort by high to low price
-            if sortkey == 'price':
-                products = products.order_by("-" + sortkey)
-            # or sort by condition A to C
+            if sortkey == 'price_descending':
+                print("price desc")
+                products = products.order_by("-price")
+            
+            # sort by low to high price
+            elif sortkey == 'price_ascending':
+                print("price asc")
+                products = products.order_by("price")
 
-            if sortkey == 'grade':
-                products = products.order_by(sortkey)
+            # or sort by condition A to C
+            elif sortkey == 'grade_ascending':
+                print("grade asc")
+                products = products.order_by("grade")
+            
+             # or sort by condition C to A
+            elif sortkey == 'grade_descending':
+                print("grade desc")
+                products = products.order_by("-grade")
 
             # default ordering for no valid sortkey in query 
-            else: products = products.order_by('-price')
+            else:
+                print("else")
+                products = products.order_by('-price')
 
         # default ordering if "sort" not in query
         else: products = products.order_by('-price')
@@ -43,7 +57,7 @@ def all_products(request):
             # if invalid category in query
             if len(products) == 0: category = "no appliances found"
 
-    # if no query set in GET request show all products with descending price
+    # if no query parameters in GET request show all products with descending price
     else: 
         products = products.order_by('-price')
 
@@ -62,5 +76,4 @@ def product_detail(request, product_id):
     context = {
         'product': product,
     }
-
     return render(request, 'products/product_detail.html', context)
