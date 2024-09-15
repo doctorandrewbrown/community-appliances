@@ -43,10 +43,12 @@
                 Washing Machines |
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price">By price</a>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price_descending">price high to low</a>
                 </li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade">By
-                    condition</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=price_ascending">price low to high</a>
+                </li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade_descending">condition C to A</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing Machines&sort=grade_ascending">condition A to C</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -55,9 +57,10 @@
                 Gas Cookers |
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=price">By price</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=grade">By condition</a>
-                </li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=price_descending">price high to low</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=price_ascending">price low to high</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=grade_descending">condition C to A</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas Cookers&sort=grade_ascending">condition A to C</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -66,10 +69,12 @@
                 Electric Cookers |
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=price">By price</a>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=price_descending">price high to low</a>
                 </li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=grade">By
-                    condition</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=price_ascending">price low to high</a>
+                </li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=grade_descending">condition C to A</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric Cookers&sort=grade_ascending">condition A to C</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -78,8 +83,10 @@
                 All Appliances
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?sort=price">By price</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?sort=grade">By condition</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?sort=price_descending">price high to low</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?sort=price_ascending">price low to high</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?sort=grade_descending">condition C to A</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?sort=grade_ascending">condition A to C</a></li>
               </ul>
             </li>
           </ul>
