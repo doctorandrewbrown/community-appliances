@@ -72,6 +72,15 @@ a.branding:hover {
     text-decoration: none;
 }
 
+#account {
+    color: blue;
+    text-decoration: none;
+}
+
+#account:hover {
+    color: rgba(0, 0, 255, 0.2);
+    text-decoration: none;
+}
 .about-us {
     margin-top: 100px;
     margin-bottom: 50px;
