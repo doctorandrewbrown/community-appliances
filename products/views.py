@@ -14,6 +14,17 @@ def all_products(request):
 
     # check query for category and sort conditions
     if request.GET:
+        # filter sorted products by category
+        if 'category' in request.GET:
+            category = request.GET['category'].split(',')
+            products = products.filter(category__name__in=category)
+
+            # get category to pass to template
+            category = category[0]
+            
+            # if invalid category in query
+            if len(products) == 0: category = "no appliances found"
+
         # sort by price or grade
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -40,17 +51,7 @@ def all_products(request):
         # default ordering if "sort" not in query
         else: products = products.order_by('-price')
 
-        # filter sorted products by category
-        if 'category' in request.GET:
-            category = request.GET['category'].split(',')
-            products = products.filter(category__name__in=category)
-
-            # get category to pass to template
-            category = category[0]
-            
-            # if invalid category in query
-            if len(products) == 0: category = "no appliances found"
-
+        
     # if no query parameters in GET request show all products with descending price
     else: 
         products = products.order_by('-price')
