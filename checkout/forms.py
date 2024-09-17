@@ -3,7 +3,6 @@ from .models import Order
 from django.core.exceptions import ValidationError
 
 
-
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -36,17 +35,17 @@ class OrderForm(forms.ModelForm):
             else:
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border border-primary rounded-0 mt-2 shadow-none'
+            self.fields[field].widget.attrs[
+                'class'] = 'border border-primary rounded-0 mt-2 shadow-none'
             self.fields[field].label = False
 
-
-    
     def clean_postcode(self):
         """
-        Check for valid postcode 
+        Check for valid postcode
         """
         data = self.cleaned_data["postcode"]
         # check for valid delivery postcode
-        if "CF34" not in data and "CF31" not in data and "cf34" not in data and "cf31" not in data:
+        if ("CF34" not in data and "CF31" not in data
+           and "cf34" not in data and "cf31" not in data):
             raise ValidationError("Invalid postcode")
         return data

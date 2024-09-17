@@ -1,5 +1,6 @@
 
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (render, redirect, reverse,
+                              get_object_or_404, HttpResponse)
 from django.contrib import messages
 from django.conf import settings
 from .forms import OrderForm
@@ -41,10 +42,11 @@ def checkout(request):
                         )
                     # save to order_line_item model
                     order_line_item.save()
-            
+
             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                           'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Did you enter a valid CF34 or CF31 postcode?')
@@ -52,7 +54,8 @@ def checkout(request):
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.info(request, "There are no items in your cart to checkout")
+            messages.info(request, 'There are no items in \
+                your cart to checkout')
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
@@ -63,7 +66,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        
+
         # Attempt to prefill the form from users profile
         if request.user.is_authenticated:
             try:
@@ -87,13 +90,14 @@ def checkout(request):
                 Did you forget to set it in your environment?')
         template = 'checkout/checkout.html'
         context = {
-            'order_form': order_form, 
+            'order_form': order_form,
             'stripe_public_key': stripe_public_key,
             'client_secret': intent.client_secret,
 
         }
-        
+
         return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """
@@ -119,17 +123,19 @@ def checkout_success(request, order_number):
                 'default_street_address2': order.street_address2,
                 'default_county': order.county,
             }
-            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            user_profile_form = UserProfileForm(profile_data,
+                                                instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
     if 'cart' in request.session:
         # empty cart
         del request.session['cart']
-        messages.success(request, 'Checkout succcessful! Your order will be delivered within five working days.')
+        messages.success(request, 'Checkout succcessful! Your order will \
+                         be delivered within five working days.')
         template = 'checkout/checkout_success.html'
         context = {
-        'order': order,
+                   'order': order,
         }
 
     return render(request, template, context)
