@@ -32,26 +32,26 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Python code for compatibility with the [PEP8 standard](https://peps.python.org/pep-0008/).
 
-| App | Python File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| cart |apps.py | ![screenshot](documentation/testing/images/pep-cart-apps.png) | No errors |
-| cart |contexts.py | ![screenshot](documentation/testing/images/pep-cart-contexts.png) | No errors |
-| cart |urls.py | ![screenshot](documentation/testing/images/pep-cart-urls.png) | No errors |
-| cart |views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
-| cart |views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
-| checkout |urls.py | ![screenshot](documentation/testing/images/pep-checkout-urls.png) | No errors |
-| checkout |apps.py | ![screenshot](documentation/testing/images/pep-checkout-apps.png) | No errors |
-| checkout |forms.py | ![screenshot](documentation/testing/images/pep-checkout-forms.png) | No errors |
-| checkout |models.py | ![screenshot](documentation/testing/images/pep-checkout-models.png) | No errors |
-| checkout |signals.py | ![screenshot](documentation/testing/images/pep-checkout-signals.png) | No errors |
-| checkout |admin.py | ![screenshot](documentation/testing/images/pep-checkout-admin.png) | No errors |
-| checkout |views.py | ![screenshot](documentation/testing/images/pep-checkout-views.png) | No errors |
-| home |views.py | ![screenshot](documentation/testing/images/pep-home-views.png) | No errors |
-| home |urls.py | ![screenshot](documentation/testing/images/pep-home-urls.png) | No errors |
-| products |admin.py | ![screenshot](documentation/testing/images/pep-products-admin.png) | No errors |
-| products |models.py | ![screenshot](documentation/testing/images/pep-products-models.png) | No errors |
-| products |urls.py | ![screenshot](documentation/testing/images/pep-products-urls.png) | No errors |
-| products |views.py | ![screenshot](documentation/testing/images/pep-products-views.png) | No errors |
+| Python File | Screenshot | Notes |
+| --- | --- | --- |
+| cart apps.py | ![screenshot](documentation/testing/images/pep-cart-apps.png) | No errors |
+| cart contexts.py | ![screenshot](documentation/testing/images/pep-cart-contexts.png) | No errors |
+| cart urls.py | ![screenshot](documentation/testing/images/pep-cart-urls.png) | No errors |
+| cart views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
+| cart views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
+| checkout urls.py | ![screenshot](documentation/testing/images/pep-checkout-urls.png) | No errors |
+| checkout apps.py | ![screenshot](documentation/testing/images/pep-checkout-apps.png) | No errors |
+| checkout forms.py | ![screenshot](documentation/testing/images/pep-checkout-forms.png) | No errors |
+| checkout models.py | ![screenshot](documentation/testing/images/pep-checkout-models.png) | No errors |
+| checkout signals.py | ![screenshot](documentation/testing/images/pep-checkout-signals.png) | No errors |
+| checkout admin.py | ![screenshot](documentation/testing/images/pep-checkout-admin.png) | No errors |
+| checkout views.py | ![screenshot](documentation/testing/images/pep-checkout-views.png) | No errors |
+| home views.py | ![screenshot](documentation/testing/images/pep-home-views.png) | No errors |
+| home urls.py | ![screenshot](documentation/testing/images/pep-home-urls.png) | No errors |
+| products admin.py | ![screenshot](documentation/testing/images/pep-products-admin.png) | No errors |
+| products models.py | ![screenshot](documentation/testing/images/pep-products-models.png) | No errors |
+| products urls.py | ![screenshot](documentation/testing/images/pep-products-urls.png) | No errors |
+| products views.py | ![screenshot](documentation/testing/images/pep-products-views.png) | No errors |
 
 
 
