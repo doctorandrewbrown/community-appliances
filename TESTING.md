@@ -48,6 +48,10 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | checkout |admin.py | ![screenshot](documentation/testing/images/pep-checkout-admin.png) | No errors |
 | checkout |views.py | ![screenshot](documentation/testing/images/pep-checkout-views.png) | No errors |
 
+| home |views.py | ![screenshot](documentation/testing/images/pep-home-views.png) | No errors |
+| home |urls.py | ![screenshot](documentation/testing/images/pep-home-urls.png) | No errors |
+
+
 
 
 
