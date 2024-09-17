@@ -5,12 +5,14 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+
 class VolunteerProfile(models.Model):
     """
     A volunteer profile model for maintaining volunteer details
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    volunteer_full_name = models.CharField(max_length=80, null=False, blank=False)
+    volunteer_full_name = models.CharField(max_length=80,
+                                           null=False, blank=False)
     email = models.EmailField(max_length=80, null=False, blank=False)
     details = models.TextField(max_length=254, null=True, blank=True)
 
@@ -25,5 +27,5 @@ def create_or_update_volunteer_profile(sender, instance, created, **kwargs):
     """
     if created:
         VolunteerProfile.objects.create(user=instance)
-    #Existing users: just save the profile
+    # Existing users: just save the profile
     instance.volunteerprofile.save()
