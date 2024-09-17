@@ -18,6 +18,17 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Order History | n/a | text input | no errors or warnings|
 | Volunteers | n/a | text input | no errors or warnings|
 
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| File | Jigsaw URL | Screenshot/Validation method | Notes|
+| --- | --- | --- | --- |
+| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |![screenshot](documentation/testing/images/w3c-css.png)| no errors|
+| product.css | n/a |text input| no errors|
+| checkout.css | n/a |text input| no errors|
+
+
 
 
 
