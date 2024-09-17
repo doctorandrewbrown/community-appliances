@@ -6,11 +6,12 @@ from django.contrib.auth.decorators import login_required
 from .models import VolunteerProfile
 from .forms import VolunteerProfileForm
 
+
 # direct to login page if not logged in
 @login_required
 def volunteers(request):
     """ Display and update volunteer profile. """
-    
+
     volunteer_profile = get_object_or_404(VolunteerProfile, user=request.user)
     if request.method == 'POST':
         form = VolunteerProfileForm(request.POST, instance=volunteer_profile)
