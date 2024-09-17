@@ -39,7 +39,6 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | cart |urls.py | ![screenshot](documentation/testing/images/pep-cart-urls.png) | No errors |
 | cart |views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
 | cart |views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
-
 | checkout |urls.py | ![screenshot](documentation/testing/images/pep-checkout-urls.png) | No errors |
 | checkout |apps.py | ![screenshot](documentation/testing/images/pep-checkout-apps.png) | No errors |
 | checkout |forms.py | ![screenshot](documentation/testing/images/pep-checkout-forms.png) | No errors |
@@ -47,7 +46,6 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | checkout |signals.py | ![screenshot](documentation/testing/images/pep-checkout-signals.png) | No errors |
 | checkout |admin.py | ![screenshot](documentation/testing/images/pep-checkout-admin.png) | No errors |
 | checkout |views.py | ![screenshot](documentation/testing/images/pep-checkout-views.png) | No errors |
-
 | home |views.py | ![screenshot](documentation/testing/images/pep-home-views.png) | No errors |
 | home |urls.py | ![screenshot](documentation/testing/images/pep-home-urls.png) | No errors |
 
