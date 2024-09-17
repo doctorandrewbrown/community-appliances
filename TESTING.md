@@ -26,7 +26,21 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | --- | --- | --- | --- |
 | base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |![screenshot](documentation/testing/images/w3c-css.png)| no errors|
 | product.css | n/a |text input| no errors|
-| checkout.css | n/a |text input| no errors|
+| checkout.css | n/a |text input| minor warning about vendor extension|
+
+### Python PEP8 Compatibility
+
+I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Python code for compatibility with the [PEP8 standard](https://peps.python.org/pep-0008/).
+
+| App | Python File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| cart |routes.py | ![screenshot](documentation/testing/images/pep-cart-apps.png) | No errors |
+| cart |contexts.py | ![screenshot](documentation/testing/images/pep-cart-contexts.png) | No errors |
+| cart |urls.py | ![screenshot](documentation/testing/images/pep-cart-urls.png) | No errors |
+| cart |views.py | ![screenshot](documentation/testing/images/pep-cart-views.png) | No errors |
+
+
+
 
 
 
