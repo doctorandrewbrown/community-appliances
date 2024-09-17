@@ -9,7 +9,8 @@ def all_products(request):
     # get all products from database
     products = Product.objects.all()
 
-    # set value for category to pass in context where no category is passed in GET request
+    # set value for category to pass in context where
+    # no category is passed in GET request
     category = 'All Appliances'
 
     # check query for category and sort conditions
@@ -21,9 +22,9 @@ def all_products(request):
 
             # get category to pass to template
             category = category[0]
-            
             # if invalid category in query
-            if len(products) == 0: category = "no appliances found"
+            if len(products) == 0:
+                category = "no appliances found"
 
         # sort by price or grade
         if 'sort' in request.GET:
@@ -32,7 +33,7 @@ def all_products(request):
             # sort by high to low price
             if sortkey == 'price_descending':
                 products = products.order_by("-price")
-            
+
             # sort by low to high price
             elif sortkey == 'price_ascending':
                 products = products.order_by("price")
@@ -40,20 +41,22 @@ def all_products(request):
             # or sort by condition A to C
             elif sortkey == 'grade_ascending':
                 products = products.order_by("grade")
-            
-             # or sort by condition C to A
+
+            # or sort by condition C to A
             elif sortkey == 'grade_descending':
                 products = products.order_by("-grade")
 
-            # default ordering for no valid sortkey in query 
-            else: products = products.order_by('-price')
+            # default ordering for no valid sortkey in query
+            else:
+                products = products.order_by('-price')
 
         # default ordering if "sort" not in query
-        else: products = products.order_by('-price')
+        else:
+            products = products.order_by('-price')
 
-        
-    # if no query parameters in GET request show all products with descending price
-    else: 
+    # if no query parameters in GET request show
+    # all products with descending price
+    else:
         products = products.order_by('-price')
 
     context = {
