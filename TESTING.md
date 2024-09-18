@@ -62,6 +62,11 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | volunteers models.py | ![screenshot](documentation/testing/images/pep-volunteers-models.png) | No errors |
 | volunteers urls.py | ![screenshot](documentation/testing/images/pep-volunteers-urls.png) | No errors |
 | volunteers views.py | ![screenshot](documentation/testing/images/pep-volunteers-views.png) | No errors |
+| community-appliances custom_storages.py | ![screenshot](documentation/testing/images/pep-custom-storages.png) | No errors |
+| community-appliances settings.py | ![screenshot](documentation/testing/images/pep-settings.png) | No errors |
+| community-appliances urls.py | ![screenshot](documentation/testing/images/pep-urls.png) | No errors |
+
+
 
 
 
