@@ -8,6 +8,7 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from checkout.models import Order
 
+
 # direct to login page if not logged in
 @login_required
 def profile(request):
@@ -21,7 +22,8 @@ def profile(request):
             messages.success(request, 'Profile updated successfully')
             return redirect(reverse('profile'))
         else:
-            messages.error(request, 'There was a problem with your form. Did you enter a valid CF34 or CF31 postcode?')
+            messages.error(request, 'There was a problem with your form. \
+            Did you enter a valid CF34 or CF31 postcode?')
             return redirect(reverse('profile'))
 
     form = UserProfileForm(instance=profile)
@@ -41,18 +43,19 @@ def profile(request):
 def order_history(request, order_number):
     """ Display order history """
 
-    # get order using order number in get request 
+    # get order using order number in get request
     order = get_object_or_404(Order, order_number=order_number)
 
     # get order owner username for requested order from Order model
     order_owner = order.user_profile.user.username
 
     # get username for current logged in user
-    current_user = get_object_or_404(UserProfile, user=request.user).user.username
-    
+    current_user = get_object_or_404(UserProfile,
+                                     user=request.user).user.username
+
     # check the logged-in user owns the order or trigger 403.html page
     if current_user != order_owner:
-        raise PermissionDenied() 
+        raise PermissionDenied()
 
     messages.info(request, (
         f'These are details of a previous order number {order_number}. '

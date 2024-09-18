@@ -4,7 +4,6 @@ from django.contrib import admin
 from .models import UserProfile
 
 
-
 class UserProfileAdmin(admin.ModelAdmin):
 
     fields = (
@@ -16,5 +15,6 @@ class UserProfileAdmin(admin.ModelAdmin):
             'default_county',
             'default_postcode',
             )
+
 
 admin.site.register(UserProfile, UserProfileAdmin)
