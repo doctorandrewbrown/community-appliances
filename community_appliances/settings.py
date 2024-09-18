@@ -36,8 +36,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com', 
-                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu114.gitpod.io', '8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['community-appliances-3af27dd26db9.herokuapp.com',
+                 '8000-doctorandre-communityap-soo9qbx4lfx.ws-eu114.gitpod.io',  # noqa
+                 '8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']  # noqa
 
 # Application definition
 
@@ -83,7 +84,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-doctorandre-communityap-rdm9ylvcc46.ws.codeinstitute-ide.net']  # noqa
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -96,7 +97,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',  # required by allauth
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
@@ -136,7 +137,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-# if in dev mode use sqlite 
+# if in dev mode use sqlite
 else:
     DATABASES = {
         'default': {
@@ -150,16 +151,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -183,7 +184,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
