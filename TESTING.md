@@ -53,6 +53,10 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | products urls.py | ![screenshot](documentation/testing/images/pep-products-urls.png) | No errors |
 | products views.py | ![screenshot](documentation/testing/images/pep-products-views.png) | No errors |
 | profiles admin.py | ![screenshot](documentation/testing/images/pep-profiles-admin.png) | No errors |
+| profiles forms.py | ![screenshot](documentation/testing/images/pep-profiles-forms.png) | No errors |
+| profiles models.py | ![screenshot](documentation/testing/images/pep-profiles-models.png) | No errors |
+| profiles views.py | ![screenshot](documentation/testing/images/pep-profiles-views.png) | No errors |
+| profiles urls.py | ![screenshot](documentation/testing/images/pep-profiles-urls.png) | No errors |
 
 
 
