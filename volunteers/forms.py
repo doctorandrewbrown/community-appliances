@@ -16,11 +16,13 @@ class VolunteerProfileForm(forms.ModelForm):
         # form placeholders
         placeholders = {
             'volunteer_full_name': 'Full Name',
-            'email':'email: use the email you signed up with or a different one if you wish',
-            'details':'about you'
+            'email': 'email: use the email you signed up \
+                with or a different one if you wish',
+            'details': 'about you'
         }
 
-        self.fields['volunteer_full_name'].widget.attrs['autofocus'] = True
+        self.fields[
+                   'volunteer_full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
@@ -28,5 +30,6 @@ class VolunteerProfileForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             # add bootstrap classes
-            self.fields[field].widget.attrs['class'] = 'border border-primary shadow-none rounded-0 mt-3'
+            self.fields[field].widget.attrs['class'] = 'border border-primary \
+                shadow-none rounded-0 mt-3'
             self.fields[field].label = False
