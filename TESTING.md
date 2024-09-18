@@ -66,7 +66,14 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | community-appliances settings.py | ![screenshot](documentation/testing/images/pep-settings.png) | No errors |
 | community-appliances urls.py | ![screenshot](documentation/testing/images/pep-urls.png) | No errors |
 
+### JavaScript
 
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| stripe_elements.js | ![screenshot](documentation/testing/images/stripe-elements-js.png) | Undefined Stripe variable from external library |
 
 
 
