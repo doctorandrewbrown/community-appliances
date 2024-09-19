@@ -82,6 +82,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Browser | Home | Products | Product Detail | Cart | Checkout | Checkout Success | Profile | Volunteers | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Chrome | ![screenshot](documentation/testing/images/browser-chrome-home.png) | ![screenshot](documentation/testing/images/browser-chrome-products.png) | ![screenshot](documentation/testing/images/browser-chrome-products-detail.png)|![screenshot](documentation/testing/images/browser-chrome-cart.png)|![screenshot](documentation/testing/images/browser-chrome-checkout.png)|![screenshot](documentation/testing/images/browser-chrome-checkout-success.png)|![screenshot](documentation/testing/images/browser-chrome-profile.png)|![screenshot](documentation/testing/images/browser-chrome-volunteers.png)| Works as expected|
+| Opera | ![screenshot](documentation/testing/images/browser-opera-home.png) | ![screenshot](documentation/testing/images/browser-opera-products.png) | ![screenshot](documentation/testing/images/browser-opera-products-detail.png)|![screenshot](documentation/testing/images/browser-opera-cart.png)|![screenshot](documentation/testing/images/browser-opera-checkout.png)|![screenshot](documentation/testing/images/browser-opera-checkout-success.png)|![screenshot](documentation/testing/images/browser-opera-profile.png)|![screenshot](documentation/testing/images/browser-opera-volunteers.png)| Works as expected|
 
 
 
