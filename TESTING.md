@@ -73,10 +73,15 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| stripe_elements.js | ![screenshot](documentation/testing/images/stripe-elements-js.png) | Undefined Stripe variable from external library |
+| stripe_elements.js | ![screenshot](documentation/testing/images/jshint-stripe-js.png) | Undefined Stripe variable from external library |
 
+### Browser Compatibility
 
+I've tested my deployed project on multiple browsers to check for compatibility issues.
 
+| Browser | Home | Products | Product Detail | Cart | Checkout | Checkout Success | Profile | Volunteers | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chrome | ![screenshot](documentation/testing/images/browser-chrome-home.png) | ![screenshot](documentation/testing/images/browser-chrome-products.png) | ![screenshot](documentation/testing/images/browser-chrome-products-detail.png)|![screenshot](documentation/testing/images/browser-chrome-cart.png)|![screenshot](documentation/testing/images/browser-chrome-checkout.png)|![screenshot](documentation/testing/images/browser-chrome-checkout-success.png)|![screenshot](documentation/testing/images/browser-chrome-profile.png)|![screenshot](documentation/testing/images/browser-chrome-volunteers.png)| Works as expected|
 
 
 

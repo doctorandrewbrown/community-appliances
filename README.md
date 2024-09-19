@@ -33,5 +33,8 @@
 |[Python "in" dict operator](https://realpython.com/python-in-operator/#dictionaries-and-sets)| views.py cart app |check if item already in cart |
 |[Form validation for postcode field](https://docs.djangoproject.com/en/5.0/ref/forms/validation/)| forms.py checkout app |check for valid postcode in delivery details form |
 |[Django queryset order_by](https://www.w3schools.com/django/django_queryset_orderby.php)| views.py products app |implement order by descending product price |
+|[Remove field labels from allauth forms](https://stackoverflow.com/a/64737110/11411026)| base.css | |
+|[Raise 403 error](https://stackoverflow.com/a/67184068/11411026)| views.py profiles app | |
 |
+
 
