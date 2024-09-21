@@ -89,7 +89,7 @@ a.branding:hover {
     opacity: 0.5;
 }
 .page-top-padding{
-    padding-top: 200px;
+    padding-top: 210px;
 }
 
 /* pasted from boutique Ado walkthrough */
@@ -143,4 +143,12 @@ header .dropdown-item:hover
 
 .allauth-form-inner-content label {
     display: none;
+}
+
+/* extra top padding for larger devices */
+
+@media (min-width: 992px) { 
+    .page-top-padding{
+    padding-top: 230px;
+    }
 }
