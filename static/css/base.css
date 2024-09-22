@@ -145,10 +145,16 @@ header .dropdown-item:hover
     display: none;
 }
 
-/* extra top padding for larger devices */
+/* extra spacing for larger devices */
 
-@media (min-width: 992px) { 
+@media (min-width: 1200px) { 
     .page-top-padding{
     padding-top: 230px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .about-us{
+    margin-top: 230px;
     }
 }
