@@ -136,7 +136,7 @@ def checkout_success(request, order_number):
     send_mail(
     "Subject here",
     "Checkout Success!",
-    settings.DEFAULT_FROM_EMAIL,
+    "community-appliances.com",
     ["pagoni5461@cetnob.com"],
     fail_silently=False,)
 
