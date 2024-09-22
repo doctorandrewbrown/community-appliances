@@ -10,6 +10,8 @@ from products.models import Product
 from profiles.models import UserProfile
 from cart.contexts import cart_contents
 
+from django.core.mail import send_mail
+
 import stripe
 
 
@@ -131,8 +133,18 @@ def checkout_success(request, order_number):
     if 'cart' in request.session:
         # empty cart
         del request.session['cart']
+    send_mail(
+    "Subject here",
+    "Checkout Success!",
+    "community-appliances.com",
+    ["pagoni5461@cetnob.com"],
+    fail_silently=False,)
+
     messages.success(request, 'Checkout succcessful! Your order will \
                      be delivered within five working days.')
     template = 'checkout/checkout_success.html'
     context = {'order': order, }
     return render(request, template, context)
+
+
+
