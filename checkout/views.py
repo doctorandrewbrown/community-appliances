@@ -134,7 +134,7 @@ def checkout_success(request, order_number):
         # empty cart
         del request.session['cart']
     send_mail(
-    "Subject here",
+    "Order confirmation",
     "Checkout Success!",
     "communityapplianceswales@gmail.com",
     ["dr.andrew.david.brown@gmail.com"],
