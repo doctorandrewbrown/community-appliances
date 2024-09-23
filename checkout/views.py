@@ -11,6 +11,7 @@ from profiles.models import UserProfile
 from cart.contexts import cart_contents
 
 from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 import stripe
 
@@ -133,9 +134,16 @@ def checkout_success(request, order_number):
     if 'cart' in request.session:
         # empty cart
         del request.session['cart']
+
+    # send confirmation emails
+    cust_email = order.email
+    body = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+    
     send_mail(
     "Order confirmation",
-    "Checkout Success!",
+    body,
     "communityapplianceswales@gmail.com",
     ["dr.andrew.david.brown@gmail.com"],
     fail_silently=False,)
