@@ -136,7 +136,7 @@ def checkout_success(request, order_number):
     send_mail(
     "Subject here",
     "Checkout Success!",
-    "andrewdavidbrownwork@gmail.com",
+    "communityapplianceswales@gmail.com",
     ["andrewdavidbrownwork@gmail.com"],
     fail_silently=False,)
 
