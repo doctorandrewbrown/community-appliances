@@ -144,8 +144,8 @@ def checkout_success(request, order_number):
     send_mail(
     "Order confirmation",
     body,
-    "communityapplianceswales@gmail.com",
-    ["dr.andrew.david.brown@gmail.com"],
+    settings.DEFAULT_FROM_EMAIL,
+    [cust_email],
     fail_silently=False,)
 
     messages.success(request, 'Checkout succcessful! Your order will \
