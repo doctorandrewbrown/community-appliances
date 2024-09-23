@@ -148,8 +148,8 @@ def checkout_success(request, order_number):
     [cust_email],
     fail_silently=False,)
 
-    messages.success(request, 'Checkout succcessful! Your order will \
-                     be delivered within five working days.')
+    messages.success(request, 'Checkout succcessful! \
+                     Confirmation email sent to you.')
     template = 'checkout/checkout_success.html'
     context = {'order': order, }
     return render(request, template, context)
