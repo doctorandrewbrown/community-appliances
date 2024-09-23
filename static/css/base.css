@@ -141,7 +141,8 @@ header .dropdown-item:hover
     font-size: large;
 }
 
-.allauth-form-inner-content label {
+.allauth-form-inner-content label:not([for='id_remember']) 
+{
     display: none;
 }
 
