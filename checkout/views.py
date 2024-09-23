@@ -137,7 +137,7 @@ def checkout_success(request, order_number):
     "Subject here",
     "Checkout Success!",
     "andrewdavidbrownwork@gmail.com",
-    ["pagoni5461@cetnob.com"],
+    ["andrewdavidbrownwork@gmail.com"],
     fail_silently=False,)
 
     messages.success(request, 'Checkout succcessful! Your order will \
