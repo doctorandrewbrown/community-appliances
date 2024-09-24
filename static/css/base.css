@@ -139,6 +139,8 @@ header .dropdown-item:hover
     font-size: large;
 }
 
+/* retain label on login checkbox */
+
 .allauth-form-inner-content label:not([for='id_remember']) 
 {
     display: none;
