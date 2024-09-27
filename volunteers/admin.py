@@ -6,7 +6,7 @@ from .models import VolunteerProfile
 
 class VolunteerAdmin(admin.ModelAdmin):
 
-    fields = ('volunteer_full_name', 'email', 'details',)
+    fields = ('volunteer_full_name', 'details',)
 
 
 admin.site.register(VolunteerProfile, VolunteerAdmin)

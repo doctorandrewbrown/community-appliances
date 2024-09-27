@@ -16,8 +16,6 @@ class VolunteerProfileForm(forms.ModelForm):
         # form placeholders
         placeholders = {
             'volunteer_full_name': 'Full Name',
-            'email': 'email: use the email you signed up \
-                with or a different one if you wish',
             'details': 'about you'
         }
 
