@@ -10,6 +10,8 @@ class VolunteerAdmin(admin.ModelAdmin):
 
     # show volunteer active status in admin change list display
     list_display = ('user', 'active')
+    # order by active
+    ordering = ('-active',)
 
 
 admin.site.register(VolunteerProfile, VolunteerAdmin)
