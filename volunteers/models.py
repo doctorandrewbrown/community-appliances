@@ -13,8 +13,8 @@ class VolunteerProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     volunteer_full_name = models.CharField(max_length=80,
                                            null=False, blank=False)
-    #email = models.EmailField(max_length=80, null=False, blank=False)
     details = models.TextField(max_length=254, null=True, blank=True)
+    active = models.BooleanField(null=False, default=False)
 
     def __str__(self):
         return self.user.username
