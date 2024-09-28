@@ -35,6 +35,7 @@
 |[Django queryset order_by](https://www.w3schools.com/django/django_queryset_orderby.php)| views.py products app |implement order by descending product price |
 |[Remove field labels from allauth forms](https://stackoverflow.com/a/64737110/11411026)| base.css | |
 |[Raise 403 error](https://stackoverflow.com/a/67184068/11411026)| views.py profiles app | |
+|[Customise Django Admin Panel](https://realpython.com/customize-django-admin-python/#modifying-a-change-list-using-list_display)| admin.py volunteers app | customise change list |
 |
 
 
