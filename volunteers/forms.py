@@ -2,7 +2,6 @@ from django import forms
 from .models import VolunteerProfile
 
 
-
 class VolunteerProfileForm(forms.ModelForm):
     class Meta:
         model = VolunteerProfile
@@ -31,11 +30,11 @@ class VolunteerProfileForm(forms.ModelForm):
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
                 # add bootstrap classes
-                self.fields[field].widget.attrs['class'] = 'border border-primary \
-                    shadow-none rounded-0 mt-3'
+                self.fields[field].widget.attrs['class'] = 'border \
+                    border-primary shadow-none rounded-0 mt-3'
                 # remove auto generated field labels
                 self.fields[field].label = False
             else:
                 # add bootstrap classes to checkbox
-                self.fields[field].widget.attrs['class'] = 'border border-primary \
-                    shadow-none rounded-0'
+                self.fields[field].widget.attrs['class'] = 'border \
+                    border-primary shadow-none rounded-0'

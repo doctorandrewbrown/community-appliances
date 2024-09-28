@@ -7,8 +7,8 @@ from .models import VolunteerProfile
 class VolunteerAdmin(admin.ModelAdmin):
 
     fields = ('volunteer_full_name', 'details', 'active',)
-    
-    # show volunteer active status in admin change list display 
+
+    # show volunteer active status in admin change list display
     list_display = ('user', 'active')
 
 
