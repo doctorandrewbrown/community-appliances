@@ -32,6 +32,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ConditionAdmin(admin.ModelAdmin):
     list_display = ('grade', 'description')
+    ordering = ('grade',)
 
 # Register your models here. Note admin models defined above are registered
 # alongside respective models

@@ -31,7 +31,7 @@ class Condition(models.Model):
 
 class Category(models.Model):
     """
-    A Category model for maintaining 
+    A Category model for maintaining
     details of appliance categories
     """
 
