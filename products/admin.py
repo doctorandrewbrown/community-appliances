@@ -8,7 +8,6 @@ class CertificateAdmin(admin.ModelAdmin):
     # tuple below note () brackets
     list_display = (
         'certificate',
-        'description',
     )
 
 
@@ -17,24 +16,22 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'category',
-        'description',
         'grade',
         'price',
-        'image',
+        'image'
     )
 # chose option to order admin view note tuple
-    ordering = ('name',)
+    ordering = ('category',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
-        'friendly_name',
         'name',
     )
 
 
 class ConditionAdmin(admin.ModelAdmin):
-    list_display = ('grade',)
+    list_display = ('grade', 'description')
 
 # Register your models here. Note admin models defined above are registered
 # alongside respective models
