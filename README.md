@@ -1,5 +1,10 @@
 
-[video](https://github.com/user-attachments/assets/49aa44b4-f540-44cf-b2fc-b098ec66a24c)
+
+| Test |
+|--------|
+|[video](https://github.com/user-attachments/assets/49aa44b4-f540-44cf-b2fc-b098ec66a24c)
+|
+
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
 ## Overview
@@ -11,7 +16,7 @@
     - site owner (Admin)
 
 ### Making Purchases
-The following apply to users with or without an account
+The following apply to users with or without an account [video](https://github.com/user-attachments/assets/49aa44b4-f540-44cf-b2fc-b098ec66a24c)
 - As a user I want to view items by category, ordered by condition or price
 - As a user I want to view detailed information on selected items
 - As a user I want to view items in my cart 
