@@ -1,3 +1,39 @@
+
+[video](https://github.com/user-attachments/assets/49aa44b4-f540-44cf-b2fc-b098ec66a24c)
+# Community Appliances
+## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
+## Overview
+- Community Appliances is an app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up.
+## User Stories
+- The design of the app was guided by user stories. The categories of user considered were,
+    - visitors without an account
+    - users with an account
+    - site owner (Admin)
+
+### Making Purchases
+The following apply to users with or without an account
+- As a user I want to view items by category, ordered by condition or price
+- As a user I want to view detailed information on selected items
+- As a user I want to view items in my cart 
+- As a user I want to add and remove items to my cart
+- As a user I want to enter my delivery details
+- As a user I want to use a recognised on-line payment platform to make payment for my items
+- As a user I want to get an email confirming details of my purchase
+
+### Making an Account
+Visitors can make purchases with or without an account. However, signing-up for an account gives users the possibility of additional useful or interesting functionality
+- As a user I want to sign-up for an account to release useful/interesring additional features in the app
+- As a user with an account I want to retain and update default delivery information to prefill my delivery details into a form
+- As a user with an account I want to view a record of previous purchases, ie an order-history
+- As a user with an account I want to make a volunteer profile linked to my account, in order to volunteer with the charity
+
+### Managing the Store
+- As an admin user 
+
+### Further Considerations
+- As a user I want immediate clear messaging from interactions with the app
+
+
 ## Credits
 
 ### Technologies
