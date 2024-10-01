@@ -2,7 +2,7 @@
 
 Return back to the [README.md](README.md) file.
 
-### HTML
+## HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files. All pages were validated on the live website. Were possible pages were validated by address. For pages only available to logged in users the html source code was copied from the browser and validated with the text input option in the validator. The same procedure was used  pages such as "cart" and "checkout" which could only be meaningfully validated were there is some user interaction with the page.
 
@@ -18,7 +18,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Order History | n/a | text input | no errors or warnings|
 | Volunteers | n/a | text input | no errors or warnings|
 
-### CSS
+## CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
@@ -28,7 +28,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | product.css | n/a |text input| no errors|
 | checkout.css | n/a |text input| minor warning about vendor extension|
 
-### Python PEP8 Compatibility
+## Python PEP8 Compatibility
 
 I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Python code for compatibility with the [PEP8 standard](https://peps.python.org/pep-0008/).
 
@@ -66,7 +66,7 @@ I have used the [CI Python Linter](https://pep8ci.herokuapp.com/)  to check Pyth
 | community-appliances settings.py | ![screenshot](documentation/testing/images/pep-settings.png) | No errors |
 | community-appliances urls.py | ![screenshot](documentation/testing/images/pep-urls.png) | No errors |
 
-### JavaScript
+## JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
@@ -75,7 +75,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | --- | --- | --- |
 | stripe_elements.js | ![screenshot](documentation/testing/images/jshint-stripe-js.png) | Undefined Stripe variable from external library |
 
-### Browser Compatibility
+## Browser Compatibility
 
 I have tested my deployed project on multiple browsers to check for compatibility issues.
 
@@ -85,7 +85,7 @@ I have tested my deployed project on multiple browsers to check for compatibilit
 | Opera | ![screenshot](documentation/testing/images/browser-opera-home.png) | ![screenshot](documentation/testing/images/browser-opera-products.png) | ![screenshot](documentation/testing/images/browser-opera-products-detail.png)|![screenshot](documentation/testing/images/browser-opera-cart.png)|![screenshot](documentation/testing/images/browser-opera-checkout.png)|![screenshot](documentation/testing/images/browser-opera-checkout-success.png)|![screenshot](documentation/testing/images/browser-opera-profile.png)|![screenshot](documentation/testing/images/browser-opera-volunteers.png)| ![screenshot](documentation/testing/images/browser-opera-order-history.png)| Works as expected 
 | Firefox | ![screenshot](documentation/testing/images/browser-firefox-home.png) | ![screenshot](documentation/testing/images/browser-firefox-products.png) | ![screenshot](documentation/testing/images/browser-firefox-products-details.png)|![screenshot](documentation/testing/images/browser-firefox-cart.png)|![screenshot](documentation/testing/images/browser-firefox-checkout.png)|![screenshot](documentation/testing/images/browser-firefox-checkout-success.png)|![screenshot](documentation/testing/images/browser-firefox-profile.png)|![screenshot](documentation/testing/images/browser-firefox-volunteers.png)| ![screenshot](documentation/testing/images/browser-firefox-order-history.png)| Works as expected 
 
-### Responsiveness
+## Responsiveness
 
 I have tested my deployed project on multiple devices to check for responsiveness issues.
 
@@ -96,8 +96,13 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | Laptop (real device 1366x768px)| ![screenshot](documentation/testing/images/responsive-laptop-home.png) | ![screenshot](documentation/testing/images/responsive-laptop-products.png) | ![screenshot](documentation/testing/images/responsive-laptop-product-details.png)|![screenshot](documentation/testing/images/responsive-laptop-cart.png)|![screenshot](documentation/testing/images/responsive-laptop-checkout.png)|![screenshot](documentation/testing/images/responsive-laptop-checkout-success.png)|![screenshot](documentation/testing/images/responsive-laptop-profile.png)|![screenshot](documentation/testing/images/responsive-laptop-volunteers.png)| ![screenshot](documentation/testing/images/responsive-laptop-order-history.png)| Works as expected 
 
 
-
-
+## User Story Testing
+[User stories](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#user-stories) were used to specify a program of manual testing of the app functionality.
+### Making Purchases
+| User Story | Tests | Video/Screenshot | Comments | Pass/Fail |
+| --- | --- |----| --- | --- |
+| As a user I want to view items by category, ordered by condition or price |-![screenshot](documentation/testing/images/responsive-laptop-home.png) |As a user I want to view items by category, ordered by condition or price | As a user I want to view items by category, ordered by condition or price| 
+| As a user I want to view items by category, ordered by condition or price |- ![screenshot](documentation/testing/images/responsive-laptop-home.png) |As a user I want to view items by category, ordered by condition or price | As a user I want to view items by category, ordered by condition or price| 
 
 
 

@@ -35,7 +35,7 @@ Visitors can make purchases with or without an account. However, signing-up for 
 - As an admin user 
 
 ### Further Considerations
-- As a user I want immediate clear messaging from interactions with the app
+- As a user I want immediate clear feedback messages from interactions with the app
 
 
 ## Credits
