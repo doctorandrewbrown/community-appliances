@@ -113,10 +113,15 @@
                         
                     </button>
                     <p class="small text-danger mt-2">
-                        <span class="icon">
+                        <span class="icon me-2">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
-                        <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+                        {% if discount %}
+                            <span>your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong> with a discount of <strong>£{{ discount|floatformat:2 }}</strong> applied to cart total of <strong>£{{ total|floatformat:2 }}</strong></span>
+                        {% else %}
+                            <span>your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+                        {% endif %}
+                        
                     </p>
                 </div>
             </form>
