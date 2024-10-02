@@ -16,8 +16,8 @@ The following apply to users with or without an account
 - As a user I want to view detailed information on selected items
 - As a user I want to view, add and remove items in my cart 
 - As a user I want to enter my delivery details and view my cart and payment details at checkout
-- As a user I want to make easy on-line payment for my items
-- As a user I want to get an email confirming details of my purchase
+- As a user I want to have a familiar experience making on-line payment for my items and have access to all the relevant details
+- As a user I want to get an email confirming my order has been placed.
 
 This [video](https://github.com/user-attachments/assets/79698b64-8b53-451e-a0c8-70dce84bbfa2) gives an overview of most of the main actions in the purchasing process.
 
