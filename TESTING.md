@@ -112,3 +112,11 @@ I have tested my deployed project on multiple devices to check for responsivenes
 
 
 
+### Registering for an Account
+- As a user I want to sign-up for an account to access useful/interesting additional features in the app
+
+This user story was tested by going through the registration process with a temporary email for a fictional user
+
+|sign-up form|verify email|emailed confirm link|email confirmed|
+| --- | --- | --- | --- |
+| ![screenshot](documentation/testing/stories/authentication-signup-form.png)| ![screenshot](documentation/testing/stories/authentication-verify-email.png)| ![screenshot](documentation/testing/stories/authentication-temp-email-link.png)| ![screenshot](documentation/testing/stories/authentication-email-confirmed.png)|
