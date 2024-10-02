@@ -3,7 +3,7 @@
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
 ## Overview
-- Community Appliances is an app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up if they have an account.
+- Community Appliances is a django e-commerce app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up if they have an account. E-commerce functionality is via the [Stripe](https://stripe.com/gb) on-line payment platform.
 ## User Stories
 - The design of the app was guided by user stories. The categories of user considered were,
     - visitors without an account
@@ -15,7 +15,7 @@ The following apply to users with or without an account
 - As a user I want to view items by category, ordered by condition or price
 - As a user I want to view detailed information on selected items
 - As a user I want to view, add and remove items in my cart 
-- As a user I want to enter my delivery details and view payment details at checkout
+- As a user I want to enter my delivery details and view my cart and payment details at checkout
 - As a user I want to make easy on-line payment for my items
 - As a user I want to get an email confirming details of my purchase
 

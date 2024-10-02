@@ -1,3 +1,5 @@
+### Temp
+
 # Testing
 
 Return back to the [README.md](README.md) file.
@@ -97,12 +99,15 @@ I have tested my deployed project on multiple devices to check for responsivenes
 
 
 ## User Story Testing
-[User stories](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#user-stories) were used to specify a program of manual testing of the app functionality.
+[User stories](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#user-stories) were used to specify a program of manual testing of the app functionality. The manual tests involved going through the steps required by the user stories to check correct functioning.
 ### Making Purchases
-| User Story | Tests | Video/Screenshot | Comments | Pass/Fail |
-| --- | --- |----| --- | --- |
-| As a user I want to view items by category, ordered by condition or price |-![screenshot](documentation/testing/images/responsive-laptop-home.png) |As a user I want to view items by category, ordered by condition or price | As a user I want to view items by category, ordered by condition or price| 
-| As a user I want to view items by category, ordered by condition or price |- ![screenshot](documentation/testing/images/responsive-laptop-home.png) |As a user I want to view items by category, ordered by condition or price | As a user I want to view items by category, ordered by condition or price| 
+| User Story | Tests |Video/Screenshot | Notes | Pass/Fail |
+|:--- | :--- |----| --- | --- |
+| As a user I want to view items by category, ordered by condition or price|for each item category order results by price (ascending and descending) or grade A-C (ascending and descending) |[video](https://github.com/user-attachments/assets/24115b06-a8c4-474d-9c52-bfeff6b01373) |video shows ordering the "All Appliances" category by price and grade (ascending and descending). Similar tests were conducted for other appliance categories| Pass|
+| As a user I want to view detailed information on selected items|for an item selected from the search results user can view enlarged image, product description, condition details and saftey details|[video](https://github.com/user-attachments/assets/850f2d43-b192-4bd5-9469-74e48cd183f0) |video shows a product details view with the more detailed information including a product description, a dropdown with condition details, safety details (in this case electrical)| Pass|
+| As a user I want to view, add and remove items in my cart |user can view items in cart, add and remove items (with informative messages)|[video](https://github.com/user-attachments/assets/d7879cee-eb48-4672-884a-c6b9aa2b508b) |video shows items being added and removed from cart with cart total in navbar incrementing and decrementing correctly. User messaging is shown at each stage| Pass|
+| As a user I want to enter my delivery details and view my cart and payment details at checkout |user should be able to view an itemised breakdown of the cost of their order and any discount. The amount to be charged to the card should be clearly indicated|[video](https://github.com/user-attachments/assets/17338da0-2d44-47f2-9b4e-a1c2b8cfc837) |video shows items being added and removed from cart with cart total  in navbar incrementing and decrementing. User messaging is shown at each stage| Pass|
+
 
 
 
