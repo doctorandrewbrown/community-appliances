@@ -127,10 +127,25 @@ This user story was tested by going through the registration process with a temp
 | As a user with an account I want to view a record of previous purchases, ie an order-history|user can view list and detail views of previous orders |[video](https://github.com/user-attachments/assets/f7294884-af53-4828-95a9-d3ba5523c9a5) |video shows list and detail views to signed in user| Pass |
 | As a user with an account I want the option to make a volunteer profile linked to my account, in order to volunteer with the charity|user can create and update a volunteer profile |[video](https://github.com/user-attachments/assets/0bd4dd42-967d-477a-bb32-f3c4335ff03c) |video shows signed in user editing volunteer profile including toggling 'checkbox to indicate availability| Pass |
 
-### User Messaging
+### [User Messaging](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#user-messaging)
 - As a user I want immediate clear feedback messages from interactions with the app
+
 This user story was tested by ensuring messaging was triggered as intended and was informative to the user. Examples of messaging used in the app are shown below
 
 |info| success |warning | error |
 | --- | --- | --- | --- |
 | ![screenshot](documentation/testing/stories/stories-messages-info.png)  |![screenshot](documentation/testing/stories/stories-messages-success.png)| ![screenshot](documentation/testing/stories/stories-messages-warning.png)| ![screenshot](documentation/testing/stories/stories-messages-error.png)|
+
+### [Managing the Store (Admin User)](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#managing-the-store)
+- As an admin user I want full CRUD functionality for all models in the application database.
+
+This user story was tested by manually performing create, read, update and delete test actions on each model from within the admin panel.
+
+| app | model| admin list view| admin change form | Pass/Fail |
+| --- | --- | --- | --- | --- | 
+| Checkout | Orders | ![screenshot](documentation/testing/stories/stories-admin-orders-list.png) | ![screenshot](documentation/testing/stories/stories-admin-orders-change.png)  | Pass | 
+| Products | Products | ![screenshot](documentation/testing/stories/stories-admin-products-list.png) | ![screenshot](documentation/testing/stories/stories-admin-products-change.png)  | Pass | 
+| Categories | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | Pass | 
+
+
+

@@ -37,8 +37,11 @@ Visitors can make purchases with or without an account. However, signing-up for 
 - As a user with an account I want to view a record of previous purchases, ie an order-history
 - As a user with an account I want the option to make a volunteer profile linked to my account, in order to volunteer with the charity
 
-### Managing the Store
-- As an admin user 
+### Managing the Store (Admin User)
+The store admin needs access to order details in the database in order to fullfil customer orders. Additionally, the admin user needs to manage user accounts and user and volunteer profiles. The admin also needs to be able to add and remove products, and edit product details. These actions are performed via the Django admin panel.
+
+- As an admin user I want full CRUD functionality for all models in the application database.
+
 
 ### User Messaging
 Providing users with immediate feedback from interactions with the app was a key consideration in design. Colour coded alert Bootsrap alerts together with the Django messaging system achceived this goal.
