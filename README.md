@@ -40,7 +40,8 @@ Visitors can make purchases with or without an account. However, signing-up for 
 ### Managing the Store
 - As an admin user 
 
-### Further Considerations
+### User Messaging
+Providing users with immediate feedback from interactions with the app was a key consideration in design. Colour coded alert Bootsrap alerts together with the Django messaging system achceived this goal.
 - As a user I want immediate clear feedback messages from interactions with the app
 
 

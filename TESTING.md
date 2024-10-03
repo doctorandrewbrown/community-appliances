@@ -124,3 +124,13 @@ This user story was tested by going through the registration process with a temp
 |:--- | :--- |----| --- | --- |
 | As a user with an account I want to create and update default delivery information to prefill my delivery details into a form at checkout|delivery details form is pre-filled at checkout |[video](https://github.com/user-attachments/assets/adb4dab8-e8dc-4357-b607-2bc45d54a1d3) |video shows form prefilled at checkout once user signs in| Pass |
 | |user can edit default delivery details|![screenshot](documentation/testing/stories/stories-account-profile-update.png)| |Pass|
+| As a user with an account I want to view a record of previous purchases, ie an order-history|user can view list and detail views of previous orders |[video](https://github.com/user-attachments/assets/f7294884-af53-4828-95a9-d3ba5523c9a5) |video shows list and detail views to signed in user| Pass |
+| As a user with an account I want the option to make a volunteer profile linked to my account, in order to volunteer with the charity|user can create and update a volunteer profile |[video](https://github.com/user-attachments/assets/0bd4dd42-967d-477a-bb32-f3c4335ff03c) |video shows signed in user editing volunteer profile including toggling 'checkbox to indicate availability| Pass |
+
+### User Messaging
+- As a user I want immediate clear feedback messages from interactions with the app
+This user story was tested by ensuring messaging was triggered as intended and was informative to the user. Examples of messaging used in the app are shown below
+
+|info| success |warning | error |
+| --- | --- | --- | --- |
+| ![screenshot](documentation/testing/stories/stories-messages-info.png)  |![screenshot](documentation/testing/stories/stories-messages-success.png)| ![screenshot](documentation/testing/stories/stories-messages-warning.png)| ![screenshot](documentation/testing/stories/stories-messages-error.png)|
