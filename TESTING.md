@@ -145,7 +145,9 @@ This user story was tested by manually performing create, read, update and delet
 | --- | --- | --- | --- | --- | 
 | Checkout | Orders | ![screenshot](documentation/testing/stories/stories-admin-orders-list.png) | ![screenshot](documentation/testing/stories/stories-admin-orders-change.png)  | Pass | 
 | Products | Products | ![screenshot](documentation/testing/stories/stories-admin-products-list.png) | ![screenshot](documentation/testing/stories/stories-admin-products-change.png)  | Pass | 
-| Categories | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | Pass | 
+| Products | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | Pass | 
+| Products | Certificates | ![screenshot](documentation/testing/stories/stories-admin-certificates-list.png) | ![screenshot](documentation/testing/stories/stories-admin-certificates-change.png)  | Pass | 
+| Products | Condition | ![screenshot](documentation/testing/stories/stories-admin-condition-list.png) | ![screenshot](documentation/testing/stories/stories-admin-condition-change.png)  | Pass | 
 
 
 
