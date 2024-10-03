@@ -4,11 +4,18 @@
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
 ## Overview
 - Community Appliances is a django e-commerce app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up if they have an account. E-commerce functionality is via the [Stripe](https://stripe.com/gb) on-line payment platform.
+
 ## User Stories
-- The design of the app was guided by user stories. The categories of user considered were,
-    - visitors without an account
-    - users with an account
-    - site owner (Admin)
+The design of the app was guided by user stories. The categories of user considered were,
+- visitors without an account
+- users with an account
+- site owner (Admin)
+
+To allow analysis user stories were categorised into the areas of functionality below
+- Making purchases
+- Registering for an account
+- Users with an account
+- Managing the store
 
 ### Making Purchases
 The following apply to users with or without an account 
@@ -21,15 +28,14 @@ The following apply to users with or without an account
 
 This [video](https://github.com/user-attachments/assets/79698b64-8b53-451e-a0c8-70dce84bbfa2) gives an overview of most of the main actions in the purchasing process.
 
+### Registering for an Account
+- As a user I want to sign-up for an account to access useful/interesting additional features in the app
 
 ### Users with an Account
 Visitors can make purchases with or without an account. However, signing-up for an account gives users access to additional useful or interesting functionality
-- As a user with an account I want to retain and update default delivery information to prefill my delivery details into a form at checkout
+- As a user with an account I want to create and update default delivery information to prefill my delivery details into a form at checkout
 - As a user with an account I want to view a record of previous purchases, ie an order-history
 - As a user with an account I want the option to make a volunteer profile linked to my account, in order to volunteer with the charity
-
-### Registering for an Account
-- As a user I want to sign-up for an account to access useful/interesting additional features in the app
 
 ### Managing the Store
 - As an admin user 
@@ -45,7 +51,13 @@ Visitors can make purchases with or without an account. However, signing-up for 
 | --- | --- |
 | [Gimp](https://www.gimp.org/) |used to crop and compress images  |
 | [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
-|
+
+ ### Tools
+| Source | Notes |
+| --- | --- |
+| [Gimp](https://www.gimp.org/) |used to crop and compress images  |
+| [temp-mail](https://temp-mail.org/en/) |for test email accounts|
+| [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
 
 ### Media 
 | Source | Notes |
@@ -55,7 +67,6 @@ Visitors can make purchases with or without an account. However, signing-up for 
 | [Markselectrical](https://markselectrical.co.uk/ww11bb504daws1_samsung-washing-machine)|Washing machine placeholder image|
 | [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Gas cooker placeholder image placeholder image|
 | [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image placeholder image|
-|
 
 
 ### Content
@@ -77,6 +88,5 @@ Visitors can make purchases with or without an account. However, signing-up for 
 |[Remove field labels from allauth forms](https://stackoverflow.com/a/64737110/11411026)| base.css | |
 |[Raise 403 error](https://stackoverflow.com/a/67184068/11411026)| views.py profiles app | |
 |[Customise Django Admin Panel](https://realpython.com/customize-django-admin-python/#modifying-a-change-list-using-list_display)| admin.py volunteers app | customise change list |
-|
 
 

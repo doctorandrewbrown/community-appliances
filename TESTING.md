@@ -1,4 +1,3 @@
-### Temp
 
 # Testing
 
@@ -100,7 +99,7 @@ I have tested my deployed project on multiple devices to check for responsivenes
 
 ## User Story Testing
 [User stories](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#user-stories) were used to specify a program of manual testing of the app functionality. The manual tests involved going through the steps required by the user stories to check correct functioning.
-### Making Purchases
+### [Making Purchases](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#making-purchases)
 | User Story | Tests |Video/Screenshot | Notes | Pass/Fail |
 |:--- | :--- |----| --- | --- |
 | As a user I want to view items by category, ordered by condition or price|for each item category order results by price (ascending and descending) or grade A-C (ascending and descending) |[video](https://github.com/user-attachments/assets/24115b06-a8c4-474d-9c52-bfeff6b01373) |video shows ordering the "All Appliances" category by price and grade (ascending and descending). Similar tests were conducted for other appliance categories| Pass|
@@ -110,13 +109,18 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | As a user I want to have a familiar experience making on-line payment for my items and have access to all the relevant details |user should have a familiar payment interface and immediate confirmation of their order |[video](https://github.com/user-attachments/assets/19345825-03eb-4914-8e0d-48e923e0e52a) |video shows payment via a familiar interface provided by Stripe. The user gets immediate confimation that the order has been successfully placed with a breakdown of all the order information. The user is informed they will get an email| Pass|
 | As a user I want to get an email confirming my order has been placed. |user should receive email confirmation of their order containing all relevant details |![screenshot](documentation/testing/stories/stories-email.png) |the screen shot shows an example order confirmation email containing all the order details| Pass|
 
-
-
-### Registering for an Account
+### [Registering for an Account](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#registering-for-an-account)
 - As a user I want to sign-up for an account to access useful/interesting additional features in the app
 
-This user story was tested by going through the registration process with a temporary email for a fictional user
+This user story was tested by going through the registration process with a temporary email for a fictional user.
 
-|sign-up form|verify email|emailed confirm link|email confirmed|
+|sign-up form|verify email|email confirm link|email confirmed|
 | --- | --- | --- | --- |
 | ![screenshot](documentation/testing/stories/authentication-signup-form.png)| ![screenshot](documentation/testing/stories/authentication-verify-email.png)| ![screenshot](documentation/testing/stories/authentication-temp-email-link.png)| ![screenshot](documentation/testing/stories/authentication-email-confirmed.png)|
+
+
+### [Users with an Account](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#users-with-an-account)
+| User Story | Tests |Video/Screenshot | Notes | Pass/Fail |
+|:--- | :--- |----| --- | --- |
+| As a user with an account I want to create and update default delivery information to prefill my delivery details into a form at checkout|delivery details form is pre-filled at checkout |[video](https://github.com/user-attachments/assets/adb4dab8-e8dc-4357-b607-2bc45d54a1d3) |video shows form prefilled at checkout once user signs in| Pass |
+| |user can edit default delivery details|![screenshot](documentation/testing/stories/stories-account-profile-update.png)| |Pass|
