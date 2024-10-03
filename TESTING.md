@@ -139,7 +139,7 @@ This user story was tested by ensuring messaging was triggered as intended and w
 ### [Managing the Store (Admin User)](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#managing-the-store)
 - As an admin user I want full CRUD functionality for all models in the application database.
 
-This user story was tested by manually performing create, read, update and delete test actions on each model from within the admin panel.
+This user story was tested by manually performing create, read, update and delete test actions on each model from within the admin panel. The admin panel screenshots below show the list view and the change form for each model.
 
 | app | model| admin list view| admin change form | Pass/Fail |
 | --- | --- | --- | --- | --- | 
@@ -148,6 +148,7 @@ This user story was tested by manually performing create, read, update and delet
 | Products | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | Pass | 
 | Products | Certificates | ![screenshot](documentation/testing/stories/stories-admin-certificates-list.png) | ![screenshot](documentation/testing/stories/stories-admin-certificates-change.png)  | Pass | 
 | Products | Condition | ![screenshot](documentation/testing/stories/stories-admin-condition-list.png) | ![screenshot](documentation/testing/stories/stories-admin-condition-change.png)  | Pass | 
-
+| Profiles | User profiles | ![screenshot](documentation/testing/stories/stories-admin-profiles-list.png) | ![screenshot](documentation/testing/stories/stories-admin-profiles-change.png)  | Pass | 
+| Profiles | User profiles | ![screenshot](documentation/testing/stories/stories-admin-volunteers-list.png) | ![screenshot](documentation/testing/stories/stories-admin-volunteers-change.png)  | Pass | 
 
 
