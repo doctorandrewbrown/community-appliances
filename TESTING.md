@@ -163,14 +163,25 @@ The table below shows the test results Pass/Fail for built-in form validation an
 | App | Model |Form| Page | Screenshot | Comments | Pass/Fail|
 | --- | --- | --- | --- | --- | --- | --- |
 | checkout | Order |OrderForm | checkout |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-checkout.png)  | screenshot shows error message if an invalid postcode is submitted in form   | Pass |
+| | | | | ![screenshot](documentation/testing/form-validation/form-validation-email.png)| screenshot shows error message if email format incorrect| |
 | profiles | UserProfile |UserProfileForm | profile |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-profile.png)  | screenshot shows error message if an invalid postcode is submitted in form   | Pass |
 | volunteers | VolunteerProfile |VolunteerProfileForm | volunteers |  ![screenshot](documentation/testing/form-validation/form-validation-volunteers.png)  | screenshot shows error message if required field is omitted   | Pass |
 
 
-
-
-
 ## Defensive Programming
+Defensive measures were taken to anticipate, and handle all possible user interactions with the application. This is important for user experience (UX) so that users do not get unecessary 500 error messages and all interactions are handled in a graceful and helpful manner. Manual testing of defensive measures was conducted and the results are shown in the table below.
+
+| User Action/Server Error |Expected Result | Screenshot | Comments | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| requests a non-existant page | trigger 404 error | ![screenshot](documentation/testing/defensive/defensive-404.png)| 404.html file placed in app template directory | Pass |
+| non signed-in user requests a page only available to signed-in users | redirect to log-in page | ![screenshot](documentation/testing/defensive/defensive-sign-in.png)| @login_required python decorator used in the views.py files of the profile and volunteers apps | Pass |
+| requests forbidden resource | trigger 403 error | ![screenshot](documentation/testing/defensive/defensive-403.png)|example would be a logged in user attempting to view another users order if they have access to the order number e.g. ..../profile/order_history/1D3FED1C1B1849DD93DC698DD92E. Python code to prevent this is in views.py file of the profile app | Pass |
+| request contains invalid category parameter in url | trigger no results view | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid category parameter is in views.py of the products app | Pass |
+| request contains invalid sort parameter in url | display products with default ordering of price descending | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid sort parameter is in views.py of the products app | Pass |
+| server error | trigger 500 error | ![screenshot](documentation/testing/defensive/defensive-500.png)| 500.html file placed in app template directory| Pass |
+
+## Stripe Payment Testing
+
 
 ## Navigation Testing
 
