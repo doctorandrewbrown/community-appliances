@@ -139,32 +139,32 @@ This user story was tested by ensuring messaging was triggered as intended and w
 ### [Managing the Store (Admin User)](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#managing-the-store)
 - As an admin user I want full CRUD functionality for all models in the application database.
 
-This user story was tested by manually performing create, read, update and delete test actions on each model from within the admin panel. The admin panel screenshots below show the list view and the change form for each model.
+This user story was tested by manually performing create, read, update and delete test actions on each model from within the admin panel. The admin panel screenshots below show the list-view and the change-form for each model.
 
-| app | model| admin list view| admin change form | Pass/Fail |
-| --- | --- | --- | --- | --- | 
-| Checkout | Orders | ![screenshot](documentation/testing/stories/stories-admin-orders-list.png) | ![screenshot](documentation/testing/stories/stories-admin-orders-change.png)  | Pass | 
-| Products | Products | ![screenshot](documentation/testing/stories/stories-admin-products-list.png) | ![screenshot](documentation/testing/stories/stories-admin-products-change.png)  | Pass | 
-| Products | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | Pass | 
-| Products | Certificates | ![screenshot](documentation/testing/stories/stories-admin-certificates-list.png) | ![screenshot](documentation/testing/stories/stories-admin-certificates-change.png)  | Pass | 
-| Products | Condition | ![screenshot](documentation/testing/stories/stories-admin-condition-list.png) | ![screenshot](documentation/testing/stories/stories-admin-condition-change.png)  | Pass | 
-| Profiles | User profiles | ![screenshot](documentation/testing/stories/stories-admin-profiles-list.png) | ![screenshot](documentation/testing/stories/stories-admin-profiles-change.png)  | Pass | 
-| Volunteers | Volunteer profiles | ![screenshot](documentation/testing/stories/stories-admin-volunteers-list.png) | ![screenshot](documentation/testing/stories/stories-admin-volunteers-change.png)  | Pass | 
+| app | model| admin list-view| admin change-form | comments |Pass/Fail |
+| --- | --- | --- | --- | --- | --- |
+| Checkout | Orders | ![screenshot](documentation/testing/stories/stories-admin-orders-list.png) | ![screenshot](documentation/testing/stories/stories-admin-orders-change.png)  | | Pass | 
+| Products | Products | ![screenshot](documentation/testing/stories/stories-admin-products-list.png) | ![screenshot](documentation/testing/stories/stories-admin-products-change.png)  | | Pass | 
+| Products | Categories | ![screenshot](documentation/testing/stories/stories-admin-categories-list.png) | ![screenshot](documentation/testing/stories/stories-admin-categories-change.png)  | | Pass | 
+| Products | Certificates | ![screenshot](documentation/testing/stories/stories-admin-certificates-list.png) | ![screenshot](documentation/testing/stories/stories-admin-certificates-change.png)  | | Pass | 
+| Products | Condition | ![screenshot](documentation/testing/stories/stories-admin-condition-list.png) | ![screenshot](documentation/testing/stories/stories-admin-condition-change.png)  | | Pass | 
+| Profiles | User profiles | ![screenshot](documentation/testing/stories/stories-admin-profiles-list.png) | ![screenshot](documentation/testing/stories/stories-admin-profiles-change.png)  | | Pass | 
+| Volunteers | Volunteer profiles | ![screenshot](documentation/testing/stories/stories-admin-volunteers-list.png) | ![screenshot](documentation/testing/stories/stories-admin-volunteers-change.png)  | The screenshot of the volunteers list view shows a default ordering by "active" volunteers first. This is to improve admin-user experience. The code to give this behaviour is in admin.py file of volunteers app| Pass | 
 
 
 ## Form Validation Tests
 Basic form validation was enforced via correct Django "field types" (e.g. EmailField for emails), and "field options" (e.g. blank=False for required fields) when defining models. Manual testing was via entering invalid data into the form, and ensuring the form was not submitted and error messaging was shown. 
 
-Custom form validation was provided for the delivery postcode field in the profile form and the checkout form. This was to ensure only valid delivery postcodes (for the delivery area covered) could be saved to the Order and UserProfile models of the checkout and profiles app respectively.
+Custom form validation was provided for the delivery postcode field in the profile form and the checkout form. This was to ensure only valid delivery postcodes (for the delivery area covered) could be saved to the Order and UserProfile models of the checkout and profiles app respectively. The code for postcode validation is contained in the forms.py files for of the checkout and profiles apps.
 
 The table below shows the test results Pass/Fail for built-in form validation and custom form validation as described above, with example screenshots.
 
 
 | App | Model |Form| Page | Screenshot | Comments | Pass/Fail|
 | --- | --- | --- | --- | --- | --- | --- |
-| checkout | Order |OrderForm | checkout |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-checkout.png)  | screenshot shows error message if an invalid postcode is submitted in form   | Pass |
+| checkout | Order |OrderForm | checkout |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-checkout.png)  | screenshot shows error message if an invalid postcode is submitted in form (see forms.py for postcode validation code)| Pass |
 | | | | | ![screenshot](documentation/testing/form-validation/form-validation-email.png)| screenshot shows error message if email format incorrect| |
-| profiles | UserProfile |UserProfileForm | profile |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-profile.png)  | screenshot shows error message if an invalid postcode is submitted in form   | Pass |
+| profiles | UserProfile |UserProfileForm | profile |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-profile.png)  | screenshot shows error message if an invalid postcode is submitted in form (see forms.py for postcode validation code)  | Pass |
 | volunteers | VolunteerProfile |VolunteerProfileForm | volunteers |  ![screenshot](documentation/testing/form-validation/form-validation-volunteers.png)  | screenshot shows error message if required field is omitted   | Pass |
 
 
@@ -177,7 +177,7 @@ Defensive measures were taken to anticipate, and handle all possible user intera
 | non signed-in user requests a page only available to signed-in users | redirect to log-in page | ![screenshot](documentation/testing/defensive/defensive-sign-in.png)| @login_required python decorator used in the views.py files of the profile and volunteers apps | Pass |
 | requests forbidden resource | trigger 403 error | ![screenshot](documentation/testing/defensive/defensive-403.png)|example would be a logged in user attempting to view another users order if they have access to the order number e.g. ..../profile/order_history/1D3FED1C1B1849DD93DC698DD92E. Python code to prevent this is in views.py file of the profile app | Pass |
 | request contains invalid category parameter in url | trigger no results view | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid category parameter is in views.py of the products app | Pass |
-| request contains invalid sort parameter in url | display products with default ordering of price descending | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid sort parameter is in views.py of the products app | Pass |
+| request contains invalid sort parameter in url | display products with default ordering of price descending | ![screenshot](documentation/testing/defensive/defensive-default-sort.png)| code to check for valid sort parameter is in views.py of the products app | Pass |
 | server error | trigger 500 error | ![screenshot](documentation/testing/defensive/defensive-500.png)| 500.html file placed in app template directory| Pass |
 
 ## Stripe Payment Testing
