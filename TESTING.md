@@ -190,7 +190,13 @@ Much of the manual testing of the app has been described [above](https://github.
 |  Page | Tests | Result | Notes | Screenshot |
 | --- | --- | --- | --- | --- | 
 | main navigation - all pages | | | |  | 
-|    | clicking the site logo link returns user to home page |  |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav.png)  |
+|    | clicking the site logo link returns user to home page | Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav0.png)  |
+|    | clicking the cart icon link takes user to cart page | Pass |   |   |
+|    | clicking the account icon gives a dropdown with links to register or log-in pages (non signed-in user) and clicking on those links takes the user to the appropriate page| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav2.png)  |
+|    | clicking the account icon gives a dropdown with links to the profile, volunteers and log-out pages (signed-in user) and clicking on those links takes the user to the appropriate page| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav1.png)  |
+|    | clicking a product category gives a dropdown with results ordering options and clicking on those links takes the user to the products page showing correctly filtered and ordered results| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav-categories.png)  |
+
+
 
 ## Navigation Testing
 
