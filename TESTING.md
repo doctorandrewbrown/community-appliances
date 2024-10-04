@@ -181,7 +181,16 @@ Defensive measures were taken to anticipate, and handle all possible user intera
 | server error | trigger 500 error | ![screenshot](documentation/testing/defensive/defensive-500.png)| 500.html file placed in app template directory| Pass |
 
 ## Stripe Payment Testing
+Payment testing was conducted by making test purchases in Stripe test mode. Successful test payments could then be observed in the Stripe transactions dashboard.
 
+![screenshot](documentation/testing/images/stripe-test-transactions.png)
+
+## Further Manual Testing
+Much of the manual testing of the app has been described [above](https://github.com/doctorandrewbrown/community-appliances/blob/main/TESTING.md#user-story-testing). Additional manual testing is described below.
+|  Page | Tests | Result | Notes | Screenshot |
+| --- | --- | --- | --- | --- | 
+| main navigation - all pages | | | |  | 
+|    | clicking the site logo link returns user to home page |  |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav.png)  |
 
 ## Navigation Testing
 
