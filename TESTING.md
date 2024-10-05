@@ -195,11 +195,15 @@ Much of the manual testing of the app has been described [above](https://github.
 |    | clicking the account icon gives a dropdown with links to register or log-in pages (non signed-in user) and clicking on those links takes the user to the appropriate page| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav2.png)  |
 |    | clicking the account icon gives a dropdown with links to the profile, volunteers and log-out pages (signed-in user) and clicking on those links takes the user to the appropriate page| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav1.png)  |
 |    | clicking a product category gives a dropdown with results ordering options and clicking on those links takes the user to the products page showing correctly filtered and ordered results| Pass |   | ![screenshot](documentation/testing/further-testing/further-testing-main-nav-categories.png)  |
+| home page | | | |  | 
+|    | clicking the "Shop Now" button takes user to products page showing "All Appliances" ordered by price descending | Pass |   | ![screenshot](documentation/testing/further-testing/home-shop-now-button.png)  |
+| products page | | | |  | 
+|    | clicking on a product card link takes user to details page for product | Pass |   | ![screenshot](documentation/testing/further-testing/products-card-link.png)  |
+| products details page | | | |  |
+|    | clicking product image link opens large image of product | Pass |   | ![screenshot](documentation/testing/further-testing/products-detail-large-image.png)  |
+|    | hover on grade dropdown gives detailed description of product condition| Pass |   | ![screenshot](documentation/testing/further-testing/products-detail-grade-dropdown.png)  |
+|    | clicking product image link opens large image of product | Pass |   | ![screenshot](documentation/testing/further-testing/.png)  |
 
 
 
-## Navigation Testing
 
-## Feature Testing
-
-## Database Testing
