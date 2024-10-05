@@ -202,7 +202,10 @@ Much of the manual testing of the app has been described [above](https://github.
 | products details page | | | |  |
 |    | clicking product image link opens large image of product | Pass |   | ![screenshot](documentation/testing/further-testing/products-detail-large-image.png)  |
 |    | hover on grade dropdown gives detailed description of product condition| Pass |   | ![screenshot](documentation/testing/further-testing/products-detail-grade-dropdown.png)  |
-|    | clicking product image link opens large image of product | Pass |   | ![screenshot](documentation/testing/further-testing/.png)  |
+|    | clicking the "Keep Shopping" button takes user to products page showing "All Appliances" ordered by price descending | Pass |   | ![screenshot](documentation/testing/further-testing/products-detail-keep-shopping-button.png)  |
+| cart page | | | |  |
+|    | clicking the "Continue Shopping" button takes user to products page showing "All Appliances" ordered by price descending | Pass |   | ![screenshot](documentation/testing/further-testing/cart-link-buttons.png)  |
+|    | clicking on the checkout link button takes user to checkout page| Pass |   | ![screenshot](documentation/testing/further-testing/cart-link-buttons.png)  |
 
 
 
