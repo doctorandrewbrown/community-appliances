@@ -209,9 +209,11 @@ Much of the manual testing of the app has been described [above](https://github.
 | checkout page | | | |  |
 |    | checking the form checkbox updates default delivery details in users profile when form is submitted | Pass | signed in user  | ![screenshot](documentation/testing/further-testing/checkout-checbox-signed-in.png)  |
 |    | clicking "create an account" and "login" links take user to registration or sign-in pages respectively | Pass | user not logged in  | ![screenshot](documentation/testing/further-testing/checkout-checkbox-signed-out.png)  |
-|    | clicking "adjust cart" link button takes user back to cart page | Pass | | ![screenshot](documentation/testing/further-testing/checkout-buttons.png)  |
+|    | clicking "Adjust Cart" link button takes user back to cart page | Pass | | ![screenshot](documentation/testing/further-testing/checkout-buttons.png)  |
 |    | clicking "Complete Order" submits the valid order form | Pass | | ![screenshot](documentation/testing/further-testing/checkout-buttons.png)  |
-|    | clicking product image link in order summary takes user to relevant product details page | Pass | | ![screenshot](documentation/testing/further-testing/checkout-order-summary-image.png)  |
+|    | clicking product image link in order summary takes user back to relevant product details page | Pass | | ![screenshot](documentation/testing/further-testing/checkout-order-summary-image.png)  |
+| checkout success page | | | |  |
+|    | clicking the "Continue Shopping" button takes user to products page showing "All Appliances" ordered by price descending  | Pass | signed in user  | ![screenshot](documentation/testing/further-testing/checkout-success-link-button.png)  |
 
 
 
