@@ -22,7 +22,7 @@ def all_products(request):
 
             # get category to pass to template
             category = category[0]
-            # if invalid category in query
+            # if invalid category in query or no products found
             if len(products) == 0:
                 category = "no appliances found"
 
