@@ -216,4 +216,16 @@ Much of the manual testing of the app has been described [above](https://github.
 |    | clicking the "Continue Shopping" button takes user to products page showing "All Appliances" ordered by price descending  | Pass |   | ![screenshot](documentation/testing/further-testing/checkout-success-link-button.png)  |
 
 
+## Bugs
+### Invalid Sort Parameter in url
+A bug was observed if the user entered an invalid sort parameter in the url. This would return results filtered by category but not ordered in a meaningful way (i.e. results were returned in database order) which would result in a poor user experience. Code to gaurd against this was included in views.py of the product app. Following checking for one of the valid sort parameters the following code handles invalid sort parameters,
 
+```python
+
+             # default ordering for no valid sortkey in query
+            else:
+                products = products.order_by('-price')
+
+```
+
+The above code ensures a more user friendly default ordering of products by descending price if a user enters an invalid sort parameter in the url.
