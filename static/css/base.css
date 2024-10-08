@@ -10,14 +10,13 @@ body {
     top: 210px;
     z-index: 1;
 }
-
+ /* icon sizing  */
 i {
     font-size: 1.5em;
 }
 
 a {
     text-decoration: none;
-
 }
 
 /* accent color for features */
@@ -51,13 +50,13 @@ img {
 .cta-button {
     color: white;
     background-color: black;
-    /*font-size: large;*/
+    font-size: 1.5em;
 }
 
 .cta-button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    /*font-size: large;*/
+    font-size: 1.5em;
 }
 
 a.branding {
@@ -129,13 +128,13 @@ header .dropdown-item:hover
 .allauth-form-inner-content button {
     color: white;
     background-color: black;
-    font-size: large;
+    font-size: 1em;
 }
 
 .allauth-form-inner-content button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    font-size: large;
+    font-size: 1em;
 }
 
 /* retain label on login checkbox */
