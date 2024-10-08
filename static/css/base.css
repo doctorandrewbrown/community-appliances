@@ -50,13 +50,13 @@ img {
 .cta-button {
     color: white;
     background-color: black;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .cta-button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 a.branding {
