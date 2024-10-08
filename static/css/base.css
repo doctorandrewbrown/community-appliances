@@ -10,6 +10,11 @@ body {
     top: 210px;
     z-index: 1;
 }
+
+.logo-font {
+    font-size: 2em;
+}
+
  /* icon sizing  */
 i {
     font-size: 1.5em;
