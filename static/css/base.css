@@ -12,7 +12,7 @@ body {
 }
 
 i {
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 a {
@@ -30,7 +30,7 @@ img {
 }
 
 #main-nav {
-    font-size: x-large;
+    font-size: 1.5em;
 }
 
 /* overide BS5 styling by adding main-nav ID to make selector more specific */
@@ -51,13 +51,13 @@ img {
 .cta-button {
     color: white;
     background-color: black;
-    font-size: large;
+    /*font-size: large;*/
 }
 
 .cta-button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    font-size: large;
+    /*font-size: large;*/
 }
 
 a.branding {
@@ -87,7 +87,7 @@ a.branding:hover {
     opacity: 0.5;
 }
 .page-top-padding{
-    padding-top: 210px;
+    padding-top: 230px;
 }
 
 .overlay {
@@ -156,5 +156,32 @@ header .dropdown-item:hover
 @media (min-width: 1200px) { 
     .about-us{
     margin-top: 230px;
+    }
+}
+
+@media (min-width: 1900px) { 
+    body {
+        font-size: 1.5rem;
+    }
+    .form-control {
+        font-size: 1em;
+    }
+    .dropdown-menu { 
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 2500px) { 
+    body {
+        font-size: 2rem;
+    }
+    .form-control {
+        font-size: 1em;
+    }
+    .dropdown-menu { 
+        font-size: 0.75em;
+    }
+    .page-top-padding{
+        padding-top: 300px;
     }
 }
