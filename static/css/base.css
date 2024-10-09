@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 body {
     background: url('/media/background-large-scaled.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -64,6 +68,10 @@ img {
     font-size: 1em;
 }
 
+#shop-now-button{
+    margin-top: 5vh;
+}
+
 a.branding {
     color: blue;
     text-decoration: none;
@@ -87,9 +95,11 @@ a.branding:hover {
     color: white;
     background-color: black;
     opacity: 0.5;
+    font-size: 1.5rem;
+    margin-top: 10vh;
 }
 .page-top-padding{
-    padding-top: 230px;
+    padding-top: 200px;
 }
 
 .overlay {
@@ -147,7 +157,7 @@ header .dropdown-item:hover
     display: none;
 }
 
-/* extra spacing for larger devices */
+/* extra spacing for larger devices
 
 @media (min-width: 1200px) { 
     .page-top-padding{
@@ -155,7 +165,7 @@ header .dropdown-item:hover
     }
 }
 
-@media (min-width: 1900px) { 
+/*@media (min-width: 1900px) { 
     body {
         font-size: 1.5rem;
     }
@@ -180,4 +190,4 @@ header .dropdown-item:hover
     .page-top-padding{
         padding-top: 300px;
     }
-}
+}*/
