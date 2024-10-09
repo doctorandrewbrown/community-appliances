@@ -84,8 +84,6 @@ a.branding:hover {
     text-decoration: none;
 }
 .about-us {
-    margin-top: 100px;
-    margin-bottom: 50px;
     color: white;
     background-color: black;
     opacity: 0.5;
@@ -154,12 +152,6 @@ header .dropdown-item:hover
 @media (min-width: 1200px) { 
     .page-top-padding{
     padding-top: 230px;
-    }
-}
-
-@media (min-width: 1200px) { 
-    .about-us{
-    margin-top: 230px;
     }
 }
 
