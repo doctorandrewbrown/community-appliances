@@ -28,11 +28,6 @@ a {
     text-decoration: none;
 }
 
-/* accent color for features */
-.accent {
-    color: blue;
-}
-
 img {
     object-fit: contain
 }
@@ -76,17 +71,17 @@ img {
     min-width: 200px;
 }
 
-a.branding {
+.branding {
     color: blue;
     text-decoration: none;
 }
 
-a.branding:hover {
+.branding:hover {
     color: rgba(0, 0, 255, 0.2);
     text-decoration: none;
 }
 
-#account {
+/*#account {
     color: blue;
     text-decoration: none;
 }
@@ -95,6 +90,7 @@ a.branding:hover {
     color: rgba(0, 0, 255, 0.2);
     text-decoration: none;
 }
+*/
 .about-us {
     color: white;
     background-color: black;
