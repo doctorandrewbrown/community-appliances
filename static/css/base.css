@@ -37,8 +37,8 @@ img {
     object-fit: contain
 }
 
-#main-nav {
-    font-size: 1.5rem;
+#main-nav .dropdown-item {
+    font-size: 0.75rem;
 }
 
 /* overide BS5 styling by adding main-nav ID to make selector more specific */
@@ -68,8 +68,12 @@ img {
     font-size: 1rem;
 }
 
-#shop-now-button{
+#shop-now-button-container{
     margin-top: 5vh;
+}
+
+#shop-now-button-container .cta-button{
+    min-width: 200px;
 }
 
 a.branding {
@@ -162,13 +166,20 @@ header .dropdown-item:hover
     display: none;
 }
 
-/* about-us section larger font for md devices */
+/* larger font for lg devices */
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .about-us {
         font-size: 1.5rem;
     }
+    #main-nav .nav-link {
+        font-size: 1.5rem;
+    }
+    #main-nav .dropdown-item {
+        font-size: 1rem;
+    }
 }
+
 /* extra spacing for larger devices
 
 @media (min-width: 2500px) { 
