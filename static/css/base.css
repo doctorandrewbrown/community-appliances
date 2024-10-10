@@ -45,6 +45,11 @@ img {
     color: rgba(0, 0, 0, 0.2);
 }
 
+#main-nav .dropdown-menu.show {
+    display: inline-block;
+    text-align: center;
+}
+
 .cta-heading {
     background-color: black;
     opacity: 0.5;
@@ -81,16 +86,6 @@ img {
     text-decoration: none;
 }
 
-/*#account {
-    color: blue;
-    text-decoration: none;
-}
-
-#account:hover {
-    color: rgba(0, 0, 255, 0.2);
-    text-decoration: none;
-}
-*/
 .about-us {
     color: white;
     background-color: black;
@@ -176,8 +171,7 @@ header .dropdown-item:hover
     }
 }
 
-/* extra spacing for larger devices
-
+/*
 @media (min-width: 2500px) { 
     body {
         font-size: 2rem;
