@@ -6,13 +6,13 @@
 <div class="container">
   <div class="col">
     <hr>
-        <h2 class="logo-font mb-4 text-center">Your Cart</h2>
+        <h2 class="mb-4 text-center">Your Cart</h2>
     <hr>
 </div>
   {% if cart_items %}
   <!--table for small and above screens-->
   <div class="col d-none d-sm-block">
-    <table class="table">
+    <table class="table table-striped">
       <thead>
         <tr>
           <th scope="col"></th>
@@ -34,9 +34,7 @@
             <p class="my-0 "><em>{{ item.product.description }}</em></p>
           </td>
           <td>
-            <strong>
-              <p class="my-0">£{{ item.product.price }}</p>
-            </strong>
+            <p class="my-0">£{{ item.product.price }}</p>
           </td>
           <!--"remove from cart" button in form to submit to relevant view-->
           <td>
@@ -75,9 +73,7 @@
           </td>
           
           <td>
-            <strong>
-              <p class="my-0">£{{ item.product.price }}</p>
-            </strong>
+            <p class="my-0">£{{ item.product.price }}</p>
           </td>
           <!--"remove from cart" button in form to submit to relevant view-->
           <td>
