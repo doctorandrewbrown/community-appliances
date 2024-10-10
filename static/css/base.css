@@ -16,12 +16,12 @@ body {
 }
 
 .logo-font {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
  /* icon sizing  */
 i {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 a {
@@ -38,7 +38,7 @@ img {
 }
 
 #main-nav {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 /* overide BS5 styling by adding main-nav ID to make selector more specific */
@@ -59,13 +59,13 @@ img {
 .cta-button {
     color: white;
     background-color: black;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .cta-button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #shop-now-button{
@@ -146,13 +146,13 @@ header .dropdown-item:hover
 .allauth-form-inner-content button {
     color: white;
     background-color: black;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .allauth-form-inner-content button:hover{
     color: rgba(255, 255, 255, 0.624);
     background-color: black;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* retain label on login checkbox */
