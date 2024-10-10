@@ -95,7 +95,7 @@ a.branding:hover {
     color: white;
     background-color: black;
     opacity: 0.5;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 10vh;
 }
 
@@ -162,25 +162,14 @@ header .dropdown-item:hover
     display: none;
 }
 
-/* extra spacing for larger devices
+/* about-us section larger font for md devices */
 
-@media (min-width: 1200px) { 
-    .page-top-padding{
-    padding-top: 230px;
-    }
-}
-
-/*@media (min-width: 1900px) { 
-    body {
+@media (min-width: 768px) {
+    .about-us {
         font-size: 1.5rem;
     }
-    .form-control {
-        font-size: 1em;
-    }
-    .dropdown-menu { 
-        font-size: 0.75em;
-    }
 }
+/* extra spacing for larger devices
 
 @media (min-width: 2500px) { 
     body {
@@ -192,4 +181,5 @@ header .dropdown-item:hover
     .dropdown-menu { 
         font-size: 0.75em;
     }
-}*/
+}
+*/
