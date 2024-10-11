@@ -7,18 +7,18 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="row">
-    <div class="col-sm-6 offset-md-4 mt-xxl-3">
+    <div class="col-lg-6 offset-lg-4">
         <!--BS5 horizontal card-->
         <div class="card mb-3 p-3 border border-primary rounded-3">
             <div class="row g-0">
-                <div class="col-md-4 ">
+                <div class="col-sm-4 text-center">
                     <!-- card image link to full-size image-->
                     <a href="{{product.image.url}}">
                         <img src="{{product.image.url}}" class="img-fluid rounded-start"
                         alt="picture of {{ product.name }}" width="300" height="300">
                     </a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm-8 text-center">
                     <div class="card-body">
                         <p class="card-title">{{product.category}}</p>
                         <h5 class="card-title display-6">{{product.name}}</h5>
