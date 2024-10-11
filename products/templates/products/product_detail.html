@@ -20,8 +20,8 @@
                 </div>
                 <div class="col-sm-8 text-center">
                     <div class="card-body">
-                        <p class="card-title">{{product.category}}</p>
-                        <h5 class="card-title display-6">{{product.name}}</h5>
+                        <h4 class="card-title">{{product.category}}</h4>
+                        <h5 class="card-title display-6 branding">{{product.name}}</h5>
                         <p class="card-text"><em>{{product.description}}</em></p>
                         <div class="dropdown ">
                             <span class="fst-italic dotted-bottom-border fw-light">Grade: {{product.grade}}</span>
@@ -29,9 +29,9 @@
                                 <p><em>{{product.grade.description}}</em></p>
                             </div>
                         </div>
-                        <p class="card-text accent display-6 mt-2"><strong>£{{product.price}}</strong></p>
+                        <p class="card-text branding display-6 mt-2">£{{product.price}}</p>
                         <p>
-                            <a href="{% url 'products' %}" class="btn btn-primary rounded-0">
+                            <a href="{% url 'products' %}" class="btn cta-button rounded-0">
                                 <span>Keep Shopping</span>
                             </a>
                         </p>
@@ -40,7 +40,7 @@
                             <div class="form-row">
                                 <div class="col-12">
                                     
-                                    <input type="submit" class="btn-primary rounded-0 mt-2" value="Add to Cart">
+                                    <input type="submit" class="cta-button rounded-0 mt-2" value="Add to Cart">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
