@@ -101,10 +101,6 @@ img {
     margin-top: 10vh;
 }
 
-#about-us-container{
-    justify-content: center;
-}
-
 .page-top-padding{
     padding-top: 210px;
 }
@@ -115,7 +111,7 @@ img {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: #dee2e6;
     z-index: -1;
 }
 /*---dropdown styles---*/
