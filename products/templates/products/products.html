@@ -18,7 +18,7 @@
         <div class="card-body">
           <p class="card-text">Grade: {{product.grade}}</p>
           <p class="card-text">{{product.name}}</p>
-          <p class="card-text"><strong class="accent">£{{product.price}}</strong></p>
+          <p class="card-text"><strong class="accent">£{{product.price | floatformat:0 }}</strong></p>
         </div>
       </div>
     </div>
