@@ -38,7 +38,7 @@
                         </div>
                         <p class="card-text accent display-6 mt-2">£{{product.price | floatformat:0 }}</p>
                         <p>
-                            <a href="{% url 'products' %}" class="btn cta-button rounded-0">
+                            <a href="{% url 'products' %}" class="btn btn-lg cta-button rounded-0">
                                 <span>Keep Shopping</span>
                             </a>
                         </p>
@@ -47,7 +47,7 @@
                             <div class="form-row">
                                 <div class="col-12">
                                     
-                                    <input type="submit" class="cta-button rounded-0 mt-2" value="Add to Cart">
+                                    <input type="submit" class="cta-button btn btn-lg rounded-0 mt-2" value="Add to Cart">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>
