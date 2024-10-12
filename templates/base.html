@@ -148,9 +148,6 @@
   <!--pad top of page-->
   <div class="page-top-padding"></div>
 
-  <!--main content--> 
-  <!--div class="container-fluid"-->
-
   <!--Django messages-->
   {% if messages %}
   <div class="container-fluid" id="messages-container">
@@ -169,10 +166,11 @@
       {% endfor %}
   </div>
   {% endif %}
+
+  <!--main content-->
     {% block content %}
     {% endblock %}
 
-  <!--/div-->
   {% block postloadjs %}
   {{ block.super }}
 
