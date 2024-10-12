@@ -4,6 +4,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
+  <div class="row">
     <div class="col text-center">
       <hr class="w-50 mx-auto mb-3">
       <h2 class="accent">{{ category }}</h2>
@@ -14,7 +15,8 @@
     {% for product in products %}
     <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2">
       <div class="card border border-primary text-center mb-3 pt-2">
-        <a href="{% url 'product_detail' product.id%}"><img class="card-img-top" src="{{product.image.url}}" alt="pictures of {{product.category}}" width="300" height="300"></a>
+        <a href="{% url 'product_detail' product.id%}"><img class="card-img-top" src="{{product.image.url}}"
+            alt="pictures of {{product.category}}" width="300" height="300"></a>
         <div class="card-body">
           <p class="card-text">Grade: {{product.grade}}</p>
           <p class="card-text">{{product.name}}</p>
@@ -24,4 +26,5 @@
     </div>
     {% endfor %}
   </div>
+</div>
 {% endblock %}
