@@ -102,8 +102,8 @@ img {
     margin-top: 10vh;
 }
 
-.page-top-padding{
-    padding-top: 210px;
+.header-container{
+    padding-top: 200px;
 }
 
 .overlay {
@@ -172,5 +172,9 @@ header .dropdown-item:hover
     }
     #main-nav .dropdown-item {
         font-size: 1rem;
+    }
+    /* less top padding for expanded navbar  */
+    .header-container{
+        padding-top: 200px;
     }
 }
