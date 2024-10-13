@@ -122,6 +122,7 @@
                         <span class="icon me-2">
                             <i class="fas fa-exclamation-circle"></i>
                         </span>
+                        <!--if discount applies display to user-->
                         {% if discount %}
                             <span>your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong> with a discount of <strong>£{{ discount|floatformat:2 }}</strong> applied to cart total of <strong>£{{ total|floatformat:2 }}</strong></span>
                         {% else %}
