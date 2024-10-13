@@ -75,7 +75,7 @@
     <!--main nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-         aria-expanded="false" aria-label="Toggle navigation">
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="main-nav">
@@ -87,12 +87,17 @@
               Washing Machines |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing%20Machines&sort=price_descending">price high to low</a>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Washing%20Machines&sort=price_descending">price high to low</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing%20Machines&sort=price_ascending">price low to high</a>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Washing%20Machines&sort=price_ascending">price low to high</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing%20Machines&sort=grade_descending">condition C to A</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Washing%20Machines&sort=grade_ascending">condition A to C</a></li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Washing%20Machines&sort=grade_descending">condition C to A</a>
+              </li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Washing%20Machines&sort=grade_ascending">condition A to C</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -101,10 +106,14 @@
               Gas Cookers |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas%20Cookers&sort=price_descending">price high to low</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas%20Cookers&sort=price_ascending">price low to high</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas%20Cookers&sort=grade_descending">condition C to A</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas%20Cookers&sort=grade_ascending">condition A to C</a></li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Gas%20Cookers&sort=price_descending">price high to low</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas%20Cookers&sort=price_ascending">price
+                  low to high</a></li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Gas%20Cookers&sort=grade_descending">condition C to A</a></li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Gas%20Cookers&sort=grade_ascending">condition A to C</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -113,12 +122,17 @@
               Electric Cookers |
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric%20Cookers&sort=price_descending">price high to low</a>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Electric%20Cookers&sort=price_descending">price high to low</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric%20Cookers&sort=price_ascending">price low to high</a>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Electric%20Cookers&sort=price_ascending">price low to high</a>
               </li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric%20Cookers&sort=grade_descending">condition C to A</a></li>
-              <li><a class="dropdown-item" href="{% url 'products' %}?category=Electric%20Cookers&sort=grade_ascending">condition A to C</a></li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Electric%20Cookers&sort=grade_descending">condition C to A</a>
+              </li>
+              <li><a class="dropdown-item"
+                  href="{% url 'products' %}?category=Electric%20Cookers&sort=grade_ascending">condition A to C</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -140,40 +154,42 @@
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-dark text-white p-1">
         {{ percentage_discount }}% discount on orders over £{{ discount_threshold }}. Free
-          Delivery!
+        Delivery!
       </div>
     </div>
   </header>
 
   <!--pad top of page-->
-  <div class="page-top-padding"></div>
+    {% block page_header %}
+    {% endblock %}
+  
 
   <!--Django messages-->
   {% if messages %}
   <div class="container-fluid" id="messages-container">
-      <div class="row">
-        <div class="col col-lg-6 mx-auto text-center">
-          {% for message in messages %}
-          {% with message.level as level %}
-              {% if level == 40 %}
-                  {% include 'includes/messages/message_error.html' %}
-              {% elif level == 30 %}
-                  {% include 'includes/messages/message_warning.html' %}
-              {% elif level == 25 %}
-                  {% include 'includes/messages/message_success.html' %}
-              {% else %}
-                  {% include 'includes/messages/message_info.html' %}
-              {% endif %}
-          {% endwith %}
-      {% endfor %}
-        </div>
+    <div class="row">
+      <div class="col col-lg-6 mx-auto text-center">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/messages/message_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/messages/message_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/messages/message_success.html' %}
+        {% else %}
+        {% include 'includes/messages/message_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
       </div>
+    </div>
   </div>
   {% endif %}
 
   <!--main content-->
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
   {% block postloadjs %}
   {{ block.super }}
