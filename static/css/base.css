@@ -6,8 +6,7 @@ body {
     background: url('/media/background-large-scaled.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto';
-    color: black;
-    width: 100vw;
+    color: black
 }
 
 .sticky {
@@ -102,8 +101,10 @@ img {
     margin-top: 10vh;
 }
 
+/* page top padding */
+
 .header-container{
-    padding-top: 200px;
+    padding-top: 12rem;
 }
 
 .overlay {
@@ -173,8 +174,12 @@ header .dropdown-item:hover
     #main-nav .dropdown-item {
         font-size: 1rem;
     }
-    /* less top padding for expanded navbar  */
-    .header-container{
-        padding-top: 200px;
-    }
 }
+
+/* less top padding for expanded navbar  
+
+@media (min-width: 576px) {
+    .header-container{
+        padding-top: 220px;
+    }
+}*/
