@@ -6,7 +6,8 @@ body {
     background: url('/media/background-large-scaled.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Roboto';
-    color: black
+    color: black;
+    height: calc(100vh - 12rem);
 }
 
 .sticky {
@@ -175,11 +176,3 @@ header .dropdown-item:hover
         font-size: 1rem;
     }
 }
-
-/* less top padding for expanded navbar  
-
-@media (min-width: 576px) {
-    .header-container{
-        padding-top: 220px;
-    }
-}*/
