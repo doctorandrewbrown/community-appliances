@@ -151,7 +151,9 @@
   <!--Django messages-->
   {% if messages %}
   <div class="container-fluid" id="messages-container">
-      {% for message in messages %}
+      <div class="row">
+        <div class="col col-lg-6 mx-auto text-center">
+          {% for message in messages %}
           {% with message.level as level %}
               {% if level == 40 %}
                   {% include 'includes/messages/message_error.html' %}
@@ -164,6 +166,8 @@
               {% endif %}
           {% endwith %}
       {% endfor %}
+        </div>
+      </div>
   </div>
   {% endif %}
 
