@@ -174,3 +174,8 @@ header .dropdown-item:hover
         font-size: 1rem;
     }
 }
+@media(hover: hover) and (pointer: fine) {
+    nav a:hover {
+        background: yellow;
+    }
+}
