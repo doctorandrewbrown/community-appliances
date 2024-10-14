@@ -2,49 +2,53 @@
 {% load static %}
 {% block extra_title %} - home{% endblock %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 {% block content %}
-      <!--cta heading-->
-        <div class="row">
-          <header class="cta-heading col-12 text-center mt-3">
-            <h1 class=" display-3 p-3">View Our Quality Pre-loved Refurbished Appliances</h1>
-          </header>
-        </div>
+<div class="container-fluid">
+  <!--cta heading-->
+  <div class="row">
+    <div class="cta-heading col-12 text-center mt-3">
+      <h1 class=" display-3 p-3">View Our Quality Pre-loved Refurbished Appliances</h1>
+    </div>
+  </div>
 
-      <!--shop-now button-->
-      <div class="row sticky" id = "shop-now-button-container">
-        <div class="col-12 text-center">
-          <a href="{% url 'products' %}" class=" cta-button btn btn-lg rounded-0">Shop Now</a>
-        </div>
-      </div>
-      
-      <!--about-us section-->
-      <div class="row" >
-        <section class="col-12 col-xxl-6 mx-auto about-us text-center p-3 mb-3">
-          <h2>About us</h2>
-          <p>
-              Welcome to our community charity shop nestled in the heart of a quaint Welsh town! 
-              At our store, we're more than just a retail space; we're a hub of goodwill and sustainability. 
-              Our dedicated team of local volunteers works tirelessly to refurbish and safety-check donated appliances like washing machines, 
-              tumble dryers, and cookers.
-          </p>
-          <p>
-            By accepting generous donations from our community, we extend the life cycle of these essential household items, 
-            promoting environmental responsibility and reducing waste. 
-            Our commitment to affordability ensures that everyone in our town has access to quality appliances without breaking the bank. 
-            Every purchase made at our shop not only benefits the buyer but also supports our charitable initiatives.
-          </p>
-          <p>
-            Join us in our mission to make a positive impact, one appliance at a time. 
-            Together, we can build a stronger, more sustainable community while spreading hope and support to those in need.
-            Thank you for being a part of our journey towards a brighter future for all.
-          </p>
-        </section>
-      </div>
-      
+  <!--shop-now button-->
+  <div class="row sticky" id="shop-now-button-container">
+    <div class="col-12 text-center">
+      <a href="{% url 'products' %}" class=" cta-button btn btn-lg rounded-0">Shop Now</a>
+    </div>
+  </div>
+
+  <!--about-us section-->
+  <div class="row">
+    <section class="col-12 col-xxl-6 mx-auto about-us text-center p-3 mb-3">
+      <h2>About us</h2>
+      <p>
+        Welcome to our community charity shop nestled in the heart of a quaint Welsh town!
+        At our store, we're more than just a retail space; we're a hub of goodwill and sustainability.
+        Our dedicated team of local volunteers works tirelessly to refurbish and safety-check donated appliances like
+        washing machines,
+        tumble dryers, and cookers.
+      </p>
+      <p>
+        By accepting generous donations from our community, we extend the life cycle of these essential household items,
+        promoting environmental responsibility and reducing waste.
+        Our commitment to affordability ensures that everyone in our town has access to quality appliances without
+        breaking the bank.
+        Every purchase made at our shop not only benefits the buyer but also supports our charitable initiatives.
+      </p>
+      <p>
+        Join us in our mission to make a positive impact, one appliance at a time.
+        Together, we can build a stronger, more sustainable community while spreading hope and support to those in need.
+        Thank you for being a part of our journey towards a brighter future for all.
+      </p>
+    </section>
+  </div>
+
+</div>
 {% endblock %}
