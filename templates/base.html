@@ -180,9 +180,9 @@
 
   <!--Django messages-->
   {% if messages %}
-  <div class="container-fluid" id="messages-container">
+  <div class="container" id="messages-container">
     <div class="row">
-      <div class="col col-xl-6 mx-auto text-center">
+      <div class="col col-12 text-center">
         {% for message in messages %}
         {% with message.level as level %}
         {% if level == 40 %}
