@@ -11,8 +11,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F) | ![screenshot](documentation/testing/images/w3c-home.png) |no errors or warnings|
 | Products | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/testing/images/w3c-products.png) | no errors or warnings|
-| Product Detail | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2Fproducts%2F6) | ![screenshot](documentation/testing/images/w3c-product-detail.png) |no errors or warnings|
-| Checkout | n/a | text input | no errors or warnings|
+| Product Detail | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2Fproducts%2F7) | ![screenshot](documentation/testing/images/w3c-product-detail.png) |no errors or warnings|
+| Checkout | n/a | text input | error to be investigated ![screenshot](documentation/testing/images/w3c-checkout.png)|
 | Cart | n/a | text input | no errors or warnings|
 | Checkout Success | n/a | text input | no errors or warnings|
 | Profile | n/a | text input | no errors or warnings|
@@ -25,7 +25,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot/Validation method | Notes|
 | --- | --- | --- | --- |
-| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |![screenshot](documentation/testing/images/w3c-css.png)| no errors|
+| base.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |![screenshot](documentation/testing/images/w3c-css.png)| no errors, some bootstrap related warnings|
 | product.css | n/a |text input| no errors|
 | checkout.css | n/a |text input| minor warning about vendor extension|
 
