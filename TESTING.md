@@ -221,10 +221,16 @@ Much of the manual testing of the app has been described [above](https://github.
 ### Lighthouse Testing
 |  Page | Desktop | Mobile | Notes
 | --- | --- | --- | --- |
-|  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-home.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-home.png)|
-|  products   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-products.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-products.png)|
-|  product details   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-product-details.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-product-details.png)|
-| cart   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-cart.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-cart.png)|
+|  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-home.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-home.png)| slow loading due to external resources
+|  products   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-products.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-products.png)| slow loading due to external resources
+|  product details   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-product-details.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-product-details.png)|slow loading due to external resources
+| cart   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-cart.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-cart.png)|slow loading due to external resources
+| checkout   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-checkout.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-checkout.png)|slow loading due to external resources
+| checkout success   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-checkout-success.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-checkout-success.png)|slow loading due to external resources
+| profile   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-profile.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-profile.png)|slow loading due to external resources
+| order history  | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-order-history.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-order-history.png)|slow loading due to external resources
+| volunteers   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-volunteers.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-volunteers.png)|slow loading due to external resources
+
 
 
 ## Bugs
