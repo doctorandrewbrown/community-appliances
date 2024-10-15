@@ -222,7 +222,9 @@ Much of the manual testing of the app has been described [above](https://github.
 |  Page | Desktop | Mobile | Notes
 | --- | --- | --- | --- |
 |  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-home.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-home.png)|
-|  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-products.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-products.png)|
+|  products   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-products.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-products.png)|
+|  product details   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-product-details.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-product-details.png)|
+| cart   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-cart.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-cart.png)|
 
 
 ## Bugs
