@@ -218,6 +218,12 @@ Much of the manual testing of the app has been described [above](https://github.
 | checkout success page | | | |  |
 |    | clicking the "Continue Shopping" button takes user to products page showing "All Appliances" ordered by price descending  | Pass |   | ![screenshot](documentation/testing/further-testing/checkout-success-link-button.png)  |
 
+### Lighthouse Testing
+|  Page | Desktop | Mobile | Notes
+| --- | --- | --- | --- |
+|  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-home.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-home.png)|
+|  home    | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-products.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-products.png)|
+
 
 ## Bugs
 ### Invalid Sort Parameter in url
