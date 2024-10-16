@@ -1,4 +1,9 @@
-
+# TODO
+## Features by page
+## Wireframes
+## Surface colors typo
+## database models
+## deploy
 
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
@@ -44,8 +49,40 @@ The store admin needs access to order details in the database in order to fullfi
 
 
 ### User Messaging
-Providing users with immediate feedback from interactions with the app was a key consideration in design. Colour coded alert Bootsrap alerts together with the Django messaging system achceived this goal.
+Providing users with immediate feedback from interactions with the app was a key consideration in design. Colour coded alert Bootsrap alerts together with the Django messaging system achieved this goal.
 - As a user I want immediate clear feedback messages from interactions with the app
+
+## Features
+### Main Navigation - All Pages
+![screenshot](documentation/readme/features/main-nav1.png)
+
+The main navigation contains the site logo which acts as a link back to the home page from anywhere on the site. The navbar also has an account dropdown and a link to the users cart diplaying the value of the cart.
+
+![screenshot](documentation/readme/features/main-nav-account2.png)
+
+For a non logged in user the account dropdown shows links to the login and registration pages.
+
+![screenshot](documentation/readme/features/main-nav-account1.png)
+
+For a logged in user the account dropdown contains links to a user profile and a volunteer profile page.
+
+The main navbar displays a horizontal menu of options to search for appliances by category 
+
+![screenshot](documentation/readme/features/nav-menu1.png)
+
+When selected, each category displays a dropdown with options to search by price or grade (condition) ascending or descending
+
+![screenshot](documentation/readme/features/nav-menu2.png)
+
+On small devices the menu of options collapses behind a hamburger button
+
+![screenshot](documentation/readme/features/nav-menu3.png)
+
+### Home Page
+
+The home page features a prominent "Shop Now" button to invite users to easily engage with the site and clicking this displays a default view of all appliances ordered by price descending.
+
+![screenshot](documentation/readme/features/home-shop-now-button.png)
 
 
 ## Credits
