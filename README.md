@@ -80,10 +80,22 @@ On small devices the menu of options collapses behind a hamburger button
 
 ### Home Page
 
-The home page features a prominent "Shop Now" button to invite users to easily engage with the site and clicking this displays a default view of all appliances ordered by price descending.
+The home page introduces the charity and gives users some background information.
+The page features a prominent "Shop Now" button to invite users to easily engage with the site and clicking this takes the user to the products page which initially displays a default view of all appliances ordered by price descending.
 
 ![screenshot](documentation/readme/features/home-shop-now-button.png)
 
+### Products Page
+
+The products page shows appliances in the chosen category (or "All Appliances") with the selected ordering. The products are presented in an attractive card format with some initial information. Clicking on a card takes the user to a product details page for the selected product.
+
+![screenshot](documentation/readme/features/products-cards.png)
+
+### Product Details Page
+
+Product details for a selected item are again presented in a familiar card format. 
+
+![screenshot](documentation/readme/features/product-details-card1.png)
 
 ## Credits
 
