@@ -12,7 +12,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2F) | ![screenshot](documentation/testing/images/w3c-home.png) |no errors or warnings|
 | Products | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2Fproducts%2F) | ![screenshot](documentation/testing/images/w3c-products.png) | no errors or warnings|
 | Product Detail | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcommunity-appliances-3af27dd26db9.herokuapp.com%2Fproducts%2F7) | ![screenshot](documentation/testing/images/w3c-product-detail.png) |no errors or warnings|
-| Checkout | n/a | text input | error to be investigated ![screenshot](documentation/testing/images/w3c-checkout.png)|
+| Checkout | n/a | text input |no errors or warnings|
 | Cart | n/a | text input | no errors or warnings|
 | Checkout Success | n/a | text input | no errors or warnings|
 | Profile | n/a | text input | no errors or warnings|
@@ -247,4 +247,4 @@ A bug was observed if the user entered an invalid sort parameter in the url. Thi
 
 The above code ensures a more user friendly default ordering of products by descending price if a user enters an invalid sort parameter in the url.
 ### Delivery Postcode Checking
-Code to check for a valid delivery postcode was included in forms.py of the profile and checkout apps. However, the code would need to be much more robust for a full production environment. For instance the current code would pass as valid any string containing a valid sequence as a substring e.g. xyzCF31abc.
+Code to check for a valid delivery postcode was included in forms.py of the profile and checkout apps. However, the code would need to be much more robust for a full production environment. For instance the current code would pass as valid any string containing a valid sequence as a substring e.g. xyzCF31abc where this is not the intention. More robust ready-made solutions are surely available and could be included in a full production environment.
