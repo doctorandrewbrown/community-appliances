@@ -91,6 +91,10 @@ The products page shows appliances in the chosen category (or "All Appliances") 
 
 ![screenshot](documentation/readme/features/products-cards.png)
 
+To assist the user the products page title clearly indicates the the category of products displayed,
+
+![screenshot](documentation/readme/features/products-title.png)
+
 ### Product Details Page
 
 Product details for a selected item are again presented in a familiar card format. 
