@@ -190,9 +190,31 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 ![screenshot](documentation/readme/features/checkout-adjust-button.png)
 
-- A "Complete Order" button submits the completed form to process the payment on the Stripe platform.
+- A "Complete Order" button submits the completed form to process the payment via the Stripe platform.
 
 ![screenshot](documentation/readme/features/checkout-complete-order-button.png)
+
+
+## Checkout Success Page
+
+- A successful checkout triggers the checkout success page informing the user the user they will get email confimation of their purchase.
+
+![screenshot](documentation/readme/features/checkout-success-message.png)
+
+- An order breakdown with all relevant details is displayed.
+
+![screenshot](documentation/readme/features/checkout-success-order-confirmation.png)
+
+- The "Continue Shopping" button at the bottom of the order confirmation invites the user to continue engagement with the site. The button provides a link to the products page displaying the default of all products ordered by descending price.
+
+![screenshot](documentation/readme/features/checkout-success-continue-shopping-btn.png)
+
+## Profile Page
+
+- A successful checkout triggers the checkout success page informing the user the user they will get email confimation of their purchase.
+
+![screenshot](documentation/readme/features/checkout-success-message.png)
+
 
 ## Credits
 
