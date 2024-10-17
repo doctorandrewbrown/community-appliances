@@ -139,16 +139,23 @@ The product details card contains a number of features to assist the user
 
 - On removing an item a message is shown to inform the user
 
-![screenshot](documentation/readme/features/cart-message-warning.png)
+![screenshot](documentation/readme/features/cart-remove-button.png)
 
-- If the users cart is empty a warning message is shown
+- For extra-small devices a condensed version of the cart contents table is displayed with the description column ommited and a smaller remove button
+
+![screenshot](documentation/readme/features/cart-small-table.png)
+
+- On removing an item a message is shown to inform the user
 
 ![screenshot](documentation/readme/features/cart-empty-message.png)
 
-- 
+-   The "Continue Shopping" button is included to quickly return the user to the products page initially displaying all items ordered by price descending
 
+ ![screenshot](documentation/readme/features/cart-continue-shopping-button.png)
 
+- Once the user is ready to checkout the "Checkout" link button takes the user to the checkout page
 
+![screenshot](documentation/readme/features/cart-checkout-button.png)
 
 
 
