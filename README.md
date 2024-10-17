@@ -157,7 +157,38 @@ The product details card contains a number of features to assist the user
 
 ![screenshot](documentation/readme/features/cart-checkout-button.png)
 
+### Checkout Page
 
+The checkout page contains the form for delivery details, a summary of the cart contents and a card payment details input facility for making payments via Stripe.
+
+- For non logged in users a form containing prompts is provided for delivery details
+
+![screenshot](documentation/readme/features/checkout-delivery-details-form.png)
+
+- If the user is not logged in links are shown below the form to the log in and sign-up pages if the user wishes to change or save their delivery details to a user profile.
+
+![screenshot](documentation/readme/features/checkout-login-to-save.png)
+
+
+- If the user has an account the delivery details form will be prefilled by any default details contained in their "profile". If the user wishes to update their default details with the information entered in the form a checkbox is provided
+
+![screenshot](documentation/readme/features/checkout-checkbox.png)
+
+- A clear summary of the cart contents, and payment breakdown is provided to the user in tabular format
+
+![screenshot](documentation/readme/features/checkout-order-summary.png)
+
+- The payment details are again highlighted in warning text next to the payment button to alert the user before they confirm the purchase
+
+![screenshot](documentation/readme/features/checkout-warning.png)
+
+- A Stripe card payment input box is located at the end of the form
+
+![screenshot](documentation/readme/features/checkout-card-input.png)
+
+- Next to the button to confirm the purchase, is a button link titled "Adjust Cart" back to the users cart. This gives the user an opportunity if they wish, to add or remove items from the cart before proceding with payment
+
+![screenshot](documentation/readme/features/checkout-card-input.png)
 
 ## Credits
 
