@@ -211,9 +211,28 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 ## Profile Page
 
-- A successful checkout triggers the checkout success page informing the user the user they will get email confimation of their purchase.
+A user profile is created for all account holders and can be accessed via the link in the dropdown from the account icon in the main navbar.
 
-![screenshot](documentation/readme/features/checkout-success-message.png)
+The profile can be used to store default delivery details to prefill into the checkout form, and also to access details of previous orders ie an order history.
+
+- The page displays a form showing default delivery details and a table showing a summary of previous orders. The entries in the order history table are clickable links to a more detailed order history view for the particular order.
+
+![screenshot](documentation/readme/features/profile-page.png)
+
+- The default delivery details can be edited by the user and clicking the update button notifies the user of a successful update
+
+![screenshot](documentation/readme/features/profile-update-button.png)
+
+
+![screenshot](documentation/readme/features/profile-message.png)
+
+- Basic postcode validation is implemented for the default delivery details form which results in an alert message for an invalid form entry
+
+![screenshot](documentation/readme/features/profile-error-message.png)
+
+## Order History Page
+
+A user profile is created for all account holders and can be accessed via the link in the dropdown from the account icon in the main navbar.
 
 
 ## Credits
