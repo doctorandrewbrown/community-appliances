@@ -101,6 +101,37 @@ Product details for a selected item are again presented in a familiar card forma
 
 ![screenshot](documentation/readme/features/product-details-card1.png)
 
+The product details card contains a number of features to assist the user
+- A clickable image to open a larger view of the item
+- A dropdown on hover giving a more detailed description of the item grade
+
+- ![screenshot](documentation/readme/features/product-details-dropdown.png)
+
+- A button to add the item to the users cart
+
+- ![screenshot](documentation/readme/features/product-details-add-button.png)
+
+- When an item is successfully added to the cart a message informs the user
+
+- ![screenshot](documentation/readme/features/product-details-message-success.png)
+
+- If the item is already in the cart a message alert informs the user 
+
+- ![screenshot](documentation/readme/features/product-details-message-warning.png)
+
+- The "Keep Shopping" button is included to quickly return the user to the products page initially displaying all items ordered by price descending
+
+- ![screenshot](documentation/readme/features/product-details-keep-shopping-button.png)
+
+### Cart Page
+
+Clicking the cart icon in the main navigation takes the user to the cart page
+
+![screenshot](documentation/readme/features/product-details-card1.png)
+
+
+
+
 ## Credits
 
 ### Technologies
