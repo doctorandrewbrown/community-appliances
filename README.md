@@ -105,29 +105,49 @@ The product details card contains a number of features to assist the user
 - A clickable image to open a larger view of the item
 - A dropdown on hover giving a more detailed description of the item grade
 
-- ![screenshot](documentation/readme/features/product-details-dropdown.png)
+ ![screenshot](documentation/readme/features/product-details-dropdown.png)
 
 - A button to add the item to the users cart
 
-- ![screenshot](documentation/readme/features/product-details-add-button.png)
+ ![screenshot](documentation/readme/features/product-details-add-button.png)
 
 - When an item is successfully added to the cart a message informs the user
 
-- ![screenshot](documentation/readme/features/product-details-message-success.png)
+ ![screenshot](documentation/readme/features/product-details-message-success.png)
 
-- If the item is already in the cart a message alert informs the user 
+ - If the item is already in the cart a message alert informs the user 
 
-- ![screenshot](documentation/readme/features/product-details-message-warning.png)
+ ![screenshot](documentation/readme/features/product-details-message-warning.png)
 
-- The "Keep Shopping" button is included to quickly return the user to the products page initially displaying all items ordered by price descending
+-  The "Keep Shopping" button is included to quickly return the user to the products page initially displaying all items ordered by price descending
 
-- ![screenshot](documentation/readme/features/product-details-keep-shopping-button.png)
+ ![screenshot](documentation/readme/features/product-details-keep-shopping-button.png)
 
 ### Cart Page
 
-Clicking the cart icon in the main navigation takes the user to the cart page
+- Clicking the cart icon link in the main navigation takes the user to the cart page
 
-![screenshot](documentation/readme/features/product-details-card1.png)
+![screenshot](documentation/readme/features/cart-icon-link.png)
+
+- Details of cart contents are shown to the user in a clear table format
+
+![screenshot](documentation/readme/features/cart-table-header.png)
+
+- A button is provided to remove an item if desired
+
+![screenshot](documentation/readme/features/cart-remove-button.png)
+
+- On removing an item a message is shown to inform the user
+
+![screenshot](documentation/readme/features/cart-message-warning.png)
+
+- If the users cart is empty a warning message is shown
+
+![screenshot](documentation/readme/features/cart-empty-message.png)
+
+- 
+
+
 
 
 
