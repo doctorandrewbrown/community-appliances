@@ -188,7 +188,11 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 - Next to the button to confirm the purchase, is a button link titled "Adjust Cart" back to the users cart. This gives the user an opportunity if they wish, to add or remove items from the cart before proceding with payment
 
-![screenshot](documentation/readme/features/checkout-card-input.png)
+![screenshot](documentation/readme/features/checkout-adjust-button.png)
+
+- A "Complete Order" button submits the completed form to process the payment on the Stripe platform.
+
+![screenshot](documentation/readme/features/checkout-complete-order-button.png)
 
 ## Credits
 
