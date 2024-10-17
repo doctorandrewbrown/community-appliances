@@ -139,13 +139,13 @@ The product details card contains a number of features to assist the user
 
 - On removing an item a message is shown to inform the user
 
-![screenshot](documentation/readme/features/cart-remove-button.png)
+![screenshot](documentation/readme/features/cart-message-warning.png)
 
 - For extra-small devices a condensed version of the cart contents table is displayed with the description column ommited and a smaller remove button
 
 ![screenshot](documentation/readme/features/cart-small-table.png)
 
-- On removing an item a message is shown to inform the user
+- If the cart is empty the user is informed
 
 ![screenshot](documentation/readme/features/cart-empty-message.png)
 
