@@ -174,6 +174,10 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 ![screenshot](documentation/readme/features/checkout-checkbox.png)
 
+- Basic postcode validation is implemented for the delivery details form which results in an alert message for an invalid form entry
+
+![screenshot](documentation/readme/features/profile-error-message.png)
+
 - A clear summary of the cart contents, and payment breakdown is provided to the user in tabular format
 
 ![screenshot](documentation/readme/features/checkout-order-summary.png)
@@ -232,9 +236,13 @@ The profile can be used to store default delivery details to prefill into the ch
 
 ## Order History Page
 
-A user profile is created for all account holders and can be accessed via the link in the dropdown from the account icon in the main navbar.
+The details of previous purchases are available to account holders by clicking a link for a particular order in the order history table.
 
 
+
+
+
+![screenshot](documentation/readme/features/order-history-message.png)
 ## Credits
 
 ### Technologies
