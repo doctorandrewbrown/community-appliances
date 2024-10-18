@@ -250,6 +250,36 @@ The details of previous purchases are available to account holders by clicking a
 
 ![screenshot](documentation/readme/features/order-history-button.png)
 
+## Volunteers Page
+A volunteers profile is created for all account holders and logged in users access their profile via a link in the account icon dropdown in the main navbar. 
+
+![screenshot](documentation/readme/features/volunteers-nav-link.png)
+
+- Uses who wish to volunteer with the charity can leave their details in the form
+
+![screenshot](documentation/readme/features/volunteers-form.png)
+
+- Users can toggle the "Active" checkbox to indicate their availability
+
+![screenshot](documentation/readme/features/volunteers-checkbox.png)
+
+- Users can save changes to their details via an "Update Information" button
+
+![screenshot](documentation/readme/features/volunteers-update-btn.png)
+
+- An alert success message infroms the user of a successful update 
+
+![screenshot](documentation/readme/features/volunteers-message.png)
+
+
+
+
+ opt in and out of volinteering via a togglable checkbox.
+
+- An info alert box reminds the user they are viewing details of a previous order
+
+![screenshot](documentation/readme/features/order-history-message.png)
+
 
 ## Credits
 
