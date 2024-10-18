@@ -182,7 +182,7 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 ![screenshot](documentation/readme/features/checkout-order-summary.png)
 
-- The payment details are again highlighted in warning text next to the payment button to alert the user before they confirm the purchase
+- The payment details are again highlighted in warning text next to the payment button to alert the user before they confirm the purchase. If a discount applies this is displayed.
 
 ![screenshot](documentation/readme/features/checkout-warning.png)
 
@@ -236,13 +236,21 @@ The profile can be used to store default delivery details to prefill into the ch
 
 ## Order History Page
 
-The details of previous purchases are available to account holders by clicking a link for a particular order in the order history table.
+The details of previous purchases are available to account holders by clicking a link for a particular order in the order history table of the profile page.
 
-
-
-
+- An info alert box reminds the user they are viewing details of a previous order
 
 ![screenshot](documentation/readme/features/order-history-message.png)
+
+- Previous order details are displayed in a tabular format
+
+![screenshot](documentation/readme/features/order-history-table.png)
+
+- A button provides a link back to the profile page
+
+![screenshot](documentation/readme/features/order-history-button.png)
+
+
 ## Credits
 
 ### Technologies
