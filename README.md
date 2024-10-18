@@ -4,6 +4,7 @@
 ## Surface colors typo
 ## database models
 ## deploy
+## future work
 
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
@@ -199,7 +200,7 @@ The checkout page contains the form for delivery details, a summary of the cart 
 ![screenshot](documentation/readme/features/checkout-complete-order-button.png)
 
 
-## Checkout Success Page
+### Checkout Success Page
 
 - A successful checkout triggers the checkout success page informing the user the user they will get email confimation of their purchase.
 
@@ -213,7 +214,7 @@ The checkout page contains the form for delivery details, a summary of the cart 
 
 ![screenshot](documentation/readme/features/checkout-success-continue-shopping-btn.png)
 
-## Profile Page
+### Profile Page
 
 A user profile is created for all account holders and can be accessed via the link in the dropdown from the account icon in the main navbar.
 
@@ -234,7 +235,7 @@ The profile can be used to store default delivery details to prefill into the ch
 
 ![screenshot](documentation/readme/features/profile-error-message.png)
 
-## Order History Page
+### Order History Page
 
 The details of previous purchases are available to account holders by clicking a link for a particular order in the order history table of the profile page.
 
@@ -250,7 +251,7 @@ The details of previous purchases are available to account holders by clicking a
 
 ![screenshot](documentation/readme/features/order-history-button.png)
 
-## Volunteers Page
+### Volunteers Page
 A volunteers profile is created for all account holders and logged in users access their profile via a link in the account icon dropdown in the main navbar. 
 
 ![screenshot](documentation/readme/features/volunteers-nav-link.png)
@@ -267,18 +268,11 @@ A volunteers profile is created for all account holders and logged in users acce
 
 ![screenshot](documentation/readme/features/volunteers-update-btn.png)
 
-- An alert success message infroms the user of a successful update 
+- An alert success message informs the user of a successful update 
 
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
 
-
-
- opt in and out of volinteering via a togglable checkbox.
-
-- An info alert box reminds the user they are viewing details of a previous order
-
-![screenshot](documentation/readme/features/order-history-message.png)
 
 
 ## Credits
