@@ -305,6 +305,7 @@ Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/ale
 | [Gimp](https://www.gimp.org/) |used to crop and compress images  |
 | [temp-mail](https://temp-mail.org/en/) |for test email accounts|
 | [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
+| [Lucid Chart](https://www.lucidchart.com/blog/) |used to make erd diagams|
 
 ### Media 
 | Source | Notes |
