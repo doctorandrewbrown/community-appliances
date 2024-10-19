@@ -256,7 +256,7 @@ A volunteers profile is created for all account holders and logged in users acce
 
 ![screenshot](documentation/readme/features/volunteers-nav-link.png)
 
-- Uses who wish to volunteer with the charity can leave their details in the form
+- Users who wish to volunteer with the charity can leave their details in the form
 
 ![screenshot](documentation/readme/features/volunteers-form.png)
 
@@ -272,7 +272,23 @@ A volunteers profile is created for all account holders and logged in users acce
 
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
+## UX
 
+### Colour Palette
+The colour palette used for site styling was chosen to be bold and clean in keeping with the site theme of domestic appliances,
+- blue #0000ff
+- black #000000
+- white #ffffff
+
+### Bootstrap Alerts
+Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/alerts/) were used for messaging
+
+### Typography
+[Roboto](https://fonts.google.com/specimen/Roboto) font was used for all site text.
+
+## Database
+
+![screenshot](documentation/readme/features/database-erd.png)
 
 
 ## Credits
