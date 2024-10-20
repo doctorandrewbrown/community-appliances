@@ -329,6 +329,8 @@ The diagram shows
 - [PostgreSQL](https://www.postgresql.org/)
 
 ### Packages
+
+The following packages were used in the app (taken from the [requirements.txt](requirements.txt) file)
 ```bash
 asgiref==3.7.2
 boto3==1.34.62
@@ -358,6 +360,7 @@ urllib3==1.26.18
  ### Tools
 | Source | Notes |
 | --- | --- |
+| [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) |used for testing and checking front-end code|
 | [Gimp](https://www.gimp.org/) |used to crop and compress images  |
 | [temp-mail](https://temp-mail.org/en/) |for test email accounts|
 | [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
