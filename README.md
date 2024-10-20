@@ -364,11 +364,15 @@ urllib3==1.26.18
 | [W3C CSS Validator Tool](https://jigsaw.w3.org/css-validator/validator) |used for validating CSS code|
 | [Code Institute pep8 Python Validator Tool](https://pep8ci.herokuapp.com/) |used for validating python code|
 | [JSHint Javascript Validator Tool](https://jshint.com/) |used for validating javascript code|
-| [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) |used for testing and checking front-end code|
+| [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) |used for testing and checking deployed website|
 | [Gimp](https://www.gimp.org/) |used to crop and compress images  |
 | [temp-mail](https://temp-mail.org/en/) |for test email accounts|
 | [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
 | [Lucid Chart](https://www.lucidchart.com/blog/) |used to make erd diagams|
+| [tinypng](https://tinypng.com/) |used to compress images|
+
+## Testing
+For all testing please see [TESTING](TESTING.md)
 
 ## Credits
 
@@ -378,8 +382,8 @@ urllib3==1.26.18
 | [Favicon.io](https://favicon.io/favicon-generator/) | used to generate website favicon  |
 | [Unsplash](https://unsplash.com/photos/white-\front-load-washing-machine-5cpBWEl6y6c)|background image for homepage|
 | [Markselectrical](https://markselectrical.co.uk/ww11bb504daws1_samsung-washing-machine)|Washing machine placeholder image|
-| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Gas cooker placeholder image placeholder image|
-| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image placeholder image|
+| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Gas cooker placeholder image|
+| [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image|
 
 
 ### References
