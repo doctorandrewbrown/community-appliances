@@ -287,6 +287,24 @@ A volunteers profile is created for all account holders and logged in users acce
 | Profile | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-profile.jpg) |
 | Volunteers | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-volunteers.jpg) |
 | Order History | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-order-history.jpg) |
+| Home | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-home.jpg) |
+| Products | tablet  | [wireframe](documentation/readme/wireframes/wireframe-tablet-products.jpg) |
+| Product Details | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-product-details.jpg) |
+| Cart | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-cart.jpg) |
+| Checkout | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-checkout.jpg) |
+| Checkout Success | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-checkout-success.jpg) |
+| Profile | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-profile.jpg) |
+| Volunteers | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-volunteers.jpg) |
+| Order History | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-order-history.jpg) |
+| Home | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-home.jpg) |
+| Products | desktop  | [wireframe](documentation/readme/wireframes/wireframe-desktop-products.jpg) |
+| Product Details | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-product-details.jpg) |
+| Cart | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-cart.jpg) |
+| Checkout | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-checkout.jpg) |
+| Checkout Success | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-checkout-success.jpg) |
+| Profile | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-profile.jpg) |
+| Volunteers | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-volunteers.jpg) |
+| Order History | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-order-history.jpg) |
 
 # Surface
 
