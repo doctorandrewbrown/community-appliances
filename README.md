@@ -8,9 +8,10 @@
 
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
+# Strategy
 ## Overview
 - Community Appliances is a django e-commerce app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up if they have an account. E-commerce functionality is via the [Stripe](https://stripe.com/gb) on-line payment platform.
-
+# Scope
 ## User Stories
 The design of the app was guided by user stories. The categories of user considered were,
 - visitors without an account
@@ -53,6 +54,7 @@ The store admin needs access to order details in the database in order to fullfi
 Providing users with immediate feedback from interactions with the app was a key consideration in design. Colour coded alert Bootsrap alerts together with the Django messaging system achieved this goal.
 - As a user I want immediate clear feedback messages from interactions with the app
 
+# Structure
 ## Features
 ### Main Navigation - All Pages
 ![screenshot](documentation/readme/features/main-nav1.png)
@@ -272,7 +274,10 @@ A volunteers profile is created for all account holders and logged in users acce
 
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
-## UX
+# Skeleton
+## Wireframes
+
+# Surface
 
 ### Colour Palette
 The colour palette used for site styling was chosen to be bold and clean in keeping with the site theme of domestic appliances,
