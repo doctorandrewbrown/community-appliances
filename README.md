@@ -286,7 +286,16 @@ Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/ale
 ### Typography
 [Roboto](https://fonts.google.com/specimen/Roboto) font was used for all site text.
 
-## Database
+## Information Architecture
+- The app uses a Postgresql relational database deployed on the [ElephantSQL](https://www.elephantsql.com/) platform. For local development the app used a **SQLite** database.
+
+### Database Relationships
+
+The app uses three custom models in addition to those used in the Boutique Ado walkthrough and these are shown in the entity relationship diagram below. Only relationships involving the custom models are shown and not all fields in the default User model are included.
+The diagram shows
+- A one-to-one relationsip of the VolunteerProfile model to the User model
+- A many-to-one relationship between the Certificate model and the Product model
+- A many-to-one relationship between the Condition model and the Product model
 
 ![screenshot](documentation/readme/features/database-erd.png)
 
