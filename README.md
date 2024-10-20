@@ -300,14 +300,61 @@ The diagram shows
 ![screenshot](documentation/readme/features/database-erd.png)
 
 
-## Credits
+## Tools and Technologies
 
-### Technologies
-| Source | Notes |
-| --- | --- |
-| [Gimp](https://www.gimp.org/) |used to crop and compress images  |
-| [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
+### Languages
+- HTML5
+- CSS3
+- Python3
+- Javascript
 
+### Frameworks
+- [Django v4.2](https://www.djangoproject.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+
+### Libraries
+- [jQuery](https://jquery.com/)
+- [Googlefonts](https://fonts.google.com/)
+- [Fontawsome](https://fontawesome.com/)
+
+### Platforms
+- [Github](https://github.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [Heroku](https://www.heroku.com/)
+- [AWS](https://aws.amazon.com/)
+- [ElephantSQL](https://www.elephantsql.com/)
+
+### Database Management Systems
+- [SQLite](https://www.sqlite.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+
+### Packages
+```bash
+asgiref==3.7.2
+boto3==1.34.62
+botocore==1.34.62
+crispy-bootstrap5==2024.2
+dj-database-url==0.5.0
+Django==4.2.13
+django-allauth==0.50.0
+django-crispy-forms==2.3
+django-storages==1.14.2
+gunicorn==21.2.0
+jmespath==1.0.1
+oauthlib==3.2.2
+pillow==10.2.0
+psycopg2==2.9.9
+PyJWT==2.8.0
+python-dotenv==1.0.1
+python3-openid==3.2.0
+pytz==2024.1
+requests-oauthlib==1.3.1
+s3transfer==0.10.0
+sqlparse==0.4.4
+stripe==9.6.0
+urllib3==1.26.18
+
+```
  ### Tools
 | Source | Notes |
 | --- | --- |
@@ -315,6 +362,8 @@ The diagram shows
 | [temp-mail](https://temp-mail.org/en/) |for test email accounts|
 | [Simplescreenrecorder](https://www.maartenbaert.be/simplescreenrecorder/) |used to make screen recordings  |
 | [Lucid Chart](https://www.lucidchart.com/blog/) |used to make erd diagams|
+
+## Credits
 
 ### Media 
 | Source | Notes |
@@ -326,7 +375,7 @@ The diagram shows
 | [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image placeholder image|
 
 
-### Content
+### References
 
 | Source | Location | Notes |
 | --- | --- | --- |
