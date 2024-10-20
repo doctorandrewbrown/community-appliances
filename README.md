@@ -291,7 +291,7 @@ Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/ale
 ### Typography
 [Roboto](https://fonts.google.com/specimen/Roboto) font was used for all site text.
 
-## Information Architecture
+# Database
 - The app uses a Postgresql relational database deployed on the [ElephantSQL](https://www.elephantsql.com/) platform. For local development the app used a **SQLite** database.
 
 ### Database Relationships
@@ -305,7 +305,7 @@ The diagram shows
 ![screenshot](documentation/readme/features/database-erd.png)
 
 
-## Tools and Technologies
+# Tools and Technologies
 
 ### Languages
 - HTML5
@@ -376,10 +376,10 @@ urllib3==1.26.18
 | [Lucid Chart](https://www.lucidchart.com/blog/) |used to make erd diagams|
 | [tinypng](https://tinypng.com/) |used to compress images|
 
-## Testing
+# Testing
 For all testing please see [TESTING](TESTING.md)
 
-## Credits
+# Credits
 
 ### Media 
 | Source | Notes |
