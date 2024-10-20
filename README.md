@@ -360,6 +360,10 @@ urllib3==1.26.18
  ### Tools
 | Source | Notes |
 | --- | --- |
+| [W3C HTML Validator Tool](https://validator.w3.org/nu/) |used for validating HTML code|
+| [W3C CSS Validator Tool](https://jigsaw.w3.org/css-validator/validator) |used for validating CSS code|
+| [Code Institute pep8 Python Validator Tool](https://pep8ci.herokuapp.com/) |used for validating python code|
+| [JSHint Javascript Validator Tool](https://jshint.com/) |used for validating javascript code|
 | [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) |used for testing and checking front-end code|
 | [Gimp](https://www.gimp.org/) |used to crop and compress images  |
 | [temp-mail](https://temp-mail.org/en/) |for test email accounts|
