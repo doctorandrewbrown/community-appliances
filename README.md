@@ -455,9 +455,32 @@ Now use another AWS service called I AM to create a user-group and user to acces
 * Scroll to 'Access Keys' and click 'Create access key'
 * Select 'Application running outside AWS', and click next
 * On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
-* Click the 'Download .csv file' button to get a copy of the keys.
+* Click the 'Download .csv file' button to get a copy of the access keys to use with Heroku configvars.
 
+## Connecting S3 Bucket to the Django App
+* Install the packages boto3 and django-storages
+```bash
+pip install django-storages
+pip install boto3
+pip freeze > requirements.txt
+```
+* Add "storages" to installed apps in settings.py project file
+* Add the values from the .csv as mentioned above to Heroku configvars using the names
+```bash
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+```
+* Remove ```DISABLE_COLLECTSTATIC``` from Heroku configvars if present
+* In the AWS S3 dashboard create a folder called media and grant public read access
+* Upload media files for use in the app
 
+## Stripe API
+The app uses the Stripe payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku configvars with the following names
+```bash
+STRIPE_PUBLIC_KEY = pk....
+
+STRIPE_SECRET_KEY = sk....
+```
 
 
 
