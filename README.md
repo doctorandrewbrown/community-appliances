@@ -1,10 +1,3 @@
-# TODO
-## Features by page
-## Wireframes
-## Surface colors typo
-## database models
-## deploy
-## future work
 
 # Community Appliances
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
@@ -375,7 +368,7 @@ USE_AWS = True
 
 ```
 ## AWS
-The AWS S3 service is used to host static and media files for the app.
+The AWS S3 service is used to host static javascript, css and media files for the app.
 * In the AWS dashboard find the service S3 and select "create bucket"
 * ACLs enabled and Bucket owner preferred needs to be selected from Object Ownership panel
 * Uncheck "Block all public access" option
@@ -419,8 +412,8 @@ The AWS S3 service is used to host static and media files for the app.
   ]
 }
 ```
-## I AM
-Now use another AWS service called I AM to create a user-group and user to access the S3 bucket.
+## IAM
+Now use another AWS service called IAM to create a user-group and user to access the S3 bucket.
 
 * Find I AM in the AWS dashboard and click User Groups and Create Group giving the group a relevant name.
 * Select Policies from the side menu and select Create Policy
@@ -455,7 +448,11 @@ Now use another AWS service called I AM to create a user-group and user to acces
 * Scroll to 'Access Keys' and click 'Create access key'
 * Select 'Application running outside AWS', and click next
 * On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
-* Click the 'Download .csv file' button to get a copy of the access keys to use with Heroku configvars.
+* Click the 'Download .csv file' button to get a copy of the access keys to use as Heroku configvars with the following names
+```bash
+AWS_ACCESS_KEY_ID 
+AWS_SECRET_ACCESS_KEY 
+```
 
 ## Connecting S3 Bucket to the Django App
 * Install the packages boto3 and django-storages
@@ -470,11 +467,11 @@ pip freeze > requirements.txt
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 ```
-* Remove ```DISABLE_COLLECTSTATIC``` from Heroku configvars if present
+* Remove ```DISABLE_COLLECTSTATIC``` variable from Heroku configvars if present
 * In the AWS S3 dashboard create folders called media and static to hold the relevant files and grant public read access
 
 ## Stripe API
-The app uses the Stripe payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku configvars with the following names
+The app uses the [Stripe](https://stripe.com/gb) payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku configvars with the following names
 ```bash
 STRIPE_PUBLIC_KEY = pk....
 
@@ -490,7 +487,10 @@ The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephants
 * Choose the Free Tiny Turtle plan.
 * Click the "Select Region" button and select a data centre from the dropdown.
 * Confirm the new database instance by clicking "Create instance" button.
-* The database url provided is then used in the Heroku configvars to connect the database.
+* The value for the database url provided above is then used as the Heroku configvar named 
+```bash 
+DATABASE_URL
+```
 
 
 # Tools and Technologies
@@ -516,6 +516,7 @@ The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephants
 - [Heroku](https://www.heroku.com/)
 - [AWS](https://aws.amazon.com/)
 - [ElephantSQL](https://www.elephantsql.com/)
+- [Stripe](https://stripe.com/gb)
 
 ### Database Management Systems
 - [SQLite](https://www.sqlite.org/)
