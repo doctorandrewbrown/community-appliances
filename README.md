@@ -337,11 +337,17 @@ The diagram shows
 ## Heroku
 The app uses the [Heroku](https://www.heroku.com/) platform for deployment.
 * First create a new app in the Heroku dashboard and connect to your github repository.
-* In the project repo install the following dependencies required to use postgresql
+* In the project repo install the following dependencies required to use postgresql external database
 ```bash
 pip3 install dj_database_url
 pip3 install psycopg2
 ```
+* Import at the top of settings.py
+```bash
+import os
+import dj_database_url
+```
+
 
 * Update the ```requirements.txt``` file
 ```bash
@@ -353,8 +359,44 @@ web: gunicorn [your app name].wsgi:application
 
 ```
 * Commit and push these changes to Github.
-## AWS
 
+* The following "configvars" key-values need to be provided in the Heroku dashboard
+```bash
+AWS_ACCESS_KEY_ID = from AWS setup
+AWS_SECRET_ACCESS_KEY = from AWS setup
+DATABASE_URL = from elephantSQL
+EMAIL_HOST_PASS = from email server setup
+EMAIL_HOST_USER = from email server setup
+SECRET_KEY = insert value here
+STRIPE_PUBLIC_KEY = from Stripe setup
+STRIPE_SECRET_KEY = from Stripe setup
+STRIPE_WH_SECRET = from Stripe setup
+USE_AWS = True
+
+```
+## AWS
+* In the AWS dashboard find the service S3 and select "create bucket"
+* ACLs enabled and Bucket owner preferred needs to be selected from Object Ownership panel
+* Uncheck "Block all public access" option
+* Click create bucket and in the properties tab enable "static website hosting"
+* In the Permissions tab paste in the COORS configuration
+```bash
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+* From the Bucket Policy tab - select policy generator to create a security policy for the bucket (policy type = s3 bucket policy)
 ## ElephantSQL
 The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephantsql.com/)
 * Sign up for an account
