@@ -375,6 +375,7 @@ USE_AWS = True
 
 ```
 ## AWS
+The AWS S3 service is used to host static and media files for the app.
 * In the AWS dashboard find the service S3 and select "create bucket"
 * ACLs enabled and Bucket owner preferred needs to be selected from Object Ownership panel
 * Uncheck "Block all public access" option
@@ -418,6 +419,41 @@ USE_AWS = True
   ]
 }
 ```
+## I AM
+Now use another AWS service called I AM to create a user-group and user to access the S3 bucket.
+
+* Find I AM in the AWS dashboard and click User Groups and Create Group giving the group a relevant name.
+* Select Policies from the side menu and select Create Policy
+* From the JSON tab, select import managed policy to import a premade AWS policy with full access to S3
+* Select AmazonS3FullAccess policy and adapt as below using the ARN for the S3 bucket
+```bash
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::community-appliances",
+                "arn:aws:s3:::community-appliances/*"
+            ]
+        }
+    ]
+}
+```
+* Next Review Policy and give it a name and description, and click Create policy
+* Now attach the policy to the User group by selcting groups, then permissions. 
+* Open the Add Permissions dropdown and click Attach policies
+* Select the policy and then click Add permissions button.
+* Now create a user to add to the user group by selecting Users then Add user
+* Give the user a name and select Programatic Access for AWS Access type, then select next
+*
+
+
+
+
 
 ## ElephantSQL
 The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephantsql.com/)
