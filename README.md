@@ -335,7 +335,24 @@ The diagram shows
 
 # Deployment
 ## Heroku
+The app uses the [Heroku](https://www.heroku.com/) platform for deployment.
+* First create a new app in the Heroku dashboard and connect to your github repository.
+* In the project repo install the following dependencies required to use postgresql
+```bash
+pip3 install dj_database_url
+pip3 install psycopg2
+```
 
+* Update the ```requirements.txt``` file
+```bash
+pip freeze > requirements.txt
+```
+* Create a ```Procfile``` in the project to tell Heroku what to do and add the following code
+```bash
+web: gunicorn [your app name].wsgi:application
+
+```
+* Commit and push these changes to Github.
 ## AWS
 
 ## ElephantSQL
