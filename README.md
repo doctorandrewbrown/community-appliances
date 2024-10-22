@@ -413,7 +413,7 @@ The AWS S3 service is used to host static and media files for the app.
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::testandy123/*",
+      "Resource": "arn:aws:s3:::community-appliances/*",
       "Principal": "*"
     }
   ]
@@ -449,7 +449,13 @@ Now use another AWS service called I AM to create a user-group and user to acces
 * Select the policy and then click Add permissions button.
 * Now create a user to add to the user group by selecting Users then Add user
 * Give the user a name and select Programatic Access for AWS Access type, then select next
-*
+* Click through to Create user button
+* Next get access keys for the user by going to Users and selcting the user
+* Select the 'Security Credentials' tab
+* Scroll to 'Access Keys' and click 'Create access key'
+* Select 'Application running outside AWS', and click next
+* On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
+* Click the 'Download .csv file' button to get a copy of the keys.
 
 
 
