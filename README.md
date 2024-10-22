@@ -471,8 +471,7 @@ AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 ```
 * Remove ```DISABLE_COLLECTSTATIC``` from Heroku configvars if present
-* In the AWS S3 dashboard create a folder called media and grant public read access
-* Upload media files for use in the app
+* In the AWS S3 dashboard create folders called media and static to hold the relevant files and grant public read access
 
 ## Stripe API
 The app uses the Stripe payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku configvars with the following names
