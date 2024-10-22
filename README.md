@@ -396,7 +396,29 @@ USE_AWS = True
     }
 ]
 ```
-* From the Bucket Policy tab - select policy generator to create a security policy for the bucket (policy type = s3 bucket policy)
+* Edit the ACL access control list to allow public access
+* In the Permissions tab select edit Bucket Policy - select policy generator to create a security policy for the bucket
+* Select S3 for policy type in the policy generator page
+* Enter "*" in Principal input box and select "get object" from actions list and paste ARN (Amazon resource number) into box and click "Generate policy"
+* Copy the policy into the bucket policy editor add "/*" to the end of the ARN
+```bash
+{
+  "Id": "Policy1729615099960",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1729615059042",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::testandy123/*",
+      "Principal": "*"
+    }
+  ]
+}
+```
+
 ## ElephantSQL
 The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephantsql.com/)
 * Sign up for an account
