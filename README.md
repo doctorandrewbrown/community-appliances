@@ -333,6 +333,20 @@ The diagram shows
 
 ![screenshot](documentation/readme/features/database-erd.png)
 
+# Deployment
+## Heroku
+
+## AWS
+
+## ElephantSQL
+The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephantsql.com/)
+* Sign up for an account
+* Once logged in, click the "Create new instance" button to create a new PostgreSQL database instance.
+* Choose the Free Tiny Turtle plan.
+* Click the "Select Region" button and select a data centre from the dropdown.
+* Confirm the new database instance by clicking "Create instance" button.
+* The database url provided is then used in the Heroku configvars to connect the database.
+
 
 # Tools and Technologies
 
