@@ -369,7 +369,7 @@ STRIPE_WH_SECRET = from Stripe setup
 USE_AWS = True
 
 ```
-* The required values for the above Heroku configvars are obtained as discussed in the sections below.
+* The required values for the above Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) are obtained as discussed in the sections below.
 ## AWS
 The AWS S3 service is used to host static javascript, css and media files for the app.
 * In the AWS dashboard find the service S3 and select "create bucket"
@@ -451,7 +451,7 @@ Now use another AWS service called IAM to create a user-group and user to access
 * Scroll to 'Access Keys' and click 'Create access key'
 * Select 'Application running outside AWS', and click next
 * On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
-* Click the 'Download .csv file' button to get a copy of the access keys to use as Heroku configvars with the following names
+* Click the 'Download .csv file' button to get a copy of the access keys to use as Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
 ```bash
 AWS_ACCESS_KEY_ID 
 AWS_SECRET_ACCESS_KEY 
@@ -465,16 +465,16 @@ pip install boto3
 pip freeze > requirements.txt
 ```
 * Add "storages" to installed apps in settings.py project file
-* Add the values from the .csv as mentioned above to Heroku configvars using the names
+* Add the values from the .csv as mentioned above to Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) using the names
 ```bash
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 ```
-* Remove ```DISABLE_COLLECTSTATIC``` variable from Heroku configvars if present
+* Remove ```DISABLE_COLLECTSTATIC``` variable from Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) if present
 * In the AWS S3 dashboard create folders called media and static to hold the relevant files and grant public read access
 
 ## Stripe API
-The app uses the [Stripe](https://stripe.com/gb) payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku configvars with the following names
+The app uses the [Stripe](https://stripe.com/gb) payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
 ```bash
 STRIPE_PUBLIC_KEY = pk....
 
@@ -494,7 +494,7 @@ The app uses gmail to send order confirmation and account verification emails us
 * Select Other (Custom name) for the device type.
 * Add any custom name
 * Save the 16-character password (API key).
-* The Gmail credentials are placed in Heroku configvars with the following names
+* The Gmail credentials are placed in Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
 ```bash
 EMAIL_HOST_PASS = 16-character API key
 EMAIL_HOST_USER = users Gmail email address
@@ -508,7 +508,7 @@ The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephants
 * Choose the Free Tiny Turtle plan.
 * Click the "Select Region" button and select a data centre from the dropdown.
 * Confirm the new database instance by clicking "Create instance" button.
-* The database url provided in the step above is then used as the value of the Heroku configvar named 
+* The database url provided in the step above is then used as the value of the Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) variable named 
 ```bash 
 DATABASE_URL
 ```
@@ -606,6 +606,7 @@ For all testing please see [TESTING](TESTING.md)
 
 | Source | Location | Notes |
 | --- | --- | --- |
+|[Code Institute Boutique Ado Walkthrough](https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/a07c1ca5a3b973eb47e5c944829cea06ead3936d)| whole site | provided guidance on general structure and coding of the app |
 | [W3Schools](https://www.w3schools.com/) | whole site | reference for bootstrap, html, css, javascript and python |
 | [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) | README.md and TESTING.md | syntax guide for writing Markdown files |
 | [w3schools](https://www.w3schools.com/css/css_positioning.asp)| index.html | sticky cta button on homepage |
