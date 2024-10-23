@@ -377,7 +377,7 @@ The AWS S3 service is used to host static javascript, css and media files for th
 * Uncheck "Block all public access" option
 * Click create bucket and in the properties tab enable "static website hosting"
 * In the Permissions tab paste in the COORS configuration
-```bash
+```json
 [
     {
         "AllowedHeaders": [
@@ -452,7 +452,7 @@ Now use another AWS service called IAM to create a user-group and user to access
 * Select 'Application running outside AWS', and click next
 * On the next screen, you can leave the 'Description tag value' blank. Click 'Create Access Key'
 * Click the 'Download .csv file' button to get a copy of the access keys to use as Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
-```bash
+```python
 AWS_ACCESS_KEY_ID 
 AWS_SECRET_ACCESS_KEY 
 ```
