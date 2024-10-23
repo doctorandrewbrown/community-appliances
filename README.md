@@ -353,7 +353,9 @@ web: gunicorn [your app name].wsgi:application
 ```
 * Commit and push these changes to Github.
 
-* The following "configvars" key-values need to be provided in the Heroku dashboard
+### Heroku Configvars
+
+* The following "configvars" key-values need to be provided in the Heroku dashboard. 
 ```bash
 AWS_ACCESS_KEY_ID = from AWS setup
 AWS_SECRET_ACCESS_KEY = from AWS setup
@@ -367,6 +369,7 @@ STRIPE_WH_SECRET = from Stripe setup
 USE_AWS = True
 
 ```
+* The required values for the above Heroku configvars are obtained as discussed in the sections below.
 ## AWS
 The AWS S3 service is used to host static javascript, css and media files for the app.
 * In the AWS dashboard find the service S3 and select "create bucket"
@@ -395,7 +398,7 @@ The AWS S3 service is used to host static javascript, css and media files for th
 * Select S3 for policy type in the policy generator page
 * Enter "*" in Principal input box and select "get object" from actions list and paste ARN (Amazon resource number) into box and click "Generate policy"
 * Copy the policy into the bucket policy editor add "/*" to the end of the ARN
-```bash
+```json
 {
   "Id": "Policy1729615099960",
   "Version": "2012-10-17",
@@ -419,7 +422,7 @@ Now use another AWS service called IAM to create a user-group and user to access
 * Select Policies from the side menu and select Create Policy
 * From the JSON tab, select import managed policy to import a premade AWS policy with full access to S3
 * Select AmazonS3FullAccess policy and adapt as below using the ARN for the S3 bucket
-```bash
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -478,7 +481,25 @@ STRIPE_PUBLIC_KEY = pk....
 STRIPE_SECRET_KEY = sk....
 ```
 
+## Gmail Setup
+The app uses gmail to send order confirmation and account verification emails using [Gmail](https://mail.google.com/mail/).
+* Click on the Account Settings in Gmail.
+* Click on the Accounts and Import tab.
+* In the section called "Change account settings", click on the link for Other Google Account settings.
+* Select Security.
+* Select 2-Step Verification to turn it on. (verify your password and account)
+* Select Turn On for 2FA.
+* On the Security page, select the option called App passwords.
+* Select Mail for the app type.
+* Select Other (Custom name) for the device type.
+* Add any custom name
+* Save the 16-character password (API key).
+* The Gmail credentials are placed in Heroku configvars with the following names
+```bash
+EMAIL_HOST_PASS = 16-character API key
+EMAIL_HOST_USER = users Gmail email address
 
+```
 
 ## ElephantSQL
 The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephantsql.com/)
@@ -487,7 +508,7 @@ The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephants
 * Choose the Free Tiny Turtle plan.
 * Click the "Select Region" button and select a data centre from the dropdown.
 * Confirm the new database instance by clicking "Create instance" button.
-* The value for the database url provided above is then used as the Heroku configvar named 
+* The database url provided in the step above is then used as the value of the Heroku configvar named 
 ```bash 
 DATABASE_URL
 ```
@@ -517,6 +538,7 @@ DATABASE_URL
 - [AWS](https://aws.amazon.com/)
 - [ElephantSQL](https://www.elephantsql.com/)
 - [Stripe](https://stripe.com/gb)
+- [Gmail](https://mail.google.com/mail/)
 
 ### Database Management Systems
 - [SQLite](https://www.sqlite.org/)
