@@ -336,7 +336,7 @@ pip3 install dj_database_url
 pip3 install psycopg2
 ```
 * Import at the top of settings.py
-```bash
+```python
 import os
 import dj_database_url
 ```
@@ -349,6 +349,7 @@ pip freeze > requirements.txt
 * Create a ```Procfile``` in the project to tell Heroku what to do and add the following code
 ```bash
 web: gunicorn [your app name].wsgi:application
+release: python manage.py migrate
 
 ```
 * Commit and push these changes to Github.
@@ -356,7 +357,7 @@ web: gunicorn [your app name].wsgi:application
 ### Heroku Configvars
 
 * The following "configvars" key-values need to be provided in the Heroku dashboard. 
-```bash
+```python
 AWS_ACCESS_KEY_ID = from AWS setup
 AWS_SECRET_ACCESS_KEY = from AWS setup
 DATABASE_URL = from elephantSQL
@@ -466,16 +467,16 @@ pip freeze > requirements.txt
 ```
 * Add "storages" to installed apps in settings.py project file
 * Add the values from the .csv as mentioned above to Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) using the names
-```bash
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
+```python
+AWS_ACCESS_KEY_ID = ...
+AWS_SECRET_ACCESS_KEY = ...
 ```
 * Remove ```DISABLE_COLLECTSTATIC``` variable from Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) if present
 * In the AWS S3 dashboard create folders called media and static to hold the relevant files and grant public read access
 
 ## Stripe API
 The app uses the [Stripe](https://stripe.com/gb) payment platform to implement ecommerce functionality and the Stripe credentials are obtained via the account dashboard. The Stripe credentials are placed in Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
-```bash
+```python
 STRIPE_PUBLIC_KEY = pk....
 
 STRIPE_SECRET_KEY = sk....
@@ -495,7 +496,7 @@ The app uses gmail to send order confirmation and account verification emails us
 * Add any custom name
 * Save the 16-character password (API key).
 * The Gmail credentials are placed in Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) with the following names
-```bash
+```python
 EMAIL_HOST_PASS = 16-character API key
 EMAIL_HOST_USER = users Gmail email address
 
@@ -509,8 +510,8 @@ The app uses a postgreSQL database hosted by [ElephantSQL](https://www.elephants
 * Click the "Select Region" button and select a data centre from the dropdown.
 * Confirm the new database instance by clicking "Create instance" button.
 * The database url provided in the step above is then used as the value of the Heroku [configvars ](https://github.com/doctorandrewbrown/community-appliances/blob/main/README.md#heroku-configvars) variable named 
-```bash 
-DATABASE_URL
+```python
+DATABASE_URL = ...
 ```
 
 
