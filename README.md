@@ -26,8 +26,6 @@ The following apply to users with or without an account
 - As a user I want to have a familiar experience making on-line payment for my items and have access to all the relevant details
 - As a user I want to get an email confirming my order has been placed.
 
-This [video](https://github.com/user-attachments/assets/79698b64-8b53-451e-a0c8-70dce84bbfa2) gives an overview of most of the main actions in the purchasing process.
-
 ### Registering for an Account
 - As a user I want to sign-up for an account to access useful/interesting additional features in the app
 
@@ -542,6 +540,12 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+# Future Work on the App
+* The app still has a few aspects related to "stock control" that need to be adressed before a full production version would be ready. These issues are due to the current business model of selling single items. At present when a user adds an item to their cart it remains in the list of items for sale on the site. Even though the current user can not add an item already in their cart a concurrent user would be able to do so. Code could be implemented to remove an item from sale when an order is confirmed however, the problem remains if a concurrent user had the item in their cart. The issues above would clearly need further attention in a production version of the app.
+
+* 
+
+* Currently when a user adds
 # Tools and Technologies
 
 ### Languages
