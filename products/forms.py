@@ -8,7 +8,6 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
 
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
@@ -16,4 +15,5 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class'] = 'border-primary shadow-none rounded-0 mt-3'
+            field.widget.attrs['class'] = 'border-primary \
+            shadow-none rounded-0 mt-3'
