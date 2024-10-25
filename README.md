@@ -632,6 +632,7 @@ For all testing please see [TESTING](TESTING.md)
 | [Markselectrical](https://markselectrical.co.uk/ww11bb504daws1_samsung-washing-machine)|Washing machine placeholder image|
 | [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Gas cooker placeholder image|
 | [Markselectrical](https://markselectrical.co.uk/dsc626g-1bl_delonghi-gas-cooker-with-single-oven)|Electric cooker placeholder image|
+| [pngtree](https://pngtree.com/so/no-image-available)|No-image jpg image|
 
 
 ### References
