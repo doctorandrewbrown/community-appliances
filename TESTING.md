@@ -18,6 +18,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Profile | n/a | text input | no errors or warnings|
 | Order History | n/a | text input | no errors or warnings|
 | Volunteers | n/a | text input | no errors or warnings|
+| Add product | n/a | text input | no errors or warnings|
+| Edit product| n/a | text input | no errors or warnings|
+
 
 ## CSS
 
