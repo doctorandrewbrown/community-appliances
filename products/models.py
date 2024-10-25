@@ -59,7 +59,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     certificate = models.ForeignKey('Certificate', null=True, blank=True,
                                     on_delete=models.SET_NULL)
-    image = models.ImageField()
+    image = models.ImageField(null=False, blank=False)
 
     # string representations of model
     def __str__(self):
