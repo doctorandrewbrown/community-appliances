@@ -185,7 +185,7 @@ The table below shows the test results Pass/Fail for built-in form validation an
 | profiles | UserProfile |UserProfileForm | profile |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-profile.png)  | screenshot shows error message if an invalid postcode is submitted in form (see forms.py for postcode validation code)  | Pass |
 | volunteers | VolunteerProfile |VolunteerProfileForm | volunteers |  ![screenshot](documentation/testing/form-validation/form-validation-volunteers.png)  | screenshot shows error message if required field is omitted   | Pass |
 | products | Product |ProductForm | Product Management edit/add product |  ![screenshot](documentation/testing/form-validation/form-validation-management-0.png)  | screenshot shows error message if required field is omitted   | Pass |
-| products | Product |ProductForm | Product Management edit/add product |  ![screenshot](documentation/testing/form-validation/form-validation-management-1.png)  | screenshot shows error message database constraint violated   | Pass |
+| products | Product |ProductForm | Product Management edit/add product |  ![screenshot](documentation/testing/form-validation/form-validation-management-1.png)  | screenshot shows error message database constraint violated | Pass |
 
 
 
