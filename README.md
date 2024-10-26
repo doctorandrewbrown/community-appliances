@@ -36,9 +36,10 @@ Visitors can make purchases with or without an account. However, signing-up for 
 - As a user with an account I want the option to make a volunteer profile linked to my account, in order to volunteer with the charity
 
 ### Managing the Store (Admin User)
-The store admin needs access to order details in the database in order to fullfil customer orders. Additionally, the admin user needs to manage user accounts and user and volunteer profiles. The admin also needs to be able to add and remove products, and edit product details. These actions are performed via the Django admin panel.
+The store admin needs access to order details in the database in order to fullfil customer orders. Additionally, the admin user needs to manage user accounts and user profiles and volunteer profiles. These actions are currently performed via the Django admin panel. The admin also needs to be able to add and remove products, and edit product details. The later actions can be performed via the Django admin panel but the app provides a more user-friendly interface for store owners to add and edit products in the store database without going through the Django admin panel.
 
 - As an admin user I want full CRUD functionality for all models in the application database.
+- As an admin user I want a user-friendly interface for adding new products and editing products in the store.
 
 
 ### User Messaging
@@ -281,11 +282,11 @@ For convenience, store owners (superusers) are able to create and edit products 
 
 ![screenshot](documentation/readme/features/management-add-dropdown.png)
 
-- mobile view of the select dropdown for categories
+- The mobile view of the select dropdown for categories is shown below and similar mobile-style dropdowns are implemented for the product grade (condition) and category.
 
 ![screenshot](documentation/readme/features/management-add-dropdown-mobile.jpg)
 
-- Image file upload is via form widget input
+- Image file upload is via a form widget input
 
 ![screenshot](documentation/readme/features/management-add-widget.png)
 

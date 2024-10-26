@@ -158,6 +158,17 @@ This user story was tested by manually performing create, read, update and delet
 | Profiles | User profiles | ![screenshot](documentation/testing/stories/stories-admin-profiles-list.png) | ![screenshot](documentation/testing/stories/stories-admin-profiles-change.png)  | | Pass | 
 | Volunteers | Volunteer profiles | ![screenshot](documentation/testing/stories/stories-admin-volunteers-list.png) | ![screenshot](documentation/testing/stories/stories-admin-volunteers-change.png)  | The screenshot of the volunteers list view shows a default ordering by "active" volunteers first. This is to improve admin-user experience. The code to give this behaviour is in admin.py file of volunteers app| Pass | 
 
+- As an admin user I want a user-friendly interface for adding new products and editing products in the store.
+
+This user story was tested by manually adding new products to the store and editing existing products.
+
+| Tests |Video/Screenshot | Notes | Pass/Fail |
+| :--- |----| --- | --- |
+| Adding a new product |[video](https://github.com/user-attachments/assets/2e8edc94-4d32-4116-b7ea-9076cabbe51d) |video shows Admin user adding a new product| Pass |
+| Editing an existing product |[video](https://github.com/user-attachments/assets/acd08582-fa11-4f88-9496-c64cea2edbaa) |video shows Admin user editing a product by changing the price| Pass |
+| Deleting an existing product |[video](https://github.com/user-attachments/assets/25503d93-c956-4cb6-8449-1939f12591c6) |product is deleted from database on clicking "Delete" link and user returned to default results listing| Pass |
+
+
 
 ## Form Validation Tests
 Basic form validation was enforced via correct Django "field types" (e.g. EmailField for emails), and "field options" (e.g. blank=False for required fields) when defining models. Manual testing was via entering invalid data into the form, and ensuring the form was not submitted and error messaging was shown. 
