@@ -265,6 +265,26 @@ A volunteers profile is created for all account holders and logged in users acce
 
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
+### Product Management Pages
+Store owners (superusers) are able to create and edit products without going through the Django admin panel if they wish. This is achieved via  Add Product and Edit Product pages accessible only to store owners.
+
+#### Product Add Page
+- When the store owner is logged in an additional option is visible in the account dropdown
+![screenshot](documentation/readme/features/management-nav-link.png)
+- Clicking the dropdown link takes the user to a page containing a validated form to add details of a new product to store database.
+![screenshot](documentation/readme/features/management-add-form.png)
+- Option dropdowns in the form allow users to select pre-defined category, grade and safety certificate options. 
+![screenshot](documentation/readme/features/management-add-dropdown.png)
+- mobile view
+![screenshot](documentation/readme/features/management-add-dropdown-mobile.jpg)
+- The form is validated 
+![screenshot](documentation/readme/features/management-add-validation.png)
+- Messaging is provided to keep the user informed
+![screenshot](documentation/readme/features/management-add-message-success.png)
+![screenshot](documentation/readme/features/management-add-message-error.png)
+
+#### Product Edit Page
+
 # Skeleton
 ## Wireframes
 | Page | Device | Wireframe |
