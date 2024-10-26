@@ -268,3 +268,5 @@ A bug was observed if the user entered an invalid sort parameter in the url. Thi
 The above code ensures a more user friendly default ordering of products by descending price if a user enters an invalid sort parameter in the url.
 ### Delivery Postcode Checking
 Code to check for a valid delivery postcode was included in forms.py of the profile and checkout apps. However, the code would need to be much more robust for a full production environment. For instance the current code would pass as valid any string containing a valid sequence as a substring e.g. xyzCF31abc where this is not the intention. More robust ready-made solutions are surely available and could be included in a full production environment.
+
+* There are no other bugs of which I am aware.

@@ -624,11 +624,13 @@ You can fork this repository by using the following steps:
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 # Future Work on the App
-* The app still has a few aspects related to "stock control" that need to be adressed before a full production version would be ready. These issues are due to the current business model of selling single items. At present when a user adds an item to their cart it remains in the list of items for sale on the site. Even though the current user can not add an item already in their cart a concurrent user would be able to do so. Code could be implemented to remove an item from sale when an order is confirmed however, the problem remains if a concurrent user had the item in their cart. The issues above would clearly need further attention in a production version of the app.
+* The app still has a few aspects related to "stock control" that need to be adressed before a full production version would be ready. These issues are due to the current business model of selling single items. At present when a user adds an item to their cart it remains in the list of items for sale on the site. Even though the current user can not add an item already in their cart a concurrent user would be able to do so. Code could be implemented to remove an item from sale when an order is confirmed however, the problem remains if a concurrent user had the item in their cart. The issues above would clearly need further attention in a full production version of the app.
 
-* 
+* The current MVP has basic functioning e-Commerce ability, however Stripe webhooks could be implemented as a future development to make things more robust.
 
-* Currently when a user adds
+* General search functionality beyond what is currently provided was not considered a priority at the outset given the limited amount of stock envisaged for a store such as the current one. However, a future feature which would improve the Product Management experience would be the ability to search for a product by name in order to edit. This feature could be added as part of the existing front-end Product Management functionality described above.
+
+
 # Tools and Technologies
 
 ### Languages
