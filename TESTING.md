@@ -184,6 +184,9 @@ The table below shows the test results Pass/Fail for built-in form validation an
 | | | | | ![screenshot](documentation/testing/form-validation/form-validation-email.png)| screenshot shows error message if email format incorrect| |
 | profiles | UserProfile |UserProfileForm | profile |  ![screenshot](documentation/testing/form-validation/form-validation-postcode-error-profile.png)  | screenshot shows error message if an invalid postcode is submitted in form (see forms.py for postcode validation code)  | Pass |
 | volunteers | VolunteerProfile |VolunteerProfileForm | volunteers |  ![screenshot](documentation/testing/form-validation/form-validation-volunteers.png)  | screenshot shows error message if required field is omitted   | Pass |
+| products | Product |ProductForm | Product Management edit/add product |  ![screenshot](documentation/testing/form-validation/form-validation-management-0.png)  | screenshot shows error message if required field is omitted   | Pass |
+| products | Product |ProductForm | Product Management edit/add product |  ![screenshot](documentation/testing/form-validation/form-validation-management-1.png)  | screenshot shows error message database constraint violated   | Pass |
+
 
 
 ## Defensive Programming
@@ -197,6 +200,8 @@ Defensive measures were taken to anticipate, and handle all possible user intera
 | request contains invalid category parameter in url | trigger no results view | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid category parameter is in views.py of the products app | Pass |
 | request contains invalid sort parameter in url | display products with default ordering of price descending | ![screenshot](documentation/testing/defensive/defensive-default-sort.png)| code to check for valid sort parameter is in views.py of the products app | Pass |
 | server error | trigger 500 error | ![screenshot](documentation/testing/defensive/defensive-500.png)| 500.html file placed in app template directory| Pass |
+| logged in non-admin requests admin only page | show warning message and return to homepage| ![screenshot](documentation/testing/defensive/defensive-superuser-only.png)| | Pass |
+
 
 ## Stripe Payment Testing
 Payment testing was conducted by making test purchases in Stripe test mode. Successful test payments could then be observed in the Stripe transactions dashboard.
