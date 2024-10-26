@@ -394,6 +394,8 @@ Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/ale
 ### Typography
 [Roboto](https://fonts.google.com/specimen/Roboto) font was used for all site text.
 
+[Bootstrap](https://getbootstrap.com/docs/5.3/utilities/colors/#colors) danger and success text coloring was used in some places to convey additional messaging to users.
+
 # Database
 - The app uses a Postgresql relational database deployed on the [ElephantSQL](https://www.elephantsql.com/) platform. For local development the app used a **SQLite** database.
 
@@ -624,7 +626,7 @@ You can fork this repository by using the following steps:
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 # Future Work on the App
-* The app still has a few aspects related to "stock control" that need to be adressed before a full production version would be ready. These issues are due to the current business model of selling single items. At present when a user adds an item to their cart it remains in the list of items for sale on the site. Even though the current user can not add an item already in their cart a concurrent user would be able to do so. Code could be implemented to remove an item from sale when an order is confirmed however, the problem remains if a concurrent user had the item in their cart. The issues above would clearly need further attention in a full production version of the app.
+* The app still has a few aspects related to "stock control" that need to be addressed before a full production version would be ready. These issues are due to the current business model of selling single items. At present when a user adds an item to their cart it remains in the list of items for sale on the site. Even though the current user can not add an item already in their cart a concurrent user would be able to do so. Code could be implemented to remove an item from sale when an order is confirmed however, the problem remains if a concurrent user had the item in their cart. The issues above would clearly need further attention in a full production version of the app.
 
 * The current MVP has basic functioning e-Commerce ability, however Stripe webhooks could be implemented as a future development to make things more robust.
 
@@ -741,4 +743,5 @@ For all testing please see [TESTING](TESTING.md)
 |[Raise 403 error](https://stackoverflow.com/a/67184068/11411026)| views.py profiles app | |
 |[Customise Django Admin Panel](https://realpython.com/customize-django-admin-python/#modifying-a-change-list-using-list_display)| admin.py volunteers app | customise change list |
 
-
+# Acknowledgements
+Thank you to Antonio Rodriguez of Code Institute for assistance with this project.
