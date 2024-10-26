@@ -270,18 +270,39 @@ Store owners (superusers) are able to create and edit products without going thr
 
 #### Product Add Page
 - When the store owner is logged in an additional option is visible in the account dropdown
+
 ![screenshot](documentation/readme/features/management-nav-link.png)
+
 - Clicking the dropdown link takes the user to a page containing a validated form to add details of a new product to store database.
+
 ![screenshot](documentation/readme/features/management-add-form.png)
+
 - Option dropdowns in the form allow users to select pre-defined category, grade and safety certificate options. 
+
 ![screenshot](documentation/readme/features/management-add-dropdown.png)
-- mobile view
+
+- mobile view of the select dropdown for categories
+
 ![screenshot](documentation/readme/features/management-add-dropdown-mobile.jpg)
-- The form is validated 
+
+- Image file upload is via form widget input
+
+![screenshot](documentation/readme/features/management-add-widget.png)
+
+- The form is validated according to the model constraints
+
 ![screenshot](documentation/readme/features/management-add-validation.png)
-- Messaging is provided to keep the user informed
+
+- Messaging is provided to keep the user informed of all actions
+
 ![screenshot](documentation/readme/features/management-add-message-success.png)
+
 ![screenshot](documentation/readme/features/management-add-message-error.png)
+
+- Buttons confirm the action or alternatively cancel the action and return the user to the products view
+
+![screenshot](documentation/readme/features/management-add-buttons.png)
+
 
 #### Product Edit Page
 
