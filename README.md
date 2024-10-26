@@ -266,7 +266,7 @@ A volunteers profile is created for all account holders and logged in users acce
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
 ### Product Management Pages
-Store owners (superusers) are able to create and edit products without going through the Django admin panel if they wish. This is achieved via  Add Product and Edit Product pages accessible only to store owners.
+For convenience, store owners (superusers) are able to create and edit products on the app backend without going through the Django admin panel if they wish. This is achieved via  Add Product and Edit Product pages available on the front-end but only accessible only to store owners.
 
 #### Product Add Page
 - When the store owner is logged in an additional option is visible in the account dropdown
@@ -293,18 +293,59 @@ Store owners (superusers) are able to create and edit products without going thr
 
 ![screenshot](documentation/readme/features/management-add-validation.png)
 
-- Messaging is provided to keep the user informed of all actions
+- Messaging is provided to keep the user informed of all actions. 
 
 ![screenshot](documentation/readme/features/management-add-message-success.png)
 
+- In the event of a form validation error the following alert is given
+
 ![screenshot](documentation/readme/features/management-add-message-error.png)
 
-- Buttons confirm the action or alternatively cancel the action and return the user to the products view
+- Buttons confirm the action or alternatively cancel the action. Cancelling returns the user to the products listing view (ie default listing of all products by descending price). Clicking the "Add Product" button takes the user to the product details card view for the newly added product.
 
 ![screenshot](documentation/readme/features/management-add-buttons.png)
 
 
 #### Product Edit Page
+- A product editing (update and delete) is available to superusers via links in the product details card view. These links are only visible to superusers
+
+![screenshot](documentation/readme/features/management-edit-links.png)
+
+- Clicking the edit link takes the superuser to a product edit form prepopulated with the product current details from the datadase. An info message is displayed informing the user of the name of the product they are editing.
+
+- Option dropdowns in the form allow users to change category, grade and safety certificate options. 
+
+![screenshot](documentation/readme/features/management-edit-dropdown.png)
+
+- example mobile view of the option dropdown for safety certificates
+
+![screenshot](documentation/readme/features/management-edit-dropdown-mobile.jpg)
+
+- Product image can be changed via form widget input
+
+![screenshot](documentation/readme/features/management-edit-widget.png)
+
+- The form is validated according to the model constraints
+
+![screenshot](documentation/readme/features/management-edit-validation.png)
+
+- Messaging is provided to keep the user informed of all actions. 
+
+![screenshot](documentation/readme/features/management-edit-message-success.png)
+
+- In the event of a form validation error the following alert is given
+
+![screenshot](documentation/readme/features/management-edit-message-error.png)
+
+- Buttons confirm the action or alternatively cancel the action and return the user to the products view
+
+![screenshot](documentation/readme/features/management-edit-buttons.png)
+
+- The "Delete" link in the product card deletes the product form the database.
+
+![screenshot](documentation/readme/features/management-edit-links.png)
+
+
 
 # Skeleton
 ## Wireframes
