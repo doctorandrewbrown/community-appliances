@@ -266,18 +266,18 @@ A volunteers profile is created for all account holders and logged in users acce
 ![screenshot](documentation/readme/features/volunteers-message.png)
 
 ### Product Management Pages
-For convenience, store owners (superusers) are able to create and edit products on the app backend without going through the Django admin panel if they wish. This is achieved via  Add Product and Edit Product pages available on the front-end but only accessible only to store owners.
+For convenience, store owners (superusers) are able to create and edit products on the app backend without going through the Django admin panel. This is achieved via "Add Product" and "Edit Product" pages available on the front-end but only accessible only to store owners.
 
 #### Product Add Page
-- When the store owner is logged in an additional option is visible in the account dropdown
+- When the store owner is logged in an additional "Product Management" option is visible in the account dropdown
 
 ![screenshot](documentation/readme/features/management-nav-link.png)
 
-- Clicking the dropdown link takes the user to a page containing a validated form to add details of a new product to store database.
+- Clicking the dropdown link takes the user to a page containing a form to add details of a new product to store database.
 
 ![screenshot](documentation/readme/features/management-add-form.png)
 
-- Option dropdowns in the form allow users to select pre-defined category, grade and safety certificate options. 
+- Option dropdowns in the form allow users to select pre-defined category, grade and safety certificate options as specified in the Product model. 
 
 ![screenshot](documentation/readme/features/management-add-dropdown.png)
 
@@ -307,21 +307,21 @@ For convenience, store owners (superusers) are able to create and edit products 
 
 
 #### Product Edit Page
-- A product editing (update and delete) is available to superusers via links in the product details card view. These links are only visible to superusers
+- Product editing (update and delete) is available to superusers via links in the product details card view of an existing product. These links are only visible to superusers
 
 ![screenshot](documentation/readme/features/management-edit-links.png)
 
-- Clicking the edit link takes the superuser to a product edit form prepopulated with the product current details from the datadase. An info message is displayed informing the user of the name of the product they are editing.
+- Clicking the "Edit" link takes the superuser to a product edit form prepopulated with the product current details from the datadase. An info message is displayed informing the user of the name of the product they are editing.
 
-- Option dropdowns in the form allow users to change category, grade and safety certificate options. 
+- Option dropdowns in the form allow users to change category, grade and safety certificate options for an existing product. 
 
 ![screenshot](documentation/readme/features/management-edit-dropdown.png)
 
-- example mobile view of the option dropdown for safety certificates
+- An example mobile view of the option dropdown for safety certificates is shown below
 
 ![screenshot](documentation/readme/features/management-edit-dropdown-mobile.jpg)
 
-- Product image can be changed via form widget input
+- The product image can be changed via a form widget input
 
 ![screenshot](documentation/readme/features/management-edit-widget.png)
 
@@ -337,7 +337,7 @@ For convenience, store owners (superusers) are able to create and edit products 
 
 ![screenshot](documentation/readme/features/management-edit-message-error.png)
 
-- Buttons confirm the action or alternatively cancel the action and return the user to the products view
+- Buttons confirm the action or alternatively cancel the action. Cancelling returns the user to the products listing view (ie default listing of all products by descending price). Clicking the "Update Product" button takes the user to the product details card view for the updated product.
 
 ![screenshot](documentation/readme/features/management-edit-buttons.png)
 
