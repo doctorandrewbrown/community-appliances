@@ -250,6 +250,8 @@ Much of the manual testing of the app has been described [above](https://github.
 | profile   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-profile.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-profile.png)|slow loading due to external resources
 | order history  | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-order-history.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-order-history.png)|slow loading due to external resources
 | volunteers   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-volunteers.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-volunteers.png)|slow loading due to external resources
+| product management - add product   | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-add-product.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-add-product.png)|slow loading due to external resources
+| product management - edit product  | ![screenshot](documentation/testing/lighthouse/lighthouse-desktop-edit-product.png)  | ![screenshot](documentation/testing/lighthouse/lighthouse-mobile-edit-product.png)|slow loading due to external resources
 
 
 
