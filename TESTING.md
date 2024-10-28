@@ -92,7 +92,7 @@ I have tested my deployed project on multiple browsers to check for compatibilit
 
 ## Responsiveness
 
-I have tested my deployed project on multiple devices to check for responsiveness issues.
+I have tested my deployed project on multiple devices to check for responsiveness issues (although not included here the django allauth pages were also tested for responsiveness and found satisfactory).
 
 | Device | Home | Products | Product Detail | Cart | Checkout | Checkout Success | Profile | Volunteers | Order History|Add Product |Edit Product | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
