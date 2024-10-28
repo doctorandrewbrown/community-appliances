@@ -208,6 +208,14 @@ Payment testing was conducted by making test purchases in Stripe test mode. Succ
 
 ![screenshot](documentation/testing/images/stripe-test-transactions.png)
 
+Test cards were also used to simulate errors in payment
+
+![screenshot](documentation/testing/images/stripe-error-declined.png)
+
+![screenshot](documentation/testing/images/stripe-error-processing.png)
+
+
+
 ## Further Manual Testing
 Much of the manual testing of the app has been described [above](https://github.com/doctorandrewbrown/community-appliances/blob/main/TESTING.md#user-story-testing). Additional manual testing is described below.
 |  Page | Tests | Result | Notes | Screenshot |
