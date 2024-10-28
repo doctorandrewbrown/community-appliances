@@ -200,15 +200,15 @@ Defensive measures were taken to anticipate, and handle all possible user intera
 | request contains invalid category parameter in url | trigger no results view | ![screenshot](documentation/testing/defensive/defensive-no-results.png)| code to check for valid category parameter is in views.py of the products app | Pass |
 | request contains invalid sort parameter in url | display products with default ordering of price descending | ![screenshot](documentation/testing/defensive/defensive-default-sort.png)| code to check for valid sort parameter is in views.py of the products app | Pass |
 | server error | trigger 500 error | ![screenshot](documentation/testing/defensive/defensive-500.png)| 500.html file placed in app template directory| Pass |
-| logged in non-admin requests admin only page | show warning message and return to homepage| ![screenshot](documentation/testing/defensive/defensive-superuser-only.png)| | Pass |
+| logged in non-admin requests admin only page | show warning message and return to homepage| ![screenshot](documentation/testing/defensive/defensive-superuser-only.png)|relevant code is contained in views.py of the products app | Pass |
 
 
 ## Stripe Payment Testing
-Payment testing was conducted by making test purchases in Stripe test mode. Successful test payments could then be observed in the Stripe transactions dashboard.
+* Payment testing was conducted by making test purchases in Stripe test mode. Successful test payments could then be observed in the Stripe transactions dashboard.
 
 ![screenshot](documentation/testing/images/stripe-test-transactions.png)
 
-Test cards were also used to simulate errors in payment
+* Stripe [test cards](documentation/testing/images/stripe-test-transactions.png) were also used to simulate errors in payment
 
 ![screenshot](documentation/testing/images/stripe-error-declined.png)
 
