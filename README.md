@@ -363,6 +363,7 @@ For convenience, store owners (superusers) are able to create and edit products 
 | Profile | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-profile.jpg) |
 | Volunteers | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-volunteers.jpg) |
 | Order History | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-order-history.jpg) |
+| Add/Edit Product | mobile | [wireframe](documentation/readme/wireframes/wireframe-mobile-add-edit-product.jpg) |
 | Home | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-home.jpg) |
 | Products | tablet  | [wireframe](documentation/readme/wireframes/wireframe-tablet-products.jpg) |
 | Product Details | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-product-details.jpg) |
@@ -372,6 +373,7 @@ For convenience, store owners (superusers) are able to create and edit products 
 | Profile | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-profile.jpg) |
 | Volunteers | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-volunteers.jpg) |
 | Order History | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-order-history.jpg) |
+| Add/Edit Product | tablet | [wireframe](documentation/readme/wireframes/wireframe-tablet-add-edit-product.jpg) |
 | Home | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-home.jpg) |
 | Products | desktop  | [wireframe](documentation/readme/wireframes/wireframe-desktop-products.jpg) |
 | Product Details | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-product-details.jpg) |
@@ -381,6 +383,7 @@ For convenience, store owners (superusers) are able to create and edit products 
 | Profile | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-profile.jpg) |
 | Volunteers | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-volunteers.jpg) |
 | Order History | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-order-history.jpg) |
+| Add/Edit Product | desktop | [wireframe](documentation/readme/wireframes/wireframe-desktop-add-edit-product.jpg) |
 
 # Surface
 
