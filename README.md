@@ -383,10 +383,10 @@ For convenience, store owners (superusers) are able to create and edit products 
 # Surface
 
 ### Colour Palette
-The colour palette used for site styling was chosen to be bold and clean in keeping with the site theme of domestic appliances,
-- blue #0000ff
+The aesthetic approach is minimalist with plenty of whitespace being used. The colour palette used for site styling was chosen to be bold and clean in keeping with the site theme of domestic appliances,
+- blue #0000FF
 - black #000000
-- white #ffffff
+- white #FFFFFF
 
 ### Bootstrap Alerts
 Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/alerts/) were used for messaging
@@ -394,7 +394,7 @@ Colour coded bootstrap [alerts](https://getbootstrap.com/docs/4.1/components/ale
 ### Typography
 [Roboto](https://fonts.google.com/specimen/Roboto) font was used for all site text.
 
-[Bootstrap](https://getbootstrap.com/docs/5.3/utilities/colors/#colors) danger and success text coloring was used in some places to convey additional messaging to users.
+[Bootstrap](https://getbootstrap.com/docs/5.3/utilities/colors/#colors) text-danger and text-success classes text were used in some places to convey additional messaging to users.
 
 # Database
 - The app uses a Postgresql relational database deployed on the [ElephantSQL](https://www.elephantsql.com/) platform. For local development the app used a **SQLite** database.
@@ -632,6 +632,7 @@ You can fork this repository by using the following steps:
 
 * General search functionality beyond what is currently provided was not considered a priority at the outset given the limited amount of stock envisaged for a store such as the current one. However, a future feature which would improve the Product Management experience would be the ability to search for a product by name in order to edit. This feature could be added as part of the existing front-end Product Management functionality described above.
 
+* Visually the app looks best on small devices and there is room for improvement aesthetically on very large (4k) devices.
 
 # Tools and Technologies
 

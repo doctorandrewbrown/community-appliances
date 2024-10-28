@@ -160,7 +160,7 @@ This user story was tested by manually performing create, read, update and delet
 
 - As an admin user I want a user-friendly interface for adding new products and editing products in the store.
 
-This user story was tested by manually adding new products to the store and editing existing products.
+This user story was tested by manually adding new products to the store and editing existing products. The tests below were also confimed by inspecting the Django admin panel to see changes in the product model.
 
 | Tests |Video/Screenshot | Notes | Pass/Fail |
 | :--- |----| --- | --- |
@@ -245,6 +245,8 @@ Much of the manual testing of the app has been described [above](https://github.
 |    | clicking product image link in order summary takes user back to relevant product details page | Pass | | ![screenshot](documentation/testing/further-testing/checkout-order-summary-image.png)  |
 | checkout success page | | | |  |
 |    | clicking the "Continue Shopping" button takes user to products page showing "All Appliances" ordered by price descending  | Pass |   | ![screenshot](documentation/testing/further-testing/checkout-success-link-button.png)  |
+| add/edit product management pages | | | |  |
+|    | clicking the "Cancel" button takes user to products page showing "All Appliances" ordered by price descending  | Pass |   | ![screenshot](documentation/testing/further-testing/product-management-cancel-button.png)  |
 
 ### Lighthouse Testing
 |  Page | Desktop | Mobile | Notes
