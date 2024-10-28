@@ -4,6 +4,8 @@
 # Strategy
 ## Overview
 - Community Appliances is a django e-commerce app that allows users to purchase refurbished domestic appliances (washing machines and electric and gas cookers) from a fictional charity organisation. The charity accepts donations of used appliances which are refurbished for sale to raise funds. The organisation is run by volunteers and the app also enables new volunteers to sign-up if they have an account. E-commerce functionality is via the [Stripe](https://stripe.com/gb) on-line payment platform.
+
+- This [video](https://github.com/user-attachments/assets/e30efb00-b840-414c-a89c-0fee53afa0b9) gives an overview of the main purchasing processes for a logged in user.
 # Scope
 ## User Stories
 The design of the app was guided by user stories. The categories of user considered were,
