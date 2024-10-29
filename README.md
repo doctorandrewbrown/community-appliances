@@ -434,9 +434,9 @@ import dj_database_url
 ```bash
 pip freeze > requirements.txt
 ```
-* Create a ```Procfile``` in the project to tell Heroku what to do and add the following code
+* Create a ```Procfile``` in the project to tell Heroku what to do and add the following code (the second line in the file tells Heroku to apply model migrations)
 ```bash
-web: gunicorn [your app name].wsgi:application
+web: gunicorn [community_appliances].wsgi:application
 release: python manage.py migrate
 
 ```
