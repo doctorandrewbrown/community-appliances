@@ -1,5 +1,6 @@
 
-# Community Appliances
+# Community Appliances 
+## Code Institute portfolio project
 ![screenshot](documentation/readme/features/home-page.png)
 
 # Strategy
