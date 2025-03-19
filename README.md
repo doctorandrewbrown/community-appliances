@@ -1,5 +1,6 @@
 
 # Community Appliances
+![screenshot](documentation/readme/features/home-page.png)
 ## [Live site here](https://community-appliances-3af27dd26db9.herokuapp.com/)
 # Strategy
 ## Overview
