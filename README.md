@@ -1,6 +1,12 @@
 
 # Community Appliances 
-## Code Institute portfolio project
+## Code Institute Django e-commerce app portfolio project
+### Technologies
+- Django
+- Heroku
+- Stripe
+- Postgesql
+- Bootstrap
 ![screenshot](documentation/readme/features/home-page.png)
 
 # Strategy
