@@ -4,8 +4,9 @@
 ### Technologies
 - Django
 - Heroku
+- AWS
 - Stripe
-- Postgesql
+- PostgreSQL
 - Bootstrap
 ![screenshot](documentation/readme/features/home-page.png)
 
